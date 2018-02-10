@@ -1,0 +1,58 @@
+html, body {
+    margin-left: 60px;
+    margin-right: 60px; 
+    margin-top: 0;
+}
+article {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: floralwhite;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+}
+
+div {
+    border: 1px solid gray;
+    padding: 12px;
+}
+
+p[id=b] {
+    font-weight: bold;
+}
+
+#grad {
+    background: linear-gradient(red, yellow);
+    height: 200px;
+}
+
+#grad2 {
+    background: linear-gradient(to right, red, yellow);
+    height: 200px;
+}
+
+#grad3 {
+    background: linear-gradient(to bottom right, red, yellow);
+    height: 200px;
+}
+
+#grad4 {
+    background: linear-gradient(90deg, red, yellow);
+    height: 200px;
+}
+
+#grad5 {
+    height: 200px;
+    background: linear-gradient(red, yellow, green)
+}
+#grad6 {
+    height: 200px;
+    background: linear-gradient(to right, red, yellow, green, indigo, blue, violet);
+}
+
+#grad7 {
+    height: 200px;
+    background: repeating-linear-gradient(red, yellow 10%, green 20%);
+}

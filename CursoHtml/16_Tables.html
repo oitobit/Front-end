@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Tables</title>
+  <link rel="stylesheet" href="css/Tables.css">
+</head>
+<body>
+  <h2>Defening an HTML Table</h2>
+    <p>
+      An HTML table is defined with the <strong>&lt;table&gt; tag.</strong>
+    </p>
+    <p>
+      Each table row is defined with the <strong>&lt;tr&gt;</strong> tag. A table header is defined with the <strong>&lt;th&gt;</strong> tag. By defualt, table headings are bold and centered. A table data/cell is defined with the   <strong>&lt;td&gt;</strong> tag.
+    </p>
+  <table class="table">
+    <tr>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </table>
+    <p>
+      <mark class="marcacao"><strong>Note:</strong> The &lt;td&gt; elements are the data containers of the table.
+      They can contain all sorts of HTML elements; text, images, lists, other tables, etc.</mark>
+    </p><hr class="line">
+
+  <h2>HTML Table - Adding a Border</h2>
+    <p>
+      If you do not specify a border for the table, it will be displayed without borders.
+    </p>
+    <p>
+      A border is set using the CSS <strong>border</strong> property:
+    </p>
+    <code>
+      <strong class="code">table, th, td</strong> {<br>
+        &nbsp;&nbsp;<strong class="code">border</strong>: <strong class="porcent">1px solid black</strong>;<br>
+      }
+    </code><hr class="line">
+
+  <h2>HTML Table - Collapsed Borders</h2>
+    <p>
+      If you want the borders to collapse into one border, add the CSS <strong>&lt;border-collapse&gt</strong> property:
+    </p>
+    <code>
+      <strong class="code">table, th, td</strong> {<br>
+        &nbsp;&nbsp;<strong class="code">border</strong>: <strong class="porcent">1px solid black</strong>;<br>
+        &nbsp;&nbsp;<strong class="code">border-collapse</strong>: <strong class="porcent">collapse</strong>;<br>
+      }<br><br>
+    </code>
+  <table class="collapse">
+    <tr>
+      <th class="collapse">FirstName</th>
+      <th class="collapse">LastName</th>
+      <th class="collapse">Age</th>
+    </tr>
+    <tr>
+      <td class="collapse">Jill</td>
+      <td class="collapse">Smith</td>
+      <td class="collapse">60</td>
+    </tr>
+    <tr>
+      <td class="collapse">Eve</td>
+      <td class="collapse">Jackson</td>
+      <td class="collapse">94</td>
+    </tr>
+    <tr>
+      <td class="collapse">John</td>
+      <td class="collapse">Doe</td>
+      <td class="collapse">80</td>
+    </tr>
+  </table><hr class="line">
+
+  <h2 class="difered">Chapter Summary</h2>
+    <ul>
+      <li>
+        Use the HTML <strong>&lt;table&gt;</strong> element to define a table
+      </li>
+      <li>
+        Use the HTML <strong>&lt;tr&gt;</strong> element to define a table row
+      </li>
+      <li>
+        Use the HTML <strong>&lt;td&gt;</strong> element to define a table data
+      </li>
+      <li>
+        Use the HTML <strong>&lt;th&gt;</strong> element to define a table heading
+      </li>
+      <li>
+        Use the HTML <strong>&ltcaption&gt;</strong> element to define a table caption
+      </li>
+      <li>
+        Use the CSS <strong>border</strong> property to define a border
+      </li>
+      <li>
+        Use the CSS <strong>border-collapse</strong> property to collapse cell borders
+      </li>
+      <li>
+        Use the CSS <strong>padding</strong> property to add padding to cells
+      </li>
+      <li>
+        Use the CSS <strong>text-align</strong> property to align cell text
+      </li>
+      <li>
+        Use the CSS <strong>border-spacing</strong> property to set the spacing between cells
+      </li>
+      <li>
+        Use the <strong>colspan</strong> attribute to make a cell span many columns
+      </li>
+      <li>
+        Use the <strong>rowspan</strong> attribute to make a cell span many rows
+      </li>
+      <li>
+        Use the <strong>id</strong> attribute to uniquely define one table
+      </li>
+    </ul>
+</body>
+</html>

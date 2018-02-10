@@ -1,0 +1,55 @@
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: floralwhite;
+    margin: 30px;
+    padding: 10px;
+}
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+#img {
+    opacity: 0.2;
+    filter: alpha(opacity=50);
+    width: 400px;
+    height: 250px;
+}
+
+#img2 {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    width: 400px;
+    height: 250px;
+}
+
+#img3 {
+    opacity: 1.0;
+    filter: alpha(opacity=50);
+    width: 400px;
+    height: 250px;
+}
+
+#img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    border: 3px solid greenyellow;
+    color: gainsboro;
+    shadow: 13px red;
+}
+
+#img2:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+#img3:hover {
+    opacity: 0.3;
+    filter: alpha(opacity=50);
+}
+
+figcaption {
+    width: 400px;
+    text-align: justify;
+}

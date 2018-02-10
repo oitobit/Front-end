@@ -1,0 +1,41 @@
+<!--
+Background Color
+The background-color property specifies the background color of an element.
+The background color of a page is set like this:
+-->
+<!--
+Background Image
+The background-image property specifies an image to use as the
+background of an element.
+
+By default, the image is repeated so it covers the entire element.
+
+The background image for a page can be set like this:
+-->
+<!--
+Background Image - Repeat Horizontally or Vertically
+By default, the background-image property repeats an image both horizontally
+and vertically.
+
+Some images should be repeated only horizontally or vertically, or they will
+look strange, like this:
+-->
+  <!DOCTYPE html>
+  <html>
+    <head>
+    </head>
+    <style>
+      body {
+        background-color: lightblue;
+        background-image: url(w3schools.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        margin-right: 200px;
+        background-attachment: fixed;
+      }
+    </style>
+    <body>
+      <h1>Hello world.</h1>
+      <p>This page has a light blue background color!</p>
+    </body>
+  </html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <link type="text/css" rel="stylesheet" href="css/27_Entites.css">
+    </head>
+    <body>
+        <h1>HTML Encoding (Character Sets)</h1>
+        <hr>
+            To display an HTML page correctly, a web browser must know which character set (character encoding) to use.
+        <hr>
+        <h2>What is Character Encoding?</h2>
+        <p>
+            ASCII was the first character encoding standard (also called character set). ASCII defined 127 different alphanumeric characters that could be used on the internet: numbers (0-9), English letters (A-Z), and some special characters like ! $ + - ( ) @ < > .
+        </p>
+        <p>
+            ANSI (Windows-1252) was the original Windows character set, with support for 256 different character codes.
+        </p>
+        <p>
+            ISO-8859-1 was the default character set for HTML 4. This character set also supported 256 different character codes.
+        </p>
+        <p>
+            Because ANSI and ISO-8859-1 were so limited, the default character encoding was changed to UTF-8 in HTML5.
+        </p>
+        <p>
+            UTF-8 (Unicode) covers almost all of the characters and symbols in the world.
+        </p>
+        <div class="code-2">
+            <p>All HTML 4 processors also support UTF-8 encoding.</p>
+        </div>
+        <hr>
+        <h2>The HTML charset Attribute</h2>
+        <p>
+            To display an HTML page correctly, a web browser must know the character set used in the page.
+        </p>
+        <p>This is specified in the &lt;meta> tag:</p>
+        <div class="borda">
+            <h3>For HTML4</h3>
+            <div id="coment-code">
+                <code>
+                    &lt;meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+                </code>
+            </div>
+            <h3>For HTML5</h3>
+            <div id="coment-code">
+                <code>
+                &lt;meta charset="utf-8">
+                </code>
+            </div>
+        </div>
+        <hr>
+        <div class="code-2">
+            <p>
+                If a browser detects ISO-8859-1 in a web page, it defaults to ANSI, because ANSI is identical to ISO-8859-1 except that ANSI has 32 extra characters.
+            </p>
+        </div>
+        <hr>
+        <h2>The ASCII Character Set</h2>
+        <p>
+            ASCII uses the values from 0 to 31 (and 127) for control characters.
+        </p>
+        <p>
+            ASCII uses the values from 32 to 126 for letters, digits, and symbols.
+        </p>
+        <p>
+            ASCII does not use the values from 128 to 255.
+        </p>
+        <hr>
+        <h2>The ANSI Character Set (Windows-1252)</h2>
+        <p>
+            ANSI is identical to ASCII for the values from 0 to 127.
+        </p>
+        <p>
+            ANSI has a proprietary set of characters for the values from 128 to 159.
+        </p>
+        <p>
+            ANSI is identical to UTF-8 for the values from 160 to 255.
+        </p>
+        <hr>
+        <h2>The ISO-8859-1 Character Set</h2>
+        <p>
+            8859-1 is identical to ASCII for the values from 0 to 127.
+        </p>
+        <p>
+            8859-1 does not use the values from 128 to 159.
+        </p>
+        <p>
+            8859-1 is identical to UTF-8 for the values from 160 to 255.
+        </p>
+        <hr>
+        <h2>The UTF-8 Character Set</h2>
+        <p>
+            UTF-8 is identical to ASCII for the values from 0 to 127.
+        </p>
+        <p>
+            UTF-8 does not use the values from 128 to 159. 
+        </p>
+        <p>
+            UTF-8 is identical to both ANSI and 8859-1 for the values from 160 to 255.
+        </p>
+        <p>
+            UTF-8 continues from the value 256 with more than 10 000 different characters.
+        </p>
+        <p>
+            For a closer look, study our Complete HTML Character Set Reference.
+        </p>
+    </body>
+</html>

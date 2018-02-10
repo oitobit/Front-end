@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Pseudo-elements</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/Pseudo-elements.css">
+    <style>
+        html {
+            background: #fff url(backdrop.png);
+            background-image: url(backdrop.png);
+            background-position-x: initial;
+            background-position-y: initial;
+            background-size: initial;
+            background-repeat-x: initial;
+            background-repeat-y: initial;
+            background-attachment: initial;
+            background-origin: initial;
+            background-clip: initial;
+            background-color: #fff;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="logo"><a href="file:///home/rodlinux/Dropbox/Front-end/CursoCss/28_Pseudo-elements.html"><span id="color-first">MEU</span><span id="color-two">LINUX</span></a>
+        </nav>
+        <nav id="menu">
+            <ul>
+                <li id="line"><a href="http://www.google.com" target="_blank">Sobre</a></li>
+                <li id="line"><a href="http://www.nada.com">Ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hgroup>
+        <h1>Pseudo-elements</h1>
+        <hr>
+        <h2>What are Pseudo-Elements?</h2>
+        <p>A pseudo-elements in css used to style specified parts of an elements.</p>
+        <p>For example, it can be used to:</p>
+        <ul>
+            <li>Style the first letter, or line, of an element</li>
+            <li>Insert content before, or after, the content of an element</li>
+        </ul>
+        <hr>
+        <h2>Syntax</h2>
+        <p>The syntax of pseudo-elements:</p>
+        <div class="display-panel">
+            <div class="panel">
+                <p>
+                    selector::pseudo-element {<br> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; property:value; <br>                    }
+                </p>
+            </div>
+        </div>
+        <hr>  
+        <h2>The ::first-line Pseudo-element</h2>
+        <p>The <span class="marcar">::first-line</span> pseudo-element is used to add a special style to the first line of a
+            text.
+        </p>
+        <p>The following example formats the first line of the text in all &lt;p> elements:</p>
+
+        <p id="primeiro">You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text.
+            And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and
+            more, and more.</p>
+
+        <p>Note: The <span class="marcar">::first-line</span> pseudo-element can only be applied to block-level elements.</p>
+        <p>The following properties apply to the
+            <span class="marcar">::first-line</span> pseudo-element:</p>
+        <ul>
+            <li>font properties</li>
+            <li>color properties</li>
+            <li>background properties</li>
+            <li>word spacing</li>
+            <li>letter spacing</li>
+            <li>text decoration</li>
+            <li>vertical align</li>
+            <li>text transform</li>
+            <li>line height</li>
+            <li>clear</li>
+        </ul>
+        <hr>
+        <h2>The ::first-letter Pseudo-element</h2>
+        <p>The <span class="marcar">::first-letter</span> pseudo-element is used to add a special style to the first letter
+            of a text.</p>
+        <p>The following example formats the first letter of the text in all &lt;p> elements:</p>
+        <p id="segundo">You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+        <p>Note: The ::first-letter pseudo-element can only be applied to block-level elements.</p>
+        <p>The following properties apply to the ::first-letter pseudo- element: </p>
+        <ul>
+            <li>font properties</li>
+            <li>color properties</li>
+            <li>background properties</li>
+            <li>margin properties</li>
+            <li>padding properties</li>
+            <li>border properties</li>
+            <li>text-decoration</li>
+            <li>vertical-align (only if "float" is "none")</li>
+            <li>text-transform</li>
+            <li>line-height</li>
+            <li>float</li>
+            <li>clear</li>
+        </ul>
+        <hr>
+    <h2>CSS - The ::before Pseudo-element</h2>
+    <p>The ::before pseudo-element can be used to insert some content before the content of an element.</p>
+    <p>The following example inserts an image before the content of each
+    &lt;h1> element:</p>
+
+    <h3>This is a heading</h3>
+    <p>The ::before pseudo-element inserts content before the content of an element.</p>
+
+    <h3>This is a heading</h3>
+    <p><b>Note:</b> IE8 supports the content property only if a !DOCTYPE is specified.</p>
+<hr>
+<h2>CSS - The ::after Pseudo-element</h2>
+<p>The ::after pseudo-element can be used to insert some content after the content of an element.</p>
+<p>The following example inserts an image after the content of each &lt;h1> element:
+</p>
+
+<h4>This is a heading</h4>
+<p>The ::after pseudo-element inserts content after the content of an element.</p>
+
+<h4>This is a heading</h4>
+<p><b>Note:</b> IE8 supports the content property only if a !DOCTYPE is specified.</p>
+    </hgroup>
+  </body>
+
+</html>

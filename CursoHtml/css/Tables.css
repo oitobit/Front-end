@@ -1,0 +1,31 @@
+html, body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  background-color: cadetblue;
+}
+h2 {
+  text-align: center;
+}
+.difered {
+  text-align: left;
+}
+.line {
+  color: darkorange;
+}
+table, th, td {
+  width: 25%;
+  border: 1px solid black;
+}
+th, td: {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.marcacao {
+  background-color: burlywood;
+}
+.code {
+  color: crimson;
+}
+.porcent {
+  color: blue;
+}

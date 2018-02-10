@@ -1,0 +1,25 @@
+html, body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  background-color: floralwhite;
+}
+h1, h2 {
+  text-align: center;
+}
+p#demo, #demo2. #demo3 {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+div.bloco {
+  width: auto;
+  background-color: #fff;
+  padding: 8px 12px;
+  border-left: 4px solid #4CAF50;
+  word-wrap: break-word;
+}
+.pink {
+  color: crimson;
+}
+.blue {
+  color: blue;
+}

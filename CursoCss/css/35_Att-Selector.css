@@ -1,0 +1,21 @@
+html, body {
+    font-size: 16px;
+    font-family: Verdana, sans serif;
+    background-color: floralwhite;
+    padding: 30px;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+a[target] {
+    background-color: red;
+}
+a[target="_blank"] {
+    background-color: yellow;
+}
+
+[title~=flower] {
+    border: 5px solid yellow;
+}

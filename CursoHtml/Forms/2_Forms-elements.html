@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/Padrão.css">
+</head>
+<body>
+    <h1>HTML Form Elements</h1>
+    <hr>
+    <p>This chapter describes all HTML form elements.</p>
+    <hr>
+    <h2>The input element</h2>
+    <p>The most important form element is the &lt;input> element.</p>
+    <p>The &lt;input> element can be displayed in several ways, depending on the type attribute.</p>
+    <hr>
+    <h2>The &lt;select> Element</h2>
+    <p>The <strong>&lt;select></strong> element defines a <strong>drop-down</strong> list:</p>
+    <img src="../img/form-element.png" alt="form">
+    <form action="/action_page.php">
+    <select name="cars">
+        <option value="volvo">volvo</option>
+        <option value="sabb">sabb</option>
+        <option value="fiat">fiat</option>
+        <option value="audi">audi</option>
+    </select>
+    <br><br>
+    <input type="submit">
+    </form>
+    <p>The
+    <strong>&lt;option></strong> elements defines an option that can be selected.</p>
+    <p>By default, the first item in the drop-down list is selected.</p>
+    <p>To define a pre-selected option, add the <strong>selected</strong> attribute to the option:</p>
+    <img src="../img/form-element2.png" alt="form2">
+    <form action="/action_page.php">
+        <select name="cars">
+        <option value="volvo">volvo</option>
+        <option value="sabb">sabb</option>
+        <option value="fiat"
+        selected>fiat</option>
+        <option value="audi">audi</option>
+    </select>
+        <br><br>
+        <input type="submit">
+    </form>
+    <hr>
+    <h2>The &lt;textarea> Element</h2>
+    <p>The <strong>&lt;textarea></strong> element defines a multi-line input field (a text area):</p>
+    <form action="/action_page.php">
+    <textarea name="message" rows="10" cols="30">
+         The cat was playing in the garden.
+    </textarea>
+    <br>
+    <input type="submit">
+    </form>
+    <p>The <strong>rows</strong> attribute specifies the visible number of lines in a text area.</p>
+    <p>The <strong>cols</strong> attribute specifies the visible width of a text area.</p>
+    <p>This is how the HTML code above will be displayed in a browser:</p>
+    <form action="/action_page.php">
+    <textarea name="message" cols="30" rows="10"></textarea>
+    <br>
+    <input type="submit">
+    </form>
+    <hr>
+    <h2>The &lt;button> Element</h2>
+    <p>The <strong>&lt;button></strong> element defines a clickable button:</p>
+    <button type="button" onclick="alert('ola, mundo!')">Click me!</button>
+    <hr>
+    <h2>HTML5 Form Elements</h2>
+    <p>HTML5 added the following form elements:</p>
+    <ul>
+        <li>datalist</li>
+        <li>keygen</li>
+        <li>output</li>
+    </ul>
+    <p>
+         <div class="painel-amarelo"><strong>Note:</strong> Browsers do not display unknown elements. New elements that are not supported in older browsers will not "destroy"
+        your web page.</div>
+    </p>
+</body>
+</html>

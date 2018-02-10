@@ -1,0 +1,19 @@
+html, body {
+    font-size: 18px;
+    font-family: Verdana, sans-serif;
+    line-height: 1.5;
+    background-color: floralwhite;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.city {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   max-width: 300px;
+   height: 300px;
+   border: 1px solid black;
+}

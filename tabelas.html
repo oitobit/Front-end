@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="tabelas.css">
+    <script type="text/javascript">
+    	
+    var Marcos = (7 + 8 + 9 + 10)/4;
+    var Maria = (5 + 8 + 8 + 7)/4;
+    var Joao = (4 + 5 + 8 + 5)/4;
+    var Rodrigo = (10 + 10 + 10 + 10)/4;
+    function Aprovados () {
+
+    	//Situação do Marcos
+    	if (Marcos >= 7){
+    		document.getElementById("Marcos").innerHTML = "Média de Marcos é: " + Marcos + " e Marcos está Aprovado";
+    	}
+    	else {
+    		document.getElementById("Marcos").innerHTML = "Marcos está Reprovado";
+    	}
+
+    	//Situação da Maria
+    	if (Maria >= 7) {
+    		document.getElementById("Maria").innerHTML = "Média de Maria é: " + Maria +  " e Maria está Aprovada";
+    	}
+    	else {
+    		document.getElementById("Maria").innerHTML = "Maria está Reprovada";
+    	}
+
+    	//Situação do Joao
+    	if (Joao >= 7) {
+    		document.getElementById("Joao").innerHTML = "Média de João é: " + Joao + " e João está Aprovado";
+    	}
+    	else {
+    		document.getElementById("Joao").innerHTML = "Média de João é: " + Joao + " e João está Reprovado";
+    	}
+
+    	//Situação do Rodrigo
+    	if (Rodrigo >= 7) {
+    		document.getElementById("Rodrigo").innerHTML = "Média de Rodrigo é: " + Rodrigo + " e Rodrigo está Aprovado";
+    	}
+    	else {
+    		document.getElementById("Rodrigo").innerHTML = "Rodrigo está Reprovado";
+    	}
+    }
+
+    </script>
+</head>
+<body>
+    <table>
+    	<tr>
+            <div>
+                <ul></ul>
+                <ul></ul>
+                <ul></ul>
+            </div>
+    		<th>Alunos</th>
+    		<th>N1</th>
+    		<th>N2</th>
+    		<th>N3</th>
+    		<th>N4</th>
+    	</tr>
+    	<tr>
+    		<td>Marcos</td>
+    		<td>7,0</td>
+    		<td>8,0</td>
+    		<td>9,0</td>
+    		<td>10,0</td>
+    	</tr>
+    	<tr>
+    		<td>Maria</td>
+    		<td>5,0</td>
+    		<td>8,0</td>
+    		<td>8,0</td>
+    		<td>7,0</td>
+    	</tr>
+    	<tr>
+    		<td>João</td>
+    		<td>4,0</td>
+    		<td>5,0</td>
+    		<td>8,0</td>
+    		<td>5,0</td>
+    	</tr>
+    	<tr>
+    		<td>Rodrigo</td>
+    		<td>10,0</td>
+    		<td>10,0</td>
+    		<td>10,0</td>
+    		<td>10,0</td>
+    	</tr>
+    </table>
+    <span>*n1, n2, n3, n4: são as notas dos bimestre.</span><br>
+    <span>*o aluno para ser aprovado deve de atingir a média 7, caso contrário, média inferior a 7, acarreta em reprovação.</span><br>
+
+    <br>
+    <input type="submit" value="Situação dos Alunos" onclick="Aprovados()">    
+
+    <p id="Marcos"></p>
+    <p id="Maria"></p>
+    <p id="Joao"></p>
+    <p id="Rodrigo"></p>
+
+</body>
+</html>

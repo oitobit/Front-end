@@ -1,0 +1,15 @@
+html, body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  background-color: floralwhite;
+}
+h1, h2 {
+  text-align: center;
+}
+table.tabela {
+  border: 1px solid #ccc;
+  margin: 20px 0px;
+}
+.th1, .th2 {
+  text-align: center;
+}

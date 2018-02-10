@@ -1,0 +1,41 @@
+html, body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: none;
+}
+
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+}
+/*[LVHA]*/
+/*unvisited link*/
+pseudo-classes:link {
+    color: red;
+}
+/*link visited*/
+pseudo-classes:visited {
+    color: green;
+}
+/*mouse over click*/
+pseudo-classes:hover {
+    color: yellow;
+}
+/*select link*/
+pseudo-classes:active {
+    color: blue;
+}
+
+.tolltip {
+    display: none;
+    padding: 20px;
+    background-color: yellow;
+}
+
+div:hover .tolltip {
+    display: block;
+    color: blue;
+}
+
+p.sla:first-child i {
+    color: blue;
+}

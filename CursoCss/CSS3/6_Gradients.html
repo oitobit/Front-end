@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>CSS Gradient</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/css3/6_Gradients.css">
+    </head>
+    <body>
+        <article>
+        <h1>CSS3 Gradients</h1>
+        <hr>
+        <h2>CSS3 Linear Gradients</h2>
+        <p>To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth
+        transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.</p>
+        <h3>Syntax</h3>
+        <div>
+        background: linear-gradient (<em>direction</em>, <em>color-stop1</em>, <em>color-stop2</em>, ...);
+        </div>
+        <p id="b">Linear Gradient - Top to Bottom (this is default)</p>
+        <div id="grad"></div>
+        <p id="b">Linear Gradient - Left to Right</p>
+        <div id="grad2"></div>
+        <p id="b">Linear Gradient - Diagonal</p>
+        <div id="grad3"></div>
+        <hr>
+        <h2>Using Angles</h2>
+        <p>If you want more control over the direction of the gradient, you can define an angle, instead of the predefined directions
+        (to bottom, to top, to right, to left, to bottom right, etc.).</p>
+        <h3>Syntax</h3>
+        <div>
+        background: linear-gradient (
+        <em>angle</em>,
+        <em>color-stop1</em>,
+        <em>color-stop2</em>, ...);
+        </div>
+        <p>The angle is specified as an angle between a horizontal line and the gradient line.</p>
+        <div id="grad4"></div>
+        <hr>
+        <h2>Using Multiple Color Stops</h2>
+        <p>The following example shows a linear gradient (from top to bottom) with multiple color stops:</p>
+        <div id="grad5"></div>
+        <p>The following example shows how to create a linear gradient (from left to right) with the color of the rainbow and some text:</p>
+        <div id="grad6"></div>
+        <hr>
+        <h2>Repeating a linear-gradient</h2>
+        <p>The repeating-linear-gradient() function is used to repeat linear gradients:</p>
+        <div id="grad7"></div>
+        <hr>
+        <img src="../img/drawing.svg" alt="drawing">
+    </body>
+</html>

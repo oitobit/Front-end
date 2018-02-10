@@ -1,0 +1,38 @@
+html, body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    line-height: 1.4;
+    background-color: floralwhite;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.note {
+    text-align: justify;
+    background-color: #ffffcc;
+    border-left: 6px solid #ffeb3b;
+    padding: 8px;
+}
+
+.descendant-selector p { /*descendant slector)*/
+    background-color: #ffeb3b;
+}
+
+.child-selector > p { /*child selector*/
+    background-color: #ffeb3b;
+}
+
+.adjacent-sibling-selector + p /*silbling selector*/ {
+    background-color: #ffeb3b;
+}
+.general-sibling ~ p {
+    background-color: #ffeb3b;
+}

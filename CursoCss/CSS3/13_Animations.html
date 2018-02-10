@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf8">
+    <title>Animations</title>
+    <link rel="stylesheet" href="../css/css3/13_Animations.css">
+</head>
+
+<body>
+    <h2>CSS Animations</h2>
+    <p>CSS animations allows animation of most HTML elements without using JavaScript or Flash!</p>
+    <hr>
+    <h2>What are CSS Animations?</h2>
+    <p>An animation lets an element gradually change from one style to another.</p>
+    <p>You can change as many CSS properties you want, as many times you want.</p>
+    <p>To use CSS animation, you must first specify some keyframes for the animation.
+    </p>
+    <p>Keyframes hold what styles the element will have at certain times.</p>
+    <hr>
+    <h2>The @keyframes Rule</h2>
+    <p>When you specify CSS styles inside the
+        <code class="w3-codespan">@keyframes</code> rule, the animation will gradually change from the current style to the new style at certain times.</p>
+    <p>To get an animation to work, you must bind the animation to an element.</p>
+    <p>The following example binds the &quot;example&quot; animation to the &lt;div&gt; element. The animation will last for 4 seconds,
+        and it will gradually change the background-color of the &lt;div&gt; element from &quot;red&quot; to &quot;yellow&quot;:</p>
+
+    <div id="animation">Animation</div>
+
+    <p>It is also possible to use percent. By using percent, you can add as many style changes as you like.</p>
+    <p>The following example will change the background-color of the &lt;div> element when the animation is 25% complete, 50% complete, and again when the animation is 100% complete:</p>
+    <hr><br>
+    <div id="animation-percent">Animation Porcente</div>
+    <p>The following example will change both the background-color and the position of the
+    <div> element when the animation is 25% complete, 50% complete, and again when the animation is 100% complete:</p>
+    
+    <div id="animation-position"></div>
+    <hr>
+    <h2>
+        Set How Many Times an Animation Should Run</h2>
+    <p>The
+        <code class="w3-codespan">animation-iteration-count</code> property specifies the number of times an animation should run.</p>
+    <p>The following example will run the animation 3 times before it stops:</p>
+    <div id="animation-count">Animation Count</div>
+
+</body>
+
+</html>

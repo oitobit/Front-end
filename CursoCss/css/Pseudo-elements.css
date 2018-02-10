@@ -1,0 +1,106 @@
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: floralwhite;
+    margin: 10px 30px 10px 30px;
+    border: 3px solid cadetblue;
+}
+
+hgroup {
+    padding: 30px;
+    border: 2px solid gainsboro;
+    margin: 10px;
+}
+
+nav#menu {
+    background-color: #006DA4;
+    display: block;
+    padding: 3px;
+    word-spacing: 16px;
+}
+
+#line {
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#logo {
+    padding-bottom: 20px;
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 30px;
+}
+
+#color-first {
+    color: black;
+    font-weight: bold;
+}
+
+#color-two {
+    color: red;
+    font-weight: bold;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+div.display-panel {
+    background-color: #F1F1F1;
+    padding: 30px 15px 15px 15px;
+    width: 730px;
+    margin-left: 5px;
+}
+
+div.panel {
+    border-left: 5px solid green;
+    padding: 3px;
+    margin-left: 5px;
+    background-color: white;
+    width: 700px;
+}
+
+a:hover {
+    background-color: darkcyan;
+    text-decoration: underline;
+}
+
+a:link {
+    color: chartreuse;
+}
+
+a:visited {
+    color: none;
+}
+
+a:active {
+    color: brown;
+}
+
+span.marcar {
+    color: crimson;
+    background-color: #b0b0b0;
+}
+
+#primeiro::first-line {
+    color: red;
+    font-variant: small-caps;
+}
+#segundo::first-letter {
+    color: red;
+    font-size: xx-large;
+}
+
+h3::before {
+    content: url(backdrop.png);
+}
+
+h4::after {
+    content: url(smiley.gif);
+}

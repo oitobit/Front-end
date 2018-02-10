@@ -1,0 +1,19 @@
+html, body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: floralwhite;
+    padding: 30px;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+#example1 {
+    background-image: url(..img/img_lights.jpg), url(../img/flower-vector-icon.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+    width: 400px;
+    height: 200px;
+}

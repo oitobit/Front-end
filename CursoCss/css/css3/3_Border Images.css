@@ -1,0 +1,18 @@
+html, body {
+    font-size: 16px;
+    font-family: Verdana,sans-serif;
+    background-color: floralwhite;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+.borderimg {
+    border: 10px solid transparent;
+    padding: 20px;
+    border-image: url(../img/border.png);
+    border-image-slice: 30;
+    border-image-repeat: round;
+}

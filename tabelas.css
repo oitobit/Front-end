@@ -1,0 +1,36 @@
+body, html {
+	margin-top: 15px;
+}
+
+table, td, th {
+	border: 2px solid black;
+	text-align: center;
+	width: 400px;
+	border-collapse: collapse;
+}
+
+td {
+	background-color: #e0e2e1;
+}
+
+th {
+	background-color: #9b9e9d;
+}
+
+p[id] {
+	color: black;
+}
+
+input {
+	padding: 10px;
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+	border: 2px solid black;
+	border-radius: 3px;
+}
+
+span {
+	font-size: 12px;
+	text-transform: lowercase;
+	color: crimson;
+}

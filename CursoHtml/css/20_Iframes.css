@@ -1,0 +1,33 @@
+html, body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  background-color: floralwhite;
+}
+h1, h2 {
+  text-align: center;
+}
+code.color-blue {
+  color: blue;
+}
+span.color-pink {
+  color: crimson;
+}
+div.code-comment {
+  border-top: 1px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-left: 5px;
+  border-style: solid;
+  border-left-color: green;
+  border-color: white;
+  padding: 8px;
+  background-color: white;
+  word-wrap: break-word;
+}
+.w3-example {
+  border: 20px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.16);
+  margin: 20px 0;
+  background-color: #f1f1f1;
+}

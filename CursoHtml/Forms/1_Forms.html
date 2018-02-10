@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+        <link type="text/css" rel="stylesheet" href="../css/Padr%C3%A3o.css">
+        <meta name="content">
+    </head>
+    <body>
+        <h1>HTLM Forms</h1>
+        <hr>
+        <img src="../img/forms1.png">
+        <hr>
+        <h2>The &lt;form> Element</h2>
+            <p>
+                The HTML <b>&lt;form></b> element defines a form that is used to collect user input:
+            </p>
+            <div class="sombra-painel">
+                <div class="painel">
+                    <form>
+                    &lt;form> ..<br>
+                    &nbsp;&nbsp;&nbsp;My name is Rodrigo.
+                    <br>&lt;form>..
+                    </form>
+                </div>
+            </div>
+            <p>
+                An HTML form contains form elements.
+            </p>
+            <p>
+                Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.
+            </p>
+            <hr>
+            <h2>The &lt;input> Element</h2>
+                <p>
+                    The <b>&lt;input></b> element is the most important form element.
+                </p>
+                <p>
+                    The <b>&lt;input></b> element can be displayed in several ways, depending on the type attribute.
+                </p>
+                <p>
+                    Here are some examples:
+                </p>
+                <img src="../img/forms2.png"><br>
+                <input type="text"><br>
+                <input type="radio"><br>
+                <input type="submit">
+                <br><br>
+               <div class="painel-amarelo">
+                   <p>
+                       You will learn a lot more about input types later in this tutorial.
+                    </p>
+               </div>
+               <hr>
+               <h2>Text Input</h2>
+                <p>
+                    <b>&lt;input type="text"></b> defines a one-line input field for <b>text input</b>:
+                </p>
+                <img src="../img/forms3.png">
+                <p>
+                    This is how it will look like in a browser:
+                </p>
+                <form>
+                    FirstName:<br>
+                        <input type="text" name="Rodrigo"><br>
+                    LastName:<br>
+                        <input type="text" name="França">
+                </form>
+                <div class="painel-amarelo">
+                    <p>
+                        <strong>Note:</strong> The form itself is not visible. Also note that the default width of a text field is 20 characters.
+                    </p>
+                </div>
+                <hr>
+        <h2>Radio Button Input</h2>
+        <p>&lt;input type="radio"> defines a radio button.</p>
+        <p>Radio buttons let a user select ONE of a limited number of choices:</p>
+        <p>
+             This is how the HTML code above will be displayed in a browser:
+        </p>
+        <form>
+            <input type="radio" name="personal" value="male">male<br>
+            <input type="radio" name="personal"
+            value="female">female<br>
+            <input type="radio" name="personal" value="other">other<br>
+        </form>
+        <hr>
+        <h2>The Submit Button</h2>
+        <p>
+        &lt;input type="submit"> defines a button for submitting the form data to a form-handler.
+        </p>
+        <p>
+         The form-handler is typically a server page with a script for processing input data.
+        </p>
+        <p>
+         The form-handler is specified in the form's action attribute:
+        </p>
+        <p>
+             This is how the HTML code above will be displayed in a browser:
+        </p>
+        <form action="/action_page.php">
+            FirstName:<br>
+            <input type="text" name="FirstName" value="Mickey"><br>
+            LastName:<br>
+            <input type="text" name="LastName" value="Mouse"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <hr>
+        <h2>The action attribute</h2>
+         <p>The action attribute defines the action to be performed when the form is submitted. </p>
+         <p>Normally, the form data is sent to a
+        web page on the server when the user clicks on the submit button.</p>
+        <p>
+            In the example above, the form data is sent to a page on the server called "/action_page.php". This page contains a server-side
+            script that handles the form data:
+        </p>
+        <div class="sombra-painel">
+            <div class="painel">
+                <code>
+                <strong>
+                    <span style="color:red;">&lt;form</span> <span style="color:blue;">action="/action_page.php"</span>>
+                </strong>
+                </code>
+            </div>
+        </div>
+        <p>
+             If the action attribute is omitted, the action is set to the current page.
+        </p>
+        <h2>Grouping Form Data with &lt;fieldset></h2>
+            <p>The
+            &lt;fieldset> element is used to group related data in a form.</p>
+            <p>The &lt;legend> element defines a caption for the &lt;fieldset> element.
+        <fieldset class="form">
+            <legend>Personal Information</legend>
+            <form action="/action_page.php">
+                FirstName:<br>
+                <input type="text" name="FirstName" value="Mickey"><br> LastName:
+                <br>
+                <input type="text" name="LastName" value="Mouse"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </fieldset>
+    </body>
+</html>

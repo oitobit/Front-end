@@ -1,0 +1,528 @@
+html, body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  line-height: 1.4;
+  background-color: none;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.div-exemplo {
+  text-align: justify;
+  margin: 0px 200px;
+  border: 1px;
+  border-style: solid;
+  border-color: gray;
+  padding: 8px;
+  text-indent: 50px;
+  letter-spacing: 3px;
+}
+
+.h1-exemplo {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+code {
+  color: crimson;
+  background-color: #f1f1f1;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+img {
+  width: 700px;
+  height: 200px;
+}
+
+img.img-size {
+  height: 60px;
+  width: 550px;
+}
+
+.note {
+  text-align: justify;
+  background-color: #ffffcc;
+  border-left: 6px solid #ffeb3b;
+  padding: 8px;
+}
+
+h1.head1 {
+  text-align: center;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+h2.head2 {
+  text-align: left;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+h3.head3 {
+  text-align: right;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+.limpar {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+#text1 {
+  text-decoration: overline;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+#text2 {
+  text-decoration: line-through;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+#text3 {
+  text-decoration: underline;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+}
+
+p.indent {
+  text-indent: 50px;
+}
+
+h1.spacing {
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+h2.spacing {
+  letter-spacing: -3px;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+p.small {
+  line-height: 0.7;
+}
+
+p.big {
+  1.8;
+}
+
+div.parag {
+  direction: rtl;
+}
+
+div.ex1 {
+  direction: ltr;
+}
+
+h1.word-spacing1 {
+  word-spacing: 10px;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+h2.word-spacing2 {
+  word-spacing: -5px;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+h1.text-shadow {
+  text-shadow: 3px 2px red;
+}
+
+a:active {
+  color: blue;
+}
+
+a:houve {
+  color: hotpink;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+table, td, th {
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.border2 {
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  border-collapse: collapse;
+}
+
+.border3 {
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  width: 100px;
+}
+
+th {
+  height: 50px;
+}
+
+th, td {
+  text-align: left;
+  padding: 15px;
+}
+
+tr:hover {
+  background-color: brown;
+}
+
+.div2 {
+  display: inline-block;
+  border: 1px solid black;
+  margin-left: 100px;
+  margin-right: 300px;
+  padding: 5px;
+  width: 500px;
+  height: auto;
+}
+
+div.layout {
+  border: 2px solid green;
+  width: 500px;
+  margin: auto;
+}
+
+div.ex1 {
+  width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+
+div.ex2 {
+  max-width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+
+div.exm-position {
+  position: static;
+  border: 3px solid green;
+}
+
+div.exp-position2 {
+  position: relative;
+  border: 3px solid green;
+  left: 30px;
+}
+
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+div.overflow-visible {
+  background-color: #eee;
+  height: 100px;
+  width: 200px;
+  border: 1px dotted black;
+  overflow: visible;
+}
+
+div.overflow-hidden {
+  background-color: #eee;
+  height: 100px;
+  width: 200px;
+  border: 1px dotted black;
+  overflow: hidden;
+}
+
+div.overflow-scroll {
+  background-color: #eee;
+  border: 1px dotted black;
+  height: 100px;
+  width: 200px;
+  overflow: scroll;
+}
+
+div.overflow-auto {
+  background-color: #eee;
+  border: 1px dotted black;
+  height: 100px;
+  width: 200px;
+  overflow: auto;
+}
+
+span.bloquear {
+  display: block;
+}
+
+div.overflow-x-y {
+  background-color: #eee;
+  border: 1px dotted black;
+  height: 100px;
+  width: 200px;
+  overflow-x: scroll;
+  /*add horizontal scroll*/
+  overflow-y: scroll;
+  /*add vertical scroll*/
+}
+
+.float {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+.div1 {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: 3px solid #73AD21;
+}
+
+.div2 {
+  border: 1px solid red;
+}
+
+.div3 {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: 3px solid #73AD21;
+}
+
+.div4 {
+  border: 1px solid red;
+  clear: left;
+}
+
+@font-face {
+  font-family: Foglihten;
+  src: url(fonts/Foglihten);
+}
+
+.fonts {
+  font-size: 18px;
+  font-family: Foglihten, sans-serif;
+}
+
+.floating-box {
+  float: left;
+  width: 150px;
+  height: 75px;
+  margin: 10px;
+  border: 3px solid #73AD21;
+}
+
+.after-box {
+  clear: left;
+  border: 3px solid red;
+}
+
+.floating-box-2 {
+  display: inline-block;
+  width: 150px;
+  height: 75px;
+  margin: 10px;
+  border: 3px solid #73AD21;
+}
+
+.after-box-2 {
+  border: 3px solid red;
+}
+
+div.align-center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+div.center-text {
+  text-align: center;
+  border: 3px solid green;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+div.align-position {
+  border: 1px solid green;
+  width: 300px;
+  padding: 10px;
+  right: 0px;
+  position: absolute;
+}
+
+div.align-float {
+  float: right;
+  width: 300px;
+  border: 1px solid green;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div.center {
+  border: 1px solid green;
+  padding: 70px 0;
+}
+
+.center-vertically {
+  line-height: 200px;
+  height: 200px;
+  border: 3px solid green;
+  text-align: center;
+}
+
+.center-vertically {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.shodown-panel {
+  background-color: #F1F1F1;
+  padding: 30px 15px 15px 15px;
+  width: 730px;
+  margin-left: 5px;
+}
+
+div.panel {
+  border-left: 5px solid green;
+  padding: 3px;
+  margin-left: 5px;
+  background-color: white;
+  width: 700px;
+}
+
+html, body {
+  margin-top: 55px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+.exemplo {
+  font-size: 18px;
+  font-family: Verdana, sans-serif;
+  padding: 20px;
+}
+
+img {
+  width: 200px;
+  height: 100px;
+  margin-left: 37px;
+}
+
+.logo {
+  border: 1px solid #4f94cd;
+  padding: 20px;
+  background-color: #4f94cd;
+}
+
+nav#menu ul {
+  list-style: none;
+  position: fixed;
+  top: 100px;
+  right: 86px;
+  font-size: 16px;
+  font-family: ubuntu, sans-serif;
+}
+
+nav#menu li {
+  display: inline-block;
+  background-color: none;
+  color: white;
+}
+
+
+/* Change the link color on hover */
+
+li a:hover {
+  background-color: none;
+  color: white;
+  text-decoration: underline;
+}
+
+li a {
+  display: block;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.esconder {
+  display: none;
+}
+
+nav#menu {
+  display: block;
+}
+
+#letter {
+  text-align: right;
+  margin-top: -25px;
+  font-size: 20px;
+  font-family: Arial;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>CSS Links</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="text.css">
+    </head>
+    <body>
+        <h1>CSS Links</h1>
+        <hr>
+        <p>
+            With CSS, links can be styled in different ways.
+        </p>
+        <img class="img-size" src="img/img1.png">
+        <hr>
+        <h2>Styling Links</h2>
+        <p>
+            Links can be styled with any CSS property (e.g. <code class="pink">color</code>, <code class="pink">font-family</code>, <code class="pink">background</code>, etc.).
+        </p>
+        <img class="img" src="img/img2.png">
+        <p>
+            In addition, links can be styled differently depending on what <b>state</b> they are in.
+        </p>
+        <p>
+            The four links states are:
+        </p>
+        <ul>
+            <li><code class="pink">a:link</code> - a normal, unvisited link</li>
+            <li><code class="pink">a:visited</code> - a link the user has visited</li>
+            <li><code class="pink">a:hover</code> - a link when the user mouses over it</li>
+            <li><code class="pink">a:active</code> - a link the moment it is clicked</li>
+        </ul>
+        <p><b><a href="www.google.com" target="_blank">This is place.</a></b></p>
+        <p>
+            When setting the style for several link states, there are some order rules:
+        </p>
+        <ul>
+            <li>a:hover MUST come after a:link and a:visited</li>
+            <li>a:active MUST come after a:hover
+            </li>
+        </ul>
+        <hr>
+    </body>
+</html>

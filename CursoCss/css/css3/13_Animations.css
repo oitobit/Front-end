@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: floralwhite;
+    margin: 50px;
+    padding: 30px;
+}
+
+h2 {
+    font-weight: 300;
+    padding: 15px 0px;
+}
+
+p {
+    padding: 10px 0px;
+}
+
+hr {
+    margim: 10px 0px;
+}
+
+/*Here star the part of code animations*/
+
+div#animation {
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation-name: anime;
+    animation-duration: 4s;
+}
+
+@keyframes anime{
+    from {
+        width: 100px;
+        height: 100px
+        background: red;
+    }
+    to {
+        width: 320px;
+        height: 200px;
+        background: yellow;
+        transform: rotate(360deg);/*codigo acrescentado*/
+    }
+}
+
+div#animation-percent {
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation-name: percent;
+    animation-duration: 4s;
+}
+
+@keyframes percent {
+    0%{background: red;}
+    25%{background:yellow;}
+    50%{background:blue;}
+    100%{background:green;}
+
+    to {/*codigo acrescentado*/
+        transform: rotate(120deg);
+    }
+}
+
+div#animation-position {
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation-name: position;
+    animation-duration: 4s;
+    position: relative;
+}
+
+@keyframes position {
+    0%{background: red;left:0;top:0;}
+    25%{background:yellow;left:200px;top:0px;}
+    50%{background:blue;left:200px;top:200px;}
+    75%{background:green;left:0px;top:200px;}
+    100%{background:red;left:0px;top:0px;}
+}
+
+div#animation-count {
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation-name: count;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: 3;
+}
+
+@keyframes count {
+    0%{background: red;left:0;top:0;}
+    25%{background:yellow;left:200px;top:0px;}
+    50%{background:blue;left:200px;top:200px;}
+    75%{background:green;left:0px;top:200px;}
+    100%{background:red;left:0px;top:0px;}
+}

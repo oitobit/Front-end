@@ -1,0 +1,65 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="text.css">
+            <meta charset="utf-8">
+            <title>Align</title>
+        </head>
+        <body>
+            <h1>CSS Layout - Horizontal & Vertical Align</h1>
+            <hr>
+            <h2>Center Align Elements</h2>
+            <hp>To horizontally center a block element (like
+            &lt;div>), use <code class="pink">margin: auto;</code></p> <p>Setting the width of the element will prevent it from stretching out to the edges of its                 container.</p> 
+            <p>The element will then take up the specified width, and the remaining space will be split equally between the two margins:</p>
+            <div class="align-center">
+                <p>
+                     This div element is centered.
+                </p>
+            </div>
+            <p><strong>Note:</strong>
+             Center aligning has no effect if the <code class="pink">width</code> property is not set (or set to 100%).
+            </p>
+            <hr>
+             <h2>Center Align Text</h2>
+             <p>To just center the text inside an element, use <code class="pink">text-align: center;</code></p>
+             <div class="center-text">
+                 <p>This is text centered.</p>
+             </div>
+             <hr>
+             <h2>Center an Image </h2>
+             <p>To center an image, use <code class="pink">margin: auto;</code> and make it into a <strong>block</strong> element:</p>
+             <img src="img/paris.jpg" alt="Paris" style="width:40%">
+             <hr>
+             <h2>Left and Right Align - Using position </h2>
+             <p>One method for aligning elements is to use <code class="pink">position: absolute;</code>:</p>
+             <div class="align-position">
+                 <p>
+                     In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
+                 </p>
+             </div>
+             <p><strong>Note:</strong> Absolute positioned elements are removed from the normal flow, and can overlap elements.</p>
+             <p><strong>Tip:</strong> When aligning elements with <code>position</code>, always define <code>margin</code> and <code>padding</code> for the &lt;body> element. This is to avoid visual differences in different browsers.</p>
+             <hr>
+             <h2>Left and Right Align - Using float</h2>
+             <p>Another method for aligning elements is to use the <code>float</code> property:</p>
+             <div class="align-float">
+                 <p>
+                     In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
+                 </p>
+             </div>
+            <p><strong>Tip:</strong> When aligning elements with <code>position</code>, always define <code>margin</code> and <code>padding</code>                for the &lt;body> element. This is to avoid visual differences in different browsers.</p>
+            <h2>Center Vertically - Using padding</h2>
+            <p>There are many ways to center an element vertically in CSS. A simple solution is to use top and bottom <code>padding</code>:</p>
+        <div class="center">
+            <p>
+                 I am vertically centered.
+            </p>
+        </div>
+         <h2>Center Vertically - Using line-height</h2>
+         <p>Another trick is to use the line-height property with a value that is equal to the height property.</p>
+        <div class="center-vertically">
+            <p>I am vertically and horizontally centered.</p>
+        </div>
+        </body>
+    </html>

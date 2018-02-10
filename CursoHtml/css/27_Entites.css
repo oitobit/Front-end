@@ -1,0 +1,35 @@
+html, body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#coment-code {
+    border-left: 5px solid green;
+    padding: 5px;
+    border-color: #4CAF50;
+    word-wrap: break-word;
+    background-color: #fff;
+}
+
+.code-2 {
+    border-left: 5px solid green;
+    padding: 4px;
+    border-color: #ffeb3b;
+    word-wrap: break-word;
+    background-color: #ffffcc;
+    font-size: 18px;
+}
+
+.borda {
+    border: 3px;
+    border-style: solid;
+    border-color: #F1F1F1;
+    background-color: #F1F1F1;
+    padding-left: 16px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important
+}

@@ -1,0 +1,27 @@
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: floralwhite;
+    padding: 30px;
+}
+
+input {
+    width: 100%;
+}
+
+code {
+    color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%;
+}
+
+#border-radius[type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin: 8px 0px;
+    width: 100%;
+}

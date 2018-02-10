@@ -1,0 +1,14 @@
+html, body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: floralwhite;
+    line-height: 1.6;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+.non-space {
+    line-height: none;
+}

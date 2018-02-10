@@ -1,0 +1,18 @@
+html, body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  background-color: floralwhite;
+}
+h1, h2 {
+  text-align: center;
+}
+div.cities {
+    background-color: black;
+    color: white;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+}
+span.note {
+  font-size: 120%;
+  color: red;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>CSS Layout - Overflow</title>
+        <meta charset="utf-8">
+        <meta name="overflow" content="web page 1.0" >
+        <link rel="stylesheet" href="text.css">
+    </head>
+    <body>
+        <h1>CSS Layout - Overflow</h1>
+        <hr>
+        <h2>Css overflow</h2>
+        <p>
+            The CSS <code class="pink">Overflow</code> The CSS overflow property specifies whether to clip content or to add scrollbars when the content of an element
+            is too big to fit in a specified area.
+        </p>
+        <p>
+             The <code class="pink">overflow</code> property has the following values:
+        </p>
+        <ul>
+            <li><code class="pink">visible</code> - Default. The overflow is not clipped. It renders outside the element's box</li><br>
+            <li><code class="pink">hidden</code> - The overflow is clipped, and the rest of the content will be invisible</li><br>
+            <li><code class="pink">scroll</code> - The overflow is clipped, but a scrollbar is added to see the rest of
+                the content</li><br>
+            <li><code class="pink">auto</code> - If overflow is clipped, a scrollbar should be added to see the rest of
+                the content</li>
+        </ul>
+        <hr>
+        <h2>overflow: visible</h2>
+        <p>
+             By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box
+        </p>
+        <div class="overflow-visible">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what
+         happens if content overflows an element's box.</div><br><br><br><br><br><br>
+         <hr>
+         <h2>overflow: hidden</h2>
+         <p>
+             With the <code class="pink">hidden</code> value, the overflow is clipped, and the rest of the content is hidden:
+         </p>
+        <div class="overflow-hidden">
+            You can use the overflow property when you want to have better control of the layout. The overflow property specifies what
+            happens if content overflows an element's box.
+        </div>
+        <hr>
+        <h2>overflow: scroll</h2>
+        <p>
+        Setting the value to <code class="pink">scroll</code>, the overflow is clipped and a scrollbar is added to scroll inside the box.
+        Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):
+        </p>
+        <div class="overflow-scroll">
+             You can use the overflow property when you want to have better control of the layout. The overflow property specifies what
+            happens if content overflows an element's box.
+        </div>
+        <hr>
+         <h2>overflow: auto</h2>
+            <p>
+              The <code class="pink">auto</code> value is similar to scroll, only it add scrollbars when necessary:
+            </p>
+            <div class="overflow-auto">
+                You can use the overflow property when you want to have better control of the layout. The overflow property specifies what
+                happens if content overflows an element's box.
+            </div>
+            <hr>
+             <h2>overflow-x and overflow-y</h2> <p>
+                 The <code class="pink"> overflow-x</code> and <code class="pink">overflow-y</code> properties specifies whether to change the overflow of content just horizontally or vertically (or both):
+            </p>
+             <span class="bloquear"><code class="pink">overflow-x</code> specifies what to do with the left/right edges of the content. </span>
+            <code class="pink">overflow-y</code> specifies what to do with the top/bottom edges of the content.
+
+            <div class="overflow-x-y">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what
+            happens if content overflows an element's box.</div>
+    </body>
+</html>

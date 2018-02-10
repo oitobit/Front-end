@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Transitions</title>
+        <meta charset="utf8">
+        <link rel="stylesheet" href="../css/css3/12_Transitions.css">
+    </head>
+    <body>
+        <h2>Transitions</h2>
+        <p>CSS transitions allows you to change property values smoothly (from one value to another), over a given duration.</p>
+        <hr>
+        <h2>Hot to use css transitions?</h2>
+        <p>To create a transitions effect, you must specify two things:</p>
+        <ul>
+            <li>the CSS property you want to add an effect to</li>
+            <li>the duration of the effect</li>
+        </ul>
+        <p><b>Note</b>: If the duration part is not specified, the transition will have no effect, because the default value is 0.</p>
+        <p>The following example shows a 100px * 100px red &&lt;div> element. The &lt;div> element has also specified a transition effect for the width property, with a duration of 2 seconds:</p><br>
+
+        <div id="trans">
+            transitions - Passe o mouse sobre mim!
+        </div>
+        <br>
+        <p>Notice that when the cursor mouses out of the element, it will gradually change back to its original style.</p>
+        <hr>
+        <h2>Change Several Property Values</h2>
+        <p>The following example adds a transition effect for both the width and height property, with a duration of 2 seconds for the
+        width and 4 seconds for the height:</p>
+        <br>
+        <div id="trans-several">
+            transitions
+        </div>
+        <hr>
+        <h2>Specify the Speed Curve of the Transition</h2>
+        <p>The
+            <code class="w3-codespan">transition-timing-function</code> property specifies the speed curve of the transition effect.</p>
+        <p>The transition-timing-function property can have the following values:</p>
+        <ul>
+            <li>
+                <code class="w3-codespan">ease</code> - specifies a transition effect with a slow start, then fast, then end slowly (this is default)</li>
+            <li>
+                <code class="w3-codespan">linear</code> - specifies a transition effect with the same speed from start to end</li>
+            <li>
+                <code class="w3-codespan">ease-in</code> - specifies a transition effect with a slow start</li>
+            <li>
+                <code class="w3-codespan">ease-out</code> - specifies a transition effect with a slow end</li>
+            <li>
+                <code class="w3-codespan">ease-in-out</code> - specifies a transition effect with a slow start and end</li>
+            <li>
+                <code class="w3-codespan">cubic-bezier(n,n,n,n)</code> - lets you define your own values in a cubic-bezier function</li>
+        </ul>
+        <br>
+
+        <div id="linear">linear</div><br>
+        <div id="ease">ease</div><br>
+        <div id="ease-in">ease-in</div><br>
+        <div id="ease-out">ease-out</div><br>
+        <div id="ease-in-out">ease-in-out</div>
+
+        <hr>
+        <h2>Delay the Transition Effect</h2>
+        <p>The transition-delay property specifies a delay (in seconds) for the transition effect.</p>
+
+        <div id="trans-delay">Transitions Delay</div>
+        <hr>
+        <h2>Transition + Transformation</h2>
+        <p>The following example also adds a transformation to the transition effect:</p>
+        <div id="trans-formation">
+            transition + tranformation
+        </div>
+    </body>
+</html>

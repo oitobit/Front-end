@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <link rel="stylesheet" href="../css/forms/3_Input-types.css">
+        <title>InputTypes</title>
+        <meta charset="utf8">
+    </head>
+    <body>
+        <h1>HTML Input Types</h1>
+        <hr>
+        <p>This chapter describes the different input types for the <b>&lt;input></b>element.</p>
+        <hr>
+        <h2>Input type text</h2>
+        <p>&lt;input type="text"> defines a one-line text input field:</p>
+        <form action="/action_page.php">
+        FirstName: <br>
+        <input type="text" name="FirstName">
+        <br>Lastname:<br>
+        <input type="text" name="Lastname">
+        <br><br>
+        <input type="submit">
+        </form>
+        <hr>
+        <h2>Input Type Password</h2>
+        <p>&lt;input type="password"> defines a password field:</p>
+        <form action="action_page.php">
+            Name: <br>
+            <input type="text" name="name"><br>
+            Password: <br>
+            <input type="password" name="pwd">
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+        <h2>&lt;input type="submit"></h2> <p>defines a button for submitting form data to a form-handler.</p>
+        <p>The form-handler is typically a server
+        page with a script for processing input data.</p>
+        <p>The form-handler is specified in the form's action attribute:</p>
+        <form action="action_page.php">
+            Name: <br>
+            <input type="text" name="name" value="Name"><br> Password: <br>
+            <input type="password" name="pwd" value="password">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <hr>
+        <h2>Input Type Reset</h2>
+        <p>&lt;input type="reset"> defines a reset button that will reset all form values to their default values:</p>
+        <form action="http://www.google.com/">
+            <input type="text" name="user" value="Rick"><br><br>
+            <input type="password" name="pass" value="senha"><br><br>
+            <input type="submit" value="Submit"><br><br>
+            <input type="reset" value="Reset">
+        </form>
+        <hr>
+        <h2>Input Type Radio</h2>
+        <p>&lt;input type="radio"> defines a radio button.</p>
+        <form>
+            <input type="radio" name="gender" value="male" checked> Male
+            <br>
+            <input type="radio" name="gender" value="female"> Female
+            <br>
+            <input type="radio" name="gender" value="other"> Other
+        </form>
+        <hr>
+        <h2>Input Type Checkbox</h2>
+        <p>&lt;input type="checkbox"> defines a checkbox.</p>
+        <p>Checkboxes let a user select ZERO or MORE options of a limited number of choices.</p>
+        <form action="/action_page.php">
+            <input type="checkbox" name="vehicle1" value="Bike">I have a bike
+            <br>
+            <input type="checkbox" name="vehicle2" value="Car">I have a car
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+        <hr>
+        <h2>Input Type Email</h2>
+    </body>
+</html>

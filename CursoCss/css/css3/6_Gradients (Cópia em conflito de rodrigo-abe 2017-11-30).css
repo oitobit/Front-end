@@ -1,0 +1,26 @@
+html, body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: floralwhite;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+div {
+    border: 1px solid gray;
+    padding: 12px;
+}
+
+p[id=b] {
+    font-weight: bold;
+}
+
+#grad {
+    background: linear-gradient(red, yellow);
+    height: 200px;
+}

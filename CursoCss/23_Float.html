@@ -1,0 +1,49 @@
+<!DOCYTPE html>
+<html lang="pt">
+    <head>
+        <title>CSS Layout - float and clear</title>
+        <link rel="stylesheet" href="text.css">
+        <meta charset="UTF-8">
+        <meta name="float" content="chrome">
+        <style>
+        </style>
+    </head>
+    <body>
+        <h1>CSS Layout - float and clear</h1>
+        <hr>
+        <p>
+        The <code class="pink">float</code> property specifies whether or not an element should float. 
+        </p>
+        <p>
+         The <code class="pink"> clear </code>property is used to control the behavior of floating elements.
+        </p>
+        <hr>
+         <h2>The float Property </h2>
+        <p>In its simplest use, the <code class="pink">float</code> property can be used to wrap text around images.</p>
+        <p>
+        The following example
+        specifies that an image should float to the right in a text:
+        </p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas
+        odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+        Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent
+        convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim
+        ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer
+        fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam
+        velit.</p>
+        <img class="float" src="img/float.gif" alt="imagem" width="100" height="140">
+        <hr>
+        <h2>The clear property</h2>
+        <h2>Without clear</h2>
+        <div class="div1">div1</div>
+        <div class="div2">div2 - Notice that the div2 element is after div1, in the HTML code. However, since div1 is floated to the left,
+            this happens: the text in div2 is floated around div1, and div2 surrounds the whole thing.</div>
+
+        <h2>Using clear</h2>
+        <div class="div3">div3</div>
+        <div class="div4">div4 - Using clear moves div4 down below the floated div3. The value "left" clears elements floated to the left.
+            You can also clear "right" and "both".</div>
+        <hr>
+        <h2 class="fonts">Apenas textando as fontes baixadas</h2>
+    </body>
+</html>

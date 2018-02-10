@@ -1,0 +1,43 @@
+html, body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    padding: 30px;
+    background-color: white;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+li > span {
+    color: crimson;
+    background-color: #f1f1f1;
+}
+
+.test1 {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid green;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.test2 {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid green;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div.test {
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    border: 1px solid green;
+}
+
+div.test:hover {
+    overflow:visible;
+    text-overflow: inherit;
+}

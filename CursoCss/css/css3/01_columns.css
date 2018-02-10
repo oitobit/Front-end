@@ -1,0 +1,13 @@
+div#column {
+    -moz-column-count: 2;
+    -moz-column-width: 400px;
+    -moz-column-gap: 50px;
+    background-color: red;
+}
+
+div#column-right {
+    -moz-column-count: 2;
+    -moz-column-width: 400px;
+    -moz-column-gap: 50px;
+    background-color: green;
+}

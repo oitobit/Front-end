@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Height and Width</title>
+  <link rel="stylesheet" href="w3.css">
+  <style>
+  html, body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: rgba(83,241,73,.91);
+  }
+  .c1 {
+    height: 200px;
+    width: 50%;
+    background-color: rgb(161,19,88);
+  }
+  .width {
+    width:100%;
+    border-width:1px;
+    border-style:solid;
+    padding:10px;
+    border-color: rgba(32,111,246,.69)
+  }
+  code.w3-codespan {
+    color: crimson;
+    background-color: #f1f1f1;
+  }
+  .p1 {
+    padding: 10px;
+    height: 100px;
+    max-width: 500px;
+    background-color: powderblue;;
+  }
+  .w3-code {
+    line-height: 1.4;
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word;
+  }
+  </style>
+</head>
+<body>
+  <hgroup>
+    <h1>CSS Height and Width</h1>
+    <p class="width">This element has a width of 100%</p>
+    <h2>Setting height and width</h2>
+    <h3>Set the height and width of an element.</h3>
+  </hgroup>
+  <p>This div element has a height of 200px and a width of 50%.</p>
+  <div class="c1"></div>
+  <h3>Exemple:</h3>
+  <code class="myClass">
+    div {<br>&nbsp;&nbsp;
+      height: 200px;<br>&nbsp;&nbsp;
+      width: 50%;<br>&nbsp;&nbsp;
+      background-color: powderblue;<br>
+    }
+  </code>
+  <hr color="color:black;">
+  <h2>Setting max-width</h2>
+  <p>The <code class="w3-codespan">max-width</code> property is used to set the maximum width of an element.</p>
+
+  <p>The <code class="w3-codespan">max-width</code> can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).</p>
+
+  <p>The problem with the <code class="w3-codespan">&lt;div&gt;</code> above occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.</p>
+
+  <p>Using <code class="w3-codespan">max-width</code> instead, in this situation, will improve the browser's handling of small windows.</p>
+
+  <p><strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between the two divs!</p>
+
+  <p class="p1">This element has a height of 100 pixels and a max-width of 500 pixels.</p>
+
+  <p><strong>Note:</strong> The value of the <code class="w3-codespan">max-width</code> property overrides <code class="w3-codespan">width</code>.</p>
+
+  <p>The following example shows a <code class="w3-codespan">&lt;div&gt;</code> element with a height of 100 pixels and a max-width of 500 pixels:</p>
+
+  <div class="w3-example">
+    <h3>Example</h3>
+    <div class="w3-code">
+      div {<br>&nbsp;&nbsp;&nbsp;
+        max-width: 500px;<br>&nbsp;&nbsp;&nbsp;
+        height: 100px;<br>&nbsp;&nbsp;&nbsp;
+        background-color: powderblue;&nbsp;&nbsp;&nbsp;<br>}
+      </div>
+      <p>
+        <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_dim_max_width">Try it Yourself »</a>
+      </p>
+    </div>
+    <hr>
+  </code>
+</p>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body, html {
+    padding: 30px;
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.w3-codespan {
+    color: crimson;
+    background-color: ;
+}
+
+div#trans {
+    width: 200px;
+    height: 100px;
+    background: red;
+    transition: width 2s; /*chrome*/
+    -webkit-transition: width 2s; /*safari*/
+    -moz-transition: width 2s; /*firefox*/
+}
+
+#trans:hover {
+    width: 320px;
+}
+
+div#trans-several {
+    width: 200px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 4s;
+    -moz-transition: width 2s, height 4s;
+}
+
+#trans-several:hover {
+    width: 320px;
+    height: 200px;
+}
+
+#linear, #ease, #ease-in, #ease-out, #ease-in-out{
+    width: 200px;
+    height: 100px;
+    background-color: cadetblue;
+    transition: width 2s;
+}
+
+#lienar {
+    transition-timing-function: linear;
+}
+
+#ease {
+    transition-timing-function: ease;
+}
+
+#ease-in {
+    transition-timing-function: ease-in;
+}
+
+#ease-out {
+    transition-timing-function: ease-out;
+}
+
+#ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+#linear:hover, #ease:hover, #ease-in:hover, #ease-out:hover, #ease-in-out:hover {
+    width: 300px;
+}
+
+div#trans-delay {
+    width: 200px;
+    height: 100px;
+    background-color: cornflowerblue;
+    transition-delay: 1s;
+    -moz-transition-delay: 1s;
+}
+
+#trans-delay:hover {
+    width: 320px;
+}
+
+div#trans-formation {
+    width: 200px;
+    height: 100px;
+    background-color: darkorchid;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#trans-formation:hover {
+    width: 320px;
+    height: 200px;
+    transform: rotate(360deg);
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/21_JavaScript.css">
+  </head>
+  <body>
+    <h1>HTML JavaScript</h1>
+      <p>
+        JavaScript makes HTML pages more dynamic and interactive.
+      </p>
+      <hr>
+    <h2>The HTML &lt;script&gt; Tag</h2>
+      <p>
+        The &lt;script&gt; tag is used to define a client-side script (JavaScript).
+      </p>
+      <p>
+        The &lt;script&gt; element either contains scripting statements, or it points to an external script file through the <b>src</b> attribute.
+      </p>
+      <p>
+        Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+      </p>
+      <p>
+        To select an HTML element, JavaScript very often use the document.getElementById(id) method.
+      </p>
+      <p>
+        This JavaScript example writes "Hello JavaScript!" into an HTML element with id="demo":
+      </p>
+      <b><p id="demo"></p></b>
+      <hr>
+    <h2>A Taste of JavaScript</h2>
+      <h3>JavaScript can change HTML content</h3>
+        <p>
+          Here are some examples of what JavaScript can do:
+        </p>
+          <button type="button"  onclick="meClique()">Clique-me!</button>
+        <p id="demo2">This is a demostration.</p>
+        <br>
+      <h3>JavaScript can change HTML styles</h3>
+        <p id="demo3">JavaScript can change the style of an HTML element.</p>
+        <button type="button" name="button" onclick="changeStyle()">Clique-me!</button>
+        <br>
+
+      <h3>JavaScript can change HTML attributes</h3>
+      <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+      <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+      </p><hr><br>
+    <h2>The HTML &lt;noscript&gt; Tag</h2>
+      <p>
+        The <b>&lt;noscript&gt;</b> tag is used to provide an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support client-side scripts:
+      </p>
+      <div class="bloco">
+        <code>
+          <span class="blue">&lt;</span><span class="pink">script</span><span class="blue">></span>
+          document.getElementById(<span class="pink">"demo"</span>).innerHTML = <span class="pink">"Hello JavaScript!"</span>;<span class="blue">&lt;</span><span class="pink"><span class="blue">/</span>script</span><span class="blue">></span><br><br>
+
+          <span class="blue">&lt;</span><span class="pink">noscript</span><span class="blue">></span>Sorry, your browser does not support JavaScript!<span class="blue">&lt;/</span><span class="pink">noscript</span><span class="blue">></span>
+        </code>
+      </div>
+
+<!--Código em JavaScript-->
+  <script>
+    //código do elemnto "demo"
+    document.getElementById("demo").innerHTML = "Hello, world!";
+
+    //Código do elemento "demo2"
+    function meClique() {
+      document.getElementById("demo2").innerHTML = "Hello, JavaScript!";
+    }
+
+    //Código do elemento "demo3"
+    function changeStyle () {
+      document.getElementById("demo3").style.fontSize = "25px";
+      document.getElementById("demo3").style.color = "red";
+    }
+
+    //Light on, light off
+    function light (sw){
+      var pic;
+    if (sw == 0) {
+        pic = "pic_bulboff.gif"
+    } else {
+        pic = "pic_bulbon.gif"
+    }
+    document.getElementById('myImage').src = pic;
+    }
+
+      </script>
+<!--Código em JavaScript-->
+
+  </body>
+</html>

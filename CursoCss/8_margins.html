@@ -1,0 +1,32 @@
+<!--
+CSS Margins
+The CSS margin properties are used to generate space around elements.
+
+The margin properties set the size of the white space outside the border.
+
+With CSS, you have full control over the margins. There are CSS properties for setting the margin for each side of an element (top, right, bottom, and left).
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        border: 1px solid black;
+        margin: 100px 150px 100px 80px;
+        background-color: lightblue;  
+      }
+      .nemo{
+        width:300px;
+        margin: auto;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Using individual margin properties</h2>
+    <div>This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+    <h2>Use of the auto Value</h2>
+    <p>You can set the margin property to auto to horizontally center the element within its container. The element will then take up the specified width, and the remaining space will be split equally between the left and right margins:</p
+    <div class="nemo">This div will be centered because it has margin: auto;</div>
+  </body>
+</html>

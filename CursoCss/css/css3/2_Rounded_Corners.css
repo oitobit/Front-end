@@ -1,0 +1,63 @@
+html, body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background: floralwhite;
+    padding: 10px 30px 30px 30px;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+#corners1 {
+    border-radius: 25px;
+    background: green;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#corners2 {
+    border-radius: 25px;
+    border: 2px solid green;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#corners3 {
+    border-radius: 25px;
+    background: url(gradiente.png);
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#rcorners1{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 5px;
+    background: green;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#rcorners2 {
+    border-radius: 15px 50px 30px;
+    background: green;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#rcorners3 {
+    border-radius: 15px 50px;
+    background: green;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>Tables</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="text.css">
+    </head>
+    <body>
+        <h1>CSS Tables</h1>
+        <p>The look of an HTML table can be greatly improved with CSS:</p>
+        <img alt="img3" src="img/img3.png"> 
+        <hr>
+        <h2>Table Borders</h2>
+        <p>
+            To specify table borders in CSS, use the border        property.
+        </p>
+        <p>
+            The example below specifies a black border for &lt;table>, &lt;th>, and &lt;td> elements:
+        </p>
+        <table>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+            </tr>
+            <tr>
+                <td>Rodrigo</td>
+                <td>Abelardo</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>Maria</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>Collapse Table Borders</h2>
+        <p>
+            The border-collapse property sets whether the table borders should be collapsed into a single border:
+        </p>
+        <table class="border2">
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+            </tr>
+            <tr>
+                <td>Rodrigo</td>
+                <td>Abelardo</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>Maria</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>Table Width and Height</h2>
+        <p>
+            Width and height of a table are defined by the width and height properties.
+        </p>
+        <p>
+            The example below sets the width of the table to 100%, and the height of the &lt;th> elements to 50px:
+        </p>
+        <table class="border3">
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Saving</th>
+            </tr>
+           <tr>
+               <td>Peter</td>
+               <td>Grin</td>
+               <td>100rs</td>
+           </tr>
+           <tr>
+               <td>Luiz</td>
+               <td>Grin</td>
+               <td>150rs</td>
+           </tr>
+           <tr>
+               <td>Joe</td>
+               <td>Grin</td>
+               <td>300rs</td>
+           </tr>
+        </table>
+        <hr>
+        <h2>Horizontal Alignment</h2>
+        <p>
+            The text-align property sets the horizontal alignment (like left, right, or center) of the content in &lt;th> or &lt;td>.
+        </p>
+        <p>
+            By default, the content of &lt;th> elements are center-aligned and the content of &lt;td> elements are left-aligned.
+        </p>
+        <p>
+            The following example left-aligns the text in &lt;th> elements:
+        </p>
+        <table class="border3">
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Saving</th>
+            </tr>
+           <tr>
+               <td>Peter</td>
+               <td>Grin</td>
+               <td>100rs</td>
+           </tr>
+           <tr>
+               <td>Luiz</td>
+               <td>Grin</td>
+               <td>150rs</td>
+           </tr>
+           <tr>
+               <td>Joe</td>
+               <td>Grin</td>
+               <td>300rs</td>
+           </tr>
+        </table>
+        <hr>
+        <h2>Hoverable Table</h2>
+        <p>
+            Use the :hover selector on <tr> to highlight table rows on mouse over:
+        </p>
+        <table class="border3">
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Saving</th>
+            </tr>
+           <tr>
+               <td>Peter</td>
+               <td>Grin</td>
+               <td>100rs</td>
+           </tr>
+           <tr>
+               <td>Luiz</td>
+               <td>Grin</td>
+               <td>150rs</td>
+           </tr>
+           <tr>
+               <td>Joe</td>
+               <td>Grin</td>
+               <td>300rs</td>
+           </tr>
+        </table>
+        <p>
+            For zebra-striped tables, use the <span class="pink">nth-child()</span> selector and add a <span class="pink">background-color</span> to all even (or odd) table rows:
+        </p>
+    </body>
+</html>

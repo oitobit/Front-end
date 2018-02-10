@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="css/Pseudo-classes.css">
+    <meta name="folha de estilo" content="text/html">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="text.css">
+    <title>Pseudo-classes</title>
+</head>
+<body>
+    <img src="../MEULINUX.png" alt="meulinux">
+    <div id="letter">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
+    <div class="logo">
+        <nav id="menu">
+            <h1 class="esconder">Menu Principal:</h1>
+            <ul>
+                <li><a href="http://www.gmail.com">Home</a></li>
+                <li><a href="Suporte">Suporte</a></li>
+            </ul>
+        </nav>
+    </div>
+     <h2>What are Pseudo-classes?</h2>
+     <p>A pseudo-class is used to define a special state of an element.</p>
+     <p>For example, it can be used to:</p>
+     <ul>
+         <li>Style an element when a user mouses over it</li>
+         <li>Style visited and unvisited links differently</li>
+         <li>Style an element when it gets focus</li>
+     </ul>
+     <hr>
+     <h2>Syntax</h2>
+     <p>The syntax of psdeudo-classes:</p>
+     <div class="shodown-panel">
+         <div class="panel">
+             <p>selector:pseudo-class {<br>      &nbsp;&nbsp;&nbsp; property:value;<br> }</p>
+         </div>
+     </div>
+     <hr>
+     <h2>Anchor Pseudo-classes</h2>
+     <p>Links can be displayed in different ways:</p>
+     <a href="www.google.com" class="pseudo-classes" target="_blank">This is link.</a>
+     <hr>
+    <h2>Simple Tooltip Hover</h2>
+    <p>Hover over a &lt;div> element to show a
+     &lt;p> element (like a tooltip):</p>
+    <b>
+    <div style="color:#F44336;">
+         Hover over me to show the
+        &lt;p> element.
+        <p class="tolltip">Tada! Here I am!</p>
+    </div>
+    </b>
+    <hr>
+    <h2>Match all &lt;i> elements in all first child &lt;p> elements</h2>
+    <p>In the following example, the selector matches all &lt;i> elements in &lt;p> elements that are the first child of another element:</p>
+    <p class="sla">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    <p class="sla">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    <p><b>Note:</b> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+    <div class="shodown-panel shadow-panel"><b class="exemplo">Exemplo:</b>
+        <div class="panel">
+            <p>
+                 p:first-child i {<br>
+                 &nbsp;&nbsp;&nbsp; color: blue; <br>}
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+html, body {
+    font-size: 16px;
+    font-family: Verdana,sans-serif;
+    background-color: floralwhite;
+    padding: 30px;
+}
+
+span {
+    color: crimson;
+    font-weight: bold;
+}
+
+h1, h2 {
+    font-weight:400;
+}
+
+div#translate {
+    width:300px;
+    height:100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: translate(50px, 100px);
+}
+
+div#rotate {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+div#myDiv {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: rotate(20deg);/*Sintaxe padrão*/
+    -webkit-transform: rotate(20deg);/*Sintaxe do safari(algumas versões anteriores o chrome utilizou deste motor de renderização)*/
+    -o-transform: rotate(20deg);/*sintaxe utlizada no opera*/
+    -moz-transform: rotate(20deg);/*SIntaxe utlizada no mozila firefox*/
+}
+
+div#scale {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scale(1, 2);
+}
+
+div#skew {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    padding: 10px;
+    -webkit-transform: skewX(10deg);
+    -webkit-transform: skewY(10deg);
+}

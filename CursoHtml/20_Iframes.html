@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Iframes</title>
+    <link rel="stylesheet" href="css/20_Iframes.css">
+  </head>
+  <body>
+    <hr>
+    <h1>HTML Iframes</h1>
+      <p>
+        An iframe is used to display a web page within a web page.
+      </p>
+      <hr>
+
+    <h2>Iframe Syntax</h2>
+      <p>
+        An HTML iframe is defined with the <b>&lt;iframe&gt;</b> tag:
+      </p>
+    <div class="w3-example">
+      <div class="code-comment">
+        <code class="color-blue">
+          &lt;<span class="color-pink">iframe</span> src="URL">&lt;<span class="color-pink">/iframe</span>>
+        </code>
+      </div>
+    </div>
+      <p>
+        The src attribute specifies the URL (web address) of the inline frame page.
+      </p>
+      <hr>
+
+    <h2>Iframe - Set Height and Width</h2>
+      <p>
+        Use the <b>height</b> and <b>width</b> attributes to specify the size of the iframe.
+      </p>
+      <p>
+        The attribute values are specified in pixels by default, but they can also be in percent (like "80%").
+      </p>
+      <div class="w3-example">
+        <div class="code-comment">
+          <code class="color-blue">
+            &lt;<span class="color-pink">iframe</span> src="demo_iframe.htm" <span class="color-pink">height</span>="300"<span class="color-pink"> Weigth</span>="200"&gt;&lt;<span class="color-pink">/iframe</span>>
+          </code>
+        </div>
+      </div>
+      <iframe src="demo_iframe.htm" height="200" width="300"></iframe>
+      <hr>
+
+    <h2>Iframe - Remove the Border</h2>
+      <p>
+        By default, an iframe has a border around it.
+      </p>
+      <p>
+        To remove the border, add the <b>style</b> attribute and use the CSS border <b>property</b>:
+      </p>
+      <div class="w3-example">
+        <div class="code-comment">
+          <code class="color-blue">
+            &lt;<span class="color-pink">iframe</span> src="demo_iframe.htm" <span class="color-pink">style</span>="border:none;">&lt;<span class="color-pink">/iframe</span>>
+          </code>
+        </div>
+      </div>
+      <iframe src="demo_iframe.htm" style="border:none;"></iframe>
+      <p>
+        With CSS, you can also change the size, style and color of the iframe's border:
+      </p>
+      <div class="w3-example">
+        <div class="code-comment">
+          <code class="color-blue">
+            &lt;<span class="color-pink">iframe</span> src="demo_iframe.htm" <span class="color-pink">style</span>="border:2px solid green;">&lt;/<span class="color-pink">iframe</span>>
+          </code>
+        </div>
+      </div>
+      <iframe src="demo_iframe.htm" style="border:2px solid green;"></iframe>
+      <hr>
+
+    <h2>Iframe - Target for a Link</h2>
+      <p>
+        An iframe can be used as the target frame for a link.
+      </p>
+      <p>
+        The <b>target</b> attribute of the link must refer to the <b>name</b> attribute of the iframe:
+      </p>
+      <div class="w3-example">
+        <div class="code-comment">
+          <code class="color-blue">
+            &lt;<span class="color-pink">iframe</span> <span class="color-pink">height</span>="300px" <span class="color-pink">width</span>="100%" src="demo_iframe.htm"<span class="color-pink"> name</span>="iframe_a">&lt;/<span class="color-pink">iframe</span>><br><br>
+
+            &lt;<span class="color-pink">p</span>>&lt;<span class="color-pink">a href</span>="https://www.w3schools.com" <span class="color-pink">target</span>="iframe_a">W3Schools.com&lt;/<span class="color-pink">a</span>>&lt;<span class="color-pink">/p</span>>
+          </code>
+        </div>
+      </div>
+      <iframe height="300px" width="100%" src="demo_iframe.htm" name="iframe_a"></iframe>
+
+      <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+  </body>
+</html>

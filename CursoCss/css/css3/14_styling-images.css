@@ -1,0 +1,64 @@
+body {
+    background-color: floralwhite;
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 200;
+}
+
+#rounded {
+    border-radius: 8px;
+    height: 200px;
+    width: 300px;
+}
+
+#rounded1 {
+    border-radius: 50%;
+    height: 200px;
+    width: 300px;
+}
+
+#rounded2 {
+    border-radius: 8px;
+    height: 200px;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+#opacity {
+    height: 200px;
+    width: 300px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+#opacity1 {
+    height: 200px;
+    width: 300px;
+}
+
+#filter {
+    height: 200px;
+    width: 300px;
+    filter: grayscale(100%);
+}
+
+#filter1 {
+    height: 200px;
+    width: 300px;
+    filter: brightness(25%);
+}
+
+#flip {
+    height: 200px;
+    width: 300px;
+}
+
+#flip:hover {
+    transform: scaleX(-1);
+}

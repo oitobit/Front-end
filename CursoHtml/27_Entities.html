@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <link type="text/css" rel="stylesheet" href="css/27_Entites.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>HTML Entities</h1>
+        <hr>
+            <p>
+                Reserved characters in HTML must be replaced with character entities.
+            </p>
+            <p>
+                Characters that are not present on your keyboard can also be replaced by entities.
+            </p>
+        <hr>
+        <h2>HTML Entities</h2>
+        <p>
+            Some characters are reserved in HTML
+        </p>
+        <p>
+            If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.
+        </p>
+        <p>
+            Character entities are used to display reserved characters in HTML.
+        </p>
+        <p>
+            A character entity looks like this:
+        </p>
+        <div id="coment-code">
+            <code>
+                &entity_name;<br>
+                OR<br>
+                &#entity_number;
+            </code>
+        </div>
+        <p>
+            To display a less than sign (<) we must write: <b>&lt;</b> or <b>&#60;</b>
+        </p>
+        <div class="code-2">
+            <p>
+                <strong>Advantage of using an entity name:</strong> An entity name is easy to remember.<br>
+                <strong>Disadvantage of using an entity name:</strong> Browsers may not support all entity names, but the support for numbers is good.
+            </p>
+        </div><hr>
+        <h2>Non-breaking space</h2>
+        <p>
+            A common character entity used in HTML is the non-breaking space: &nbsp;
+        </p>
+        <p>
+            A non-breaking space is a space that will not break into a new line.
+        </p>
+        <p>
+            Two words separated by a non-breaking space will stick together (not break into a new line). This is handy when breaking the words might be disruptive.
+        </p>
+        <p>Examples:</p>
+        <ul>
+            <li>§ 10</li>
+            <li>10 km/h</li>
+            <li>10 PM</li>
+        </ul>
+        <div class="code-2">
+            <p>
+                The non-breaking hyphen (&#8209;) lets you use a hyphen character (‑) that won't break.
+            </p>
+        </div><hr>
+        <h3>Some Other Useful HTML Character Entities</h3>
+        <img src="img/Character-entities.png">
+        <div class="code-2">
+            <p><b>Note:</b> Entity names are case sensitive.</p>
+        </div>
+    </body>
+</html>

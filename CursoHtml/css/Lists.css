@@ -1,0 +1,43 @@
+html, body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  background-color: cadetblue;
+}
+h2 {
+  text-align: center;
+}
+#list1 {
+  list-style-type: disc;
+}
+#list2{
+  list-style-type: circle;
+}
+#list3{
+  list-style-type: square;
+}
+#list4 {
+  list-style-type: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}

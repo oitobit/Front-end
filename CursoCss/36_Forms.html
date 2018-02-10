@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Forms</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/35_Forms.css">
+    </head>
+    <body>
+        <h1>Css Forms</h1>
+        <hr>
+        <p>The look of an HTML form can be greatly improved with CSS:</p>
+        <hr>
+        <img src="img/form.png" alt="imagem" width="914" height="396" top="325">
+        <hr>
+        <h2>Styling Input Fields</h2>
+        <p>Use the width property to determine the width of the input field:</p>
+        <form action="">
+            <label for="fname">FirstName</label>
+            <input type="text" name="fname">
+        </form><br>
+        <p>The example above applies to all
+        &lt;input> elements. If you only want to style a specific input type, you can use attribute selectors:</p>
+        <ul>
+            <li><code>input[type=text]</code> - will only select text fields</li>
+            <li><code>input[type=password]</code> - will only select password fields</li>
+            <li><code>input[type=number]</code> - will only select number fields</li>
+            <li>etc...</li>
+        </ul>
+        <hr>
+        <h2>Bordered Inputs</h2>
+        <p>Use the border property to change the border size and color, and use the border-radius property to add rounded corners:</p>
+        <form action="">
+            <label for="fname">FirstName</label>
+            <input id="border-radius" type="text" name="fname">
+            <label for="fname">LastName</label>
+            <input id="border-radius" type="text" name="text">
+        </form>
+        <hr>
+        <h2>Colored Inputs</h2>
+    </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="text.css">
+    <meta charset="utf-8">
+    <title>CSS Text</title>
+  </head>
+  <body>
+    <h1>CSS Text</h1>
+      <div class="div-exemplo">
+        <h1 class="h1-exemplo">TEXT FORMATTING</h1>
+          <p>
+            This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored "Try it Yourself" link.
+          </p>
+      </div>
+    <h2>Text Color</h2>
+      <p>
+        The <code class="pink">color</code> property is used to set the color of the text.
+      </p>
+      <p>
+        With CSS, a color is most often specified by:
+      </p>
+      <ul>
+        <li>
+          a color name - like "red"
+        </li>
+        <li>
+          a HEX value - like "#ff0000"
+        </li>
+        <li>
+          an RGB value - like "rgb(255,0,0)"
+        </li>
+      </ul>
+      <p>
+        Look at <a href="https://www.w3schools.com/cssref/css_colors_legal.asp">CSS Colers Value</a> for a complete list of possible color values.
+      </p>
+      <p>
+        The default text color for a page is defined in the body selector.
+      </p>
+      <img src="img/text.png" alt="image"><br><br>
+      <div class="note">
+        <p>
+          <b>Note</b>: For W3C compliant CSS: If you define the <code class="pink">color</code> property, you must also define the <code class="pink">background-color</code>.
+        </p>
+      </div><hr>
+    <h2>Text Alignment</h2>
+      <p>
+        The <span class="pink">text-align</span> property is used to set the horizontal alignment of a text.
+      </p>
+      <p>
+        A text can be left or right aligned, centered, or justified.
+      </p>
+      <p>
+        The following example shows center aligned, and left and right aligned text (left alignment is default if text direction is left-to-right, and right alignment is default if text direction is right-to-left):
+      </p>
+    <div class="div-exemplo">
+      <hgroup>
+        <h1 class="head1">Heading 1 (center)</h1>
+        <h2 class="head2">Heading 2 (left)</h2>
+        <h3 class="head3">Heading 3 (right)</h3>
+      </hgroup>
+    </div><hr>
+    <h2>Text Decoration</h2>
+      <p>
+        The <span class="pink">text-decoration</span> property is used to set or remove decorations from text.
+      </p>
+      <p>
+        The value <span class="pink">text-decoration: none;</span> is often used to remove underlines from links:
+      </p>
+      <p>A link with no underline: <a class="limpar" href="https://www.w3schools.com">W3Schools</a></p>
+      <p>
+        The other <span class="pink">text-decoration</span> values are used to decorate text:
+      </p>
+      <div class="div-exemplo">
+        <hgroup>
+          <h1 id="text1">This is heading 1</h1>
+          <h2 id="text2">This is heading 2</h2>
+          <h3 id="text3">This is heading 3</h3>
+        </hgroup>
+      </div>
+      <p class="note">
+        <b>Note</b>: It is not recommended to underline text that is not a link, as this often confuses the reader.
+      </p><hr>
+
+    <h2>Text transformation</h2>
+      <p>The <span class="pink">text-transform</span> property is used to specify uppercase and lowercase letters in a text.
+      </p>
+      <p>
+        It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:
+      </p>
+      <div class="div-exemplo">
+        <p class="uppercase">This is some text.</p>
+        <p class="lowercase">This is some text.</p>
+        <p class="capitalize">This is some text.</p>
+      </div><hr>
+
+    <h2>Text Indentation</h2>
+      <p>
+        The text-indent property is used to specify the indentation of the first line of a text:
+      </p>
+      <div class="div-exemplo">
+      <p class="indent">
+        In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'
+      </p>
+    </div><hr>
+
+    <h2>Letter Spacing</h2>
+      <p>
+        The letter-spacing property is used to specify the space between the characters in a text.
+      </p>
+      <p>
+        The following example demonstrates how to increase or decrease the space between characters:
+      </p>
+      <div class="div-exemplo">
+        <hgroup>
+          <h1 class="spacing">This is heading 1</h1>
+          <h2 class="spacing">This is heading 2</h2>
+        </hgroup>
+      </div><hr>
+
+    <h2>Line Height</h2>
+      <p>
+        The line-height property is used to specify the space between lines:
+      </p>
+      <p>
+        This is a paragraph with a standard line-height.<br>
+        The default line height in most browsers is about 110% to 120%.<br>
+      </p>
+      <p class="small">
+        This is a paragraph with a smaller line-height.<br>
+        This is a paragraph with a smaller line-height.<br>
+      </p>
+      <p class="big">
+        This is a paragraph with a bigger line-height.<br>
+        This is a paragraph with a bigger line-height.<br>
+      </p>
+      <hr>
+
+    <h2>Text Direction</h2>
+      <p>
+        The direction property is used to change the text direction of an element:
+      </p>
+      <div class="div-exemplo">
+        <div class="parag">This is default text direction.</div>
+        <div class="ex1">This is right-to-left text direction.</div>
+      </div><hr>
+
+    <h2>Word Spacing</h2>
+      <p>
+        The word-spacing property is used to specify the space between the words in a text.
+      </p>
+      <p>
+        The following example demonstrates how to increase or decrease the space between words:
+      </p>
+      <div class="div-exemplo">
+        <hgroup>
+          <h1 class="word-spacing1">This is heading 1</h1>
+          <h2 class="word-spacing2">This is heading 2</h2>
+        </hgroup>
+      </div>
+      <hr>
+
+      <h2>Text Shadow</h2>
+        <p>
+          The text-shadow property adds shadow to text.
+        </p>
+        <p>
+          The following example specifies the position of the horizontal shadow (3px), the position of the vertical shadow (2px) and the color of the shadow (red):
+        </p>
+        <div class="div-exemplo">
+          <h1 class="text-shadow">Text-shadow effect</h1>
+          <p><b>Note:</b> Internet Explorer 9 and earlier do not support the text-shadow property.</p>
+        </div>
+  </body>
+</html>

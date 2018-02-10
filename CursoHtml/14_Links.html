@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html, body {
+        font-size: 16px;
+        font-family: Verdana, sans-serif;
+      }
+    </style>
+    <meta charset="utf-8">
+    <title>HTML Links</title>
+  </head>
+  <body style="background-color: rgb(82,245,73);">
+    <hgroup>
+      <h1>HTML Links</h1>
+        <p>
+          Link are found in nearly all web pages. Link allow users to click their way from page to page.<br><br>
+
+        <h2>HTML Links - Hyperlinks</h2>
+          HTML links are hyperlinks.<br>
+          You can click on a link and jump to another document.<br>
+          When you move the mouse over a link, the mouse arrow will turn into a little hand.<br><br>
+
+        <mark><strong>Note:</strong> A link does not have to be text. It can be an image or any other HTML element.</mark>
+        <hr color="rgb(55,87,230)";>
+        </p>
+
+      <h1>HTML Links - Syntax</h1>
+        <p>
+          In HTML, links are defined with the <strong>"a"</strong> tag:
+        <code><'a href="url">link text<'/a></code>
+
+        <h3>Example:</h3>
+        <strong><a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a></strong> - <code><'a href="https://www.w3schools.com/html/">Visit our HTML tutorial<'/a></code><br><br>
+
+        The <strong>href</strong> attribute specifies the destination address (https://www.w3schools.com/html/) of the link.<br>
+        The <strong>link text</strong> is the visible part (Visit our HTML tutorial).<br>
+        Clicking on the link text will send you to the specified address.<br><br>
+
+        <mark><strong>Note:</strong> Without a forward slash on subfolder addresses, you might generate two requests to the server. Many servers will automatically add a forward slash to the address, and then create a new request.</mark>
+        <hr color="rgb(55,87,230)">
+        </p>
+
+      <h1>Local Links</h1>
+        <p>
+          The example above used an absolute URL (A full web address).<br>
+
+          A local link (link to the same web site) is specified with a relative URL (without http://www....).
+        <h3>Exemplo:</h3>
+        <strong><a href="html_images.asp">HTML Images</a></strong> - <code><'a href="html_images.asp">HTML Images<'/a></code>
+        <hr color="rgb(55,87,230)">
+        </p>
+
+      <h1>HTML Link Colors</h1>
+        <p>
+          By default, a link will appear like this (in all browsers)
+        <ul>
+          <li>An unvisited link is underlined and blue</li>
+        </ul>
+        <ul>
+          <li>An visit link is underlined and purple</li>
+        </ul>
+        <ul>
+          <li>An active link i underlined and red</li>
+        </ul><br>
+
+        You can changed the default colors, by using styles:<br>
+
+        <h3>Exemplo:</h3>
+        <code>
+          <'style><br>
+            &nbsp;a:link{color:green; background-color:transparent; text-decoration:none}<br>
+            &nbsp;a:visited{color:pink; background-color:transparent;     text-decoration:none}<br>
+            &nbsp;a:hover{color:red; background-color:transparent; text-decoration:underline}<br>
+            &nbsp;a:active{color:yellow; background-color:transparent; text-decoration:underline}<br>
+          <'/style>
+        </code>
+        <hr color="rgb(55,87,230)">
+        </p>
+
+      <h1>HTML Links - The target Attribute</h1>
+        <p>
+          The <strong>target</strong> attribute specifies where to open the linked document.<br>
+
+          The target attribute can have one of the following values:
+        <ul>
+          <li>
+            _blank - Opens the linked document in a new window or tab
+          </li>
+        </ul>
+        <ul>
+          <li>
+            _self - Opens the linked document in the same window/tab as it was clicked (this is default)
+          </li>
+        </ul>
+        <ul>
+          <li>
+            _parent - Opens the linked document in the parent frame
+          </li>
+        </ul>
+        <ul>
+          <li>
+            _top - Opens the linked document in the full body of the window
+          </li>
+        </ul>
+        <ul>
+          <li>
+            framename - Opens the linked document in a named frame
+          </li>
+        </ul><br>
+            This example will open the linked document in a new browser window/tab:<br>
+        <hr color="rgb(55,87,230)">
+        </p>
+
+      <h1>Chapter Summary</h1>
+        <ul>
+          <li>
+            Use the tag <strong><'a'></strong> element to define a link
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Use the tag <strong><'href'></strong> attribute to define the link address
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Use the tag <strong><'target'></strong> attribute to define where to open the linked document
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Use the tag <strong><'img'></strong> element (inside <'a'>) to use an imagem as a link
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Use the tag <strong>id</strong> attirube (id="value") to define bookmarks in a page
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Use the tag <strong>href</strong> attribute (href="#value") to link to the bookmarks
+          </li>
+        </ul>
+    </hgroup>
+  </body>
+</html>

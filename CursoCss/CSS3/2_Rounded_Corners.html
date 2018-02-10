@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Rounded Corners</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Rodrigo S França">
+        <link rel="stylesheet" href="../css/css3/2_Rounded_Corners.css">
+    </head>
+    <body>
+        <h1>CSS3 Rounded Corners</h1>
+        <hr>
+        <h2>CSS3 border-radius Property</h2>
+        <p>With CSS3, you can give any element "rounded corners", by using the border-radius property.</p>
+        <p>Here are three examples:</p>
+        <p>1. Rounded corners for an element with a specified background color:</p>
+        <p id="corners1">1.Rounded Corners</p>
+        <p>2. Rounded corners for an element with a border:</p>
+        <p id="corners2">2.Rounded Corners</p>
+        <p>3. Rounded corners for an element with a background image:</p>
+        <p id="corners3">3.Rounded Corners</p>
+        <h2>CSS3 border-radius - Specify Each Corner</h2>
+        <p>If you specify only one value for the border-radius property, this radius will be applied to all 4 corners.</p>
+        <p>However, you can specify each corner separately if you wish. Here are the rules:</p>
+        <ul>
+            <li><b>Four values</b>: first value applies to top-left, second value applies to top-right, third value applies to bottom-right, and
+            fourth value applies to bottom-left corner</li>
+            <li><b>Three values</b>: first value applies to top-left, second value applies to top-right and bottom-left, and third value applies
+            to bottom-right</li>
+            <li><b>Two values</b>: first value applies to top-left and bottom-right corner, and the second value applies to top-right and bottom-left
+            corner</li>
+            <li><b>One value</b>: all four corners are rounded equally</li>
+            <p>Here are three examples:</p>
+            <p>1. Four values - border-radius: 15px 50px 30px 5px:</p>
+            <p id="rcorners1"></p>
+            <p>2. Three values - border-radius: 15px 50px 30px:</p>
+            <p id="rcorners2"></p>
+            <p>3. Two values - border-radius: 15px 50px:</p>
+            <p id="rcorners3"></p>
+        </ul>
+    </body>
+</html>

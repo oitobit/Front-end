@@ -1,0 +1,72 @@
+html, body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  background-color: floralwhite;
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: Verdana, sans-serif;
+}
+#p1{
+  text-align: justify;
+  margin-right: 50px;
+  margin-left: 50px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-right: 0px;
+  border-left: 0px;
+  border-style: solid;
+  border-color: #9C27B0;
+  padding: 5px;
+  word-wrap: break-word;
+}
+.span {
+  border: 1px;
+  border-style: solid;
+  border-color: green;
+  padding: 4px;
+}
+.div {
+  border: 1px;
+  border-style: solid;
+  border-color: green;
+  padding: 4px;
+}
+.div2 {
+  text-align: justify;
+  margin-left: 730px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  word-wrap: break-word;
+}
+.div3 {
+  text-align: justify;
+  margin-right: 450px;
+  border-top: 1px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-left: 5px;
+  border-style: solid;
+  color: green;
+  padding: 5px;
+  word-wrap: break-word;
+  background-color: white;
+  line-height: 1.4;
+}
+.exemplo {
+  border-top: 6px;
+  border-right: 8px;
+  border-bottom: 6px;
+  border-left: 8px;
+  border-style: solid;
+  border-color: bisque;
+  background-color: bisque;
+}
+.table-2 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+}

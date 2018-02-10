@@ -1,0 +1,56 @@
+body, html {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: floralwhite;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination .pag1 {
+    padding: 8px 16px;
+    color: black;
+    float: left;
+    text-decoration: none;
+}
+
+.pagination2 {
+    display: inline-block;
+}
+
+.pagination2 .pag2 {
+    color: black;
+    padding: 8px 16px;
+    float: left;
+    text-decoration: none;
+}
+
+.pagination2 .pag2.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination2 .pag2:hover:not(.active) {
+    background-color: #ddd;
+}
+
+ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: green;
+}
