@@ -1,0 +1,33 @@
+body, html {
+    font: 16px Verdana, sans-serif;
+    margin: 20px auto;
+    width: 75%;
+    
+}
+
+h2 {
+    font-weight: 300;
+    text-align: center;
+}
+
+.w3-codespan {
+    color: crimson;
+    background-color:#f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%;
+}
+
+#newspaper, #newspaper-gap, #newspaper-rule {
+    column-count: 3;
+    background-color: #f1f1f1;
+}
+
+#newspaper-gap {
+    column-gap: 40px;
+}
+
+#newspaper-rule {
+    column-rule: 1px solid black;
+    column-gap: 40px;
+}
