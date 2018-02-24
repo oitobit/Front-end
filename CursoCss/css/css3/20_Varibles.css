@@ -1,0 +1,47 @@
+body, html {
+    margin: 20px auto;
+    width: 75%;
+    font: 16px Verdana, sans-serif;
+}
+
+h1, h2 {
+    font-weight: 300;
+    text-align: center;
+}
+
+:root {
+    --background-color: #f1f1f1;
+    --text-align: center;
+    --padding: 20px;
+    --background: #333;
+    --column-count:3;
+    --main-txt-color: white;
+}
+
+#div1 {
+    background-color: var(--background-color);
+    text-align: var(--text-align);
+    padding: var(--padding);
+}
+#div2 {
+    background-color: var(--background);
+    padding: var(--padding);
+
+}
+#div3 {
+    background-color: var(--background-color);
+    text-align: var(--text-align);
+    padding: var(--padding);
+}
+
+#demo {
+    background-color: var(--background);
+    column-count: var(--column-count);
+    padding: var(--padding);
+    color: var(--main-txt-color);
+    text-align: var(--text-align);
+}
+
+
+
+
