@@ -1,0 +1,56 @@
+html, body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    margin: 20px auto;
+    width: 75%;
+}
+
+h2 {
+    font-weight: 300;
+    text-align: center;
+}
+
+:root {
+    --background-color: #f1f1f1;
+    --margin: 10px;
+    --padding: 20px;
+    --font-size: 30px;
+    --text-align: center;
+    --line-height: 75px;
+    --background: dodgerblue;
+    --display: flex;
+    --flex-direction: column;
+    --flex-direction: column-reverse;
+}
+
+#flex-container {
+    background-color: dodgerblue;
+    display: flex;
+}
+
+#flex-container > div {
+    background-color: var(--background-color);
+    margin: var(--margin);
+    padding: var(--padding);
+    font-size: var(--font-size);
+}
+
+#flex-container1 {
+    background: var(--background);
+    display: var(--display);
+    /*flex-direction: var(--flex-direction);*/
+}
+
+#flex-container1 > div {
+    background-color: var(--background-color);
+    margin: var(--margin);
+    font-size: var(--font-size);
+    text-align: var(--text-align);
+    line-height: var(--line-height);
+}
+
+#flex-container1 {
+    background: var(--background);
+    display: var(--display);
+    flex-direction: var(--flex-direction);
+}
