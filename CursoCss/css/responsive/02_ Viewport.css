@@ -1,0 +1,16 @@
+.bd-ht {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px auto;
+    width: 75%;
+    box-sizing: border-box;
+}
+
+.body-head{
+    font-weight: 300;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
