@@ -104,3 +104,101 @@ html {
         width: 100%;
     }
 }
+
+/**********************************
+phones, tablets, laptops e desktops
+**********************************/
+
+.example {
+    padding: 10px;
+    color: white;
+    background-color: #9933cc;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .example {
+        background-color: red;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .example {
+        background-color:green;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .example {
+        background-color: blue;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .example {
+        background-color: orange;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .example {
+        background-color: pink;
+        color: black;
+    }
+}
+
+/**********************************
+Orientation: Portrait/ landscape
+**********************************/
+
+.lands {
+    background-color: green;
+    padding: 10px;
+}
+
+@media only screen and (Orientation: landscape) {
+    .lands {
+        background-color: lightgreen;
+    }
+}
+
+/**********************************
+Hide Elements Media Queries
+**********************************/
+
+.hide {
+    background-color: yellow;
+    padding: 5px;
+}
+
+/* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 600px) {
+    .hide {
+        display: none;
+    }
+}
+
+/**********************************
+Change Font Size
+**********************************/
+
+.font {
+    background-color: lightgray;
+    padding: 5px;
+}
+
+@media screen and (min-width: 601px) {
+    div.font {
+      font-size: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    div.font {
+      font-size: 12px;
+    }
+  }
