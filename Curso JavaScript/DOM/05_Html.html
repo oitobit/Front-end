@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            width: 75%;
+            margin: 20px auto;
+            font-size: 16px;
+            font-family: Verdana, sans-serif;
+        }
+        h1, h2 {
+            font-weight: 300;
+            text-align: center;
+        }
+        .border {
+            border: 1px solid gray;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript HTML DOM - Changing HTML</h1>
+    <hr>
+    <p>The HTML DOM allows JavaScript to change the content of HTML elements.</p>
+    <hr>
+    
+    <h2>Changing the HTML Output Stream</h2>
+    <p>JavaScript can create dynamic HTML content:</p>
+    <p><b>Date: 
+    <script>
+    document.write(Date());
+    </script>
+    </b></p>
+    <p>In JavaScript, document.write() can be used to write directly to the HTML output stream:</p>
+    <hr>
+    <h2>Changing HTML Content</h2>
+    <p>The easiest way to modify the content of an HTML element is by using the <b>innerHTML</b>  property.</p>
+    <p>To change the content of an HTML element, use this syntax:</p>
+    <div class="border"><div>
+    document.getElementById(<i>id</i>).innerHTML =<i> new HTML</i>
+    </div>
+    </div>
+    <p>This example changes the content of a &lt;p&gt; element:</p>
+    <p id="p1">Hello World!</p>
+    <p>Example explained:</p>
+    <ul>
+        <li>The HTML document above contains a &lt;p&gt; element    with id=&quot;p1&quot;</li>
+        <li>We use the HTML DOM to get the element with id=&quot;   p1&quot;</li>
+        <li>A JavaScript changes the content (innerHTML) of that    element to &quot;New 
+        text!&quot;</li>
+    </ul>
+    <p>This example changes the content of an element:</p>
+    <p id="id01" style="font-weight: bold; color: crimson;">Old Heading</p>
+    <hr>
+
+    <h2>Changing the Value of an Attribute</h2>
+    <p>To change the value of an HTML attribute, use this   syntax: </p>
+    <div class="border"><div>
+    document.getElementById(<i>id</i>).<i>attribute = new   value</i>
+    </div>
+    </div>
+    <p>This example changes the value of the src attribute of   an &lt;img&gt; element:</p>
+
+    <img id="change-atribute" src="https://www.w3schools.com/js/smiley.gif"></img>
+
+    <p>Example explained:</p>
+        <ul>
+            <li>The HTML document above contains an &lt;img&gt;     element with id=&quot;myImage&quot;</li>
+            <li>We use the HTML DOM to get the element with id=&    quot;   myImage&quot;</li>
+            <li>A JavaScript changes the src attribute of that      element from &quot;smiley.gif&quot; to &quot;landscape.jpg&quot;</li>
+        </ul>
+
+
+    <script src="JS/05_Html.js"></script>
+
+</body>
+</html>
