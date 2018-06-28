@@ -1,0 +1,64 @@
+html, body {
+    width: 75%;
+    margin:  20px auto;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    counter-reset: section; /*property counter that liga to h3::before*/
+}
+
+h1 {
+    text-align: center;
+    font-weight: 300;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+img {
+    width: 100%;
+    height: 200px;
+}
+
+code.w3-codespan {
+    color: crimson;
+    background-color: #f1f1f1;
+}
+
+div {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+div > h3 {
+    font-weight: 300;
+}
+
+h3::before {
+    counter-increment: section;
+    content: "Section " counter(section) ": ";
+}
+
+h2.s2 {
+    counter-reset: subsection;
+}
+
+h2.s2::before {
+    counter-increment: section;
+    content: "Section " counter(section) ". ";
+}
+
+h3.s3::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+}
+
+ol {
+    counter-reset: section;
+    list-style-type: none;
+}
+
+li::before {
+    counter-increment: section;
+    content: counters(section,".") " ";
+}
