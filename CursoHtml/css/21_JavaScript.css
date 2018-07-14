@@ -6,7 +6,7 @@ html, body {
 h1, h2 {
   text-align: center;
 }
-p#demo, #demo2. #demo3 {
+p#demo, #demo2, #demo3 {
   font-size: 18px;
   font-family: Arial, sans-serif;
 }

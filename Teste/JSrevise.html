@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        html, body {
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 75%;
+            margin: 20px auto;
+            counter-reset: section;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: 400;
+        }
+
+        h2::before {
+            counter-increment: section;
+            content: counter(section) ". ";
+        }
+
+        p[id] {
+            color: crimson;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <button onclick="myShow()">Clique-me!</button>
+    <button onclick="myHide()">Hidden</button>
+    <p id="demo2"></p>
+
+    <p id="demo3"></p>
+
+    <script>
+        //statement variables
+        document.write("<h2>Statement variables</h2>");
+
+        var a, b, c;
+
+        a = 10;
+        b = 20;
+        c = -30;
+        
+        var x = '10', y = 10;   
+        
+        document.write("valor de x é: " + x + "<br>");
+        document.write("valor de y é: " + y + "<br>");
+        document.write("tipo de x é: " + typeof(x) + "<br>");
+        document.write("tipo de y é: " + typeof(y) + "<br>");
+        document.write("comparando tipos(mesmo valor): ", x == y, "<br>");
+        document.write("comparando tipos(mesmo valor e tipo): ", x === y);
+
+
+        //operators 
+        document.write("<h2>Operators</h2>");
+        var x1, y1, z1;
+        x1 = 8;
+        y1 = 9;
+        z1 = 22;
+
+        document.write(x1 += 5, "<br>");// x = x + 5
+        document.write(y1 += x1, "<br>");// y = y1 + x1
+        document.write(z1 -= 29, "<br>");
+        document.write(x1 %= 64, "<br>");
+        document.write(y1 *= 2);//y = y1 * 2
+
+        //operators relational
+        document.write("<h2>Operator Relational</h2>");
+
+        document.write(5 > 6, "<br>");
+        document.write(6 < 5, "<br>");
+        document.write(10 >= 9, "<br>");
+        document.write(9 <= 10, "<br>");
+
+        //Functions
+        document.write("<h2>Functions</h2>");
+
+        var res = myFunction(4, 5);
+        document.getElementById("demo").innerHTML = res;
+
+        function myFunction(x, y) {
+            return x * y;
+        }
+
+        function myShow () {
+            document.getElementById("demo2").innerHTML = "Hello Wordl!"
+        }
+
+        function myHide () {
+            document.getElementById("demo2").innerHTML = "";
+        }
+
+        //Loop For
+        document.write("<h2>Loop For</h2>");
+        var i;
+        var text = "";
+
+        for(i=0; i < 10; i++) {
+            text += i + "<br>";
+        }
+        document.getElementById("demo3").innerHTML = text;
+        
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Methods JavaScript</title>
+</head>
+<body>
+    <p id="demo" style="color: crimson;font-size:32px;"></p>
+
+    <script type="text/javascript">
+
+    var person =  {
+        firstName: "Rodrigo",
+        lastName: "França",       
+        id: 7788,
+        fullName: function() {
+            return this.firstName + " " + this.lastName;
+        },
+        idName: function() {
+            return this.id;
+        }
+    };
+
+    document.getElementById("demo").innerHTML
+    = person.idName();
+
+    </script>
+</body>
+</html>
