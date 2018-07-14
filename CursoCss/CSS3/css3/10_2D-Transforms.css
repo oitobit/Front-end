@@ -1,8 +1,8 @@
 html, body {
+    width: 75%;
+    margin: 20px auto;
     font-size: 16px;
     font-family: Verdana,sans-serif;
-    background-color: floralwhite;
-    padding: 30px;
 }
 
 span {
@@ -11,6 +11,7 @@ span {
 }
 
 h1, h2 {
+    text-align: center;
     font-weight:400;
 }
 
