@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Prototypes</title>
+        <link rel="stylesheet" href="/normalize.css">
+        <style>
+            html, body {
+                width: 75%;
+                margin: 20px auto;
+                font-size: 16px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .h1, .h2 {
+                font-weight: 500;
+                text-align: center;
+            }
+
+            @import url("https://www.w3schools.com/w3css/4/w3.css");
+
+            div.w3-note {
+                border-left: 6px solid #ffeb3b;
+                background-color: #ffffcc;
+            }
+
+            div.w3-panel {
+                margin-top: 16px;
+                margin-bottom: 16px;
+                padding: 0.01em 16px;
+            }
+            .w3-border {
+                border: 1px solid #ccc!important;
+            }
+
+            .w3-section, .w3-code {
+                margin-top: 16px!important;
+                 margin-bottom: 16px!important;
+            }
+
+            .w3-border {
+                border: 1px solid #ccc!important;
+            }
+
+            .w3-code {
+                width: auto;
+                background-color: #fff;
+                padding: 8px 12px;
+                border-left: 4px solid #4CAF50;
+                word-wrap: break-word;
+            }   
+
+            .w3-code, .w3-codespan {
+                font-family: Consolas,"courier new";
+                font-size: 16px;
+            }
+            
+            button#btn {
+                width: 100px;
+                height: 40px;
+                border: none;
+                background-color: #4CAF50;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+            
+            a#link {
+                text-decoration: none;
+                font-size: 16px;
+                color: #fff;
+            }
+
+            hr.break {
+                margin: 30px 0;
+            }
+
+            p[id] {
+                color: crimson;
+                font-weight: bold;
+            }
+
+            .w3-warning{
+                background-color:#ffdddd;border-left:6px solid #f44336
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="h1">JavaScript Object Prototypes</h1>
+        <p>All JavaScript objects inherit properties and methods from a prototype.</p>
+        <p>In the previous chapter we learned how to use an <strong>object constructor</strong>:</p>
+        <img src="objects.png" alt="imagem" width="700px">
+        <p>We also learned that you can <strong>not</strong> add a new property to an existing object constructor:</p>
+        <p>(Clique no botão para checar o exemplo)</p>
+        <button id="btn"><a id="link" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_prototype4" target="_blank">Checar!</a></button>
+        <hr class="break">
+
+        <h2 class="h2">Prototype Inheritance</h2>
+        <p>All JavaScript objects inherit properties and methods from a prototype.</p>
+        <p>Date objects inherit from Date.prototype. Array objects inherit from Array.prototype.
+        Person objects inherit from Person.prototype.</p>
+        <p>The Object.prototype is on the top of the prototype inheritance chain:</p>
+        <p>Date objects, Array objects, and Person objects inherit from Obzject.prototype.</p>
+        <hr class="break">
+
+        <h2 class="h2">Adding Properties and Methods to Objects</h2>
+        <p>Sometimes you want to add new properties (or methods) to all existing objects of a given type.</p>
+        <p>Sometimes you want to add new properties (or methods) to an object 
+        constructor.</p>
+        <hr>
+
+        <h2 class="h2">Using the <strong>prototype</strong> Property</h2>
+        <p>The JavaScript prototype property allows you to add new properties to object 
+        constructors:</p>
+        <p>(Clique no botão para checar o exemplo)</p>
+        <button id="btn"><a id="link" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_prototype5" target="_blank">Checar!</a></button>
+        <p id="add-property-object"></p>
+        <p>The JavaScript prototype property also allows you to add new methods to objects constructors:</p>
+        <p>(Clique no botão para checar o exemplo)</p>
+        <button id="btn"><a id="link" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_prototype6" target="_blank">Checar!</a></button>
+        <p id="add-method-object"></p>
+
+
+        <div class="w3-panel w3-warning">
+            <p>Only modify your <strong>own</strong>    prototypes. Never modify the prototypes of  
+            standard JavaScript objects.</p>
+        </div>
+                
+
+        <!--Código Javascript-->
+        <script src="JS/05_Prototypes.js"></script>
+    </body>
+</html>
