@@ -6,106 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Grid Basic - BootStrap</title>
     <link rel="stylesheet" href="bootstrap4.1/css/bootstrap.min.css">
-    <style>
-        
-        html, body {
-                width: 75%;
-                margin: 20px auto;
-                font-size: 16px;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        .h1, .h2 {
-                font-weight: 500;
-                text-align: center;
-            }
-
-            @import url("https://www.w3schools.com/w3css/4/w3.css");
-
-            .w3-codespan {
-                color: crimson;
-                background-color: #f1f1f1;
-                padding-left: 4px;
-                padding-right: 4px;
-                font-size: 110%;
-            }
-
-            div.w3-note {
-                border-left: 6px solid #ffeb3b;
-                background-color: #ffffcc;
-            }
-
-            div.w3-panel {
-                margin-top: 16px;
-                margin-bottom: 16px;
-                padding: 0.01em 16px;
-            }
-            .w3-border {
-                border: 1px solid #ccc!important;
-            }
-
-            .w3-section, .w3-code {
-                margin-top: 16px!important;
-                 margin-bottom: 16px!important;
-            }
-
-            .w3-border {
-                border: 1px solid #ccc!important;
-            }
-
-            .w3-code {
-                width: auto;
-                background-color: #fff;
-                padding: 8px 12px;
-                border-left: 4px solid #4CAF50;
-                word-wrap: break-word;
-            }   
-
-            .w3-code, .w3-codespan {
-                font-family: Consolas,"courier new";
-                font-size: 16px;
-            }
-            
-            button#btn {
-                width: 100px;
-                height: 40px;
-                border: none;
-                background-color: #4CAF50;
-                border-radius: 3px;
-                cursor: pointer;
-            }
-            
-            a#link {
-                text-decoration: none;
-                font-size: 16px;
-                color: #fff;
-            }
-
-            hr.break {
-                margin: 30px 0;
-            }
-
-            p[id] {
-                color: crimson;
-                font-weight: bold;
-            }
-
-            .w3-warning{
-                background-color:#ffdddd;border-left:6px solid #f44336
-            }
-
-    </style>
+    <link rel="stylesheet" href="bootstrap4.1/css/myCss-style.css">
 </head>
 <body>
-    <h1 class="h1">Bootstrap Grids</h1>
+    <h1 class="h1-ro">Bootstrap Grids</h1>
     <hr>
-    <h2 class="h2">Bootstrap Grid System</h2>
+    <h2 class="h2-ro">Bootstrap Grid System</h2>
     <p>Bootstrap's grid system allows up to 12 columns across the page.</p>
     <p>If you do not want to use all 12 columns individually, you can group the columns together to create wider columns:</p>
     <p>Bootstrap's grid system is responsive, and the columns will re-arrange automatically depending on the screen size.</p>
     <hr>
 
-    <h2 class="h2">Grid Classes</h2>
+    <h2 class="h2-ro">Grid Classes</h2>
     <p>The Bootstrap grid system has four classes:</p>
     <ul>
         <li><code class="w3-codespan">xs</code> (for phones - screens less than 768px wide)</li>
@@ -115,14 +27,14 @@
     </ul>
     <p>The classes above can be combined to create more dynamic and flexible layouts.</p>
     <hr>
-    <h2 class="h2">Basic Structure of a Bootstrap Grid</h2>
+    <h2 class="h2-ro">Basic Structure of a Bootstrap Grid</h2>
     <p>The following is a basic structure of a Bootstrap grid:</p>
     <p>First; create a row (<code class="w3-codespan">&lt;div 
     class="row"&gt;</code>). Then, add the desired number of columns (tags witappropriate 
     <code class="w3-codespan">.col-*-*</code> classes). Note that numbers in <codclass="w3-codespan">.col-*-*</code> should always add up to 12 for each row.</p>
     <p>Below we have collected some examples of basic Bootstrap grid layouts.</p>
     <hr>
-    <h2 class="h2">Three Equal Columns</h2>
+    <h2 class="h2-ro">Three Equal Columns</h2>
     <div class="row">
         <div class="col-sm-4" style="background-color: chartreuse;">.col-sm-4</div>
         <div class="col-sm-4" style="background-color: chartreuse;">.col-sm-4</div>
@@ -131,7 +43,7 @@
     <p>The following example shows how to get a three equal-width columns starting at tablets and scaling to large desktops. On mobile phones <span lang="no-bok">or screens that are less than 768px wide, </span>the columns will automatically stack:</p>
 
     <hr>
-    <h2 class="h2">Two Unequal Columns</h2>
+    <h2 class="h2-ro">Two Unequal Columns</h2>
     <p>The following example shows how to get two various-width columns starting at tablets and scaling to large desktops:</p>
 
     <div class="row">
@@ -142,6 +54,5 @@
     <div class="w3-panel w3-note">
         <p><strong>Tip:</strong> You will learn more about Bootstrap grids later in this tutorial.</p>
     </div>
-        
 </body>
 </html>
