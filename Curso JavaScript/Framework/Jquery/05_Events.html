@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Event Methods</title>
+    <link rel="stylesheet" href="myCss-style.css">
+    <style>
+        p[class] {
+            color: crimson;
+        }
+        p > b {
+            font-size: 18px;
+         }
+    </style>
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            $("#ocultar").click(function(){
+                $("#demo").hide();
+            })
+        });
+
+        //oculta todos os elementos com a clase hideP com apenas um clique
+        $(document).ready(function(){
+            $(".hideP").click(function(){
+                $(this).hide();
+            })
+        });
+
+        //ocultando elementos com dois cliques
+        $(document).ready(function(){
+            $(".hideP2").dblclick(function(){
+                $(this).hide();
+            })
+        })
+
+        //ocultando elementos com mouseneter
+        $(document).ready(function(){
+            $(".mouse").mouseenter(function(){
+                $(this).hide();
+            })
+        })
+
+        //exibindo o alert ao sair do parágrafo
+        $(document).ready(function(){
+            $(".leave").mouseleave(function(){
+                alert("Bye! You now leave paragraph");
+            })
+        }) 
+        
+        //ao pressionar, left, middle, right e down, será exibido uma mensagem
+        $(document).ready(function(){
+            $(".down").mousedown(function(){
+                alert("Bye! You are down paragraph");
+            })
+        })
+        
+        ////ao pressionar, left, middle, right e up, será exibido uma mensagem
+        $(document).ready(function(){
+            $(".up").mouseup(function(){
+                alert("Bye! You are up paragraph");
+            })
+        })
+        
+        //hover method is combination of two function: mouseenter and mouseleave
+        $(document).ready(function(){
+            $(".hover").hover(function(){
+                alert("You pressed p1");
+            },
+            function(){
+                alert("You leave p1");
+            })
+        })
+
+        //method focus and blur
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css("background-color", "#ccc");
+            })
+            $("input").blur(function(){
+                $(this).css("background-color", "#fff");
+            })
+        })
+
+        //method on
+        $(document).ready(function(){
+            $(".p").on("click", function(){
+                $(this).hide();
+            })
+        })
+
+        $(document).ready(function(){
+            $(".p2").on({
+                mouseenter: function () {
+                    $(this).css("background-color", "red");
+                },
+                mouseleave:function()  {
+                    $(this).css("background-color", "green");
+                },
+                click: function() {
+                    $(this).css("background-color", "blue");
+                }
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <h1 class="h1-ro">jQuery Event Methods</h1>
+    <hr>
+    <p>jQuery is tailor-made to respond to events in an HTML page.</p>
+    <hr>
+    <h2>What are Events?</h2>
+    <p>All the different visitor's actions that a web page can respond to are called events.</p>
+    <p>An event represents the precise moment when something happens.</p>
+    <p>Examples:</p>
+    <ul>
+        <li>moving a mouse over an element</li>
+        <li>selecting a radio button</li>
+        <li>clicking on an element</li>
+    </ul>
+    <p>The term <b>&quot;fires/fired&quot;</b> is often used with events. Example: 
+    &quot;The keypress event is fired, the moment you press a key&quot;.</p>
+    <p>Here are some common DOM events:</p>
+
+    <div class="w3-responsive">
+            <table class="w3-table-all notranslate">
+            <tr>
+            <th style="width:23%">Mouse Events</th>
+            <th style="width:25%">Keyboard Events</th>
+            <th style="width:22%">Form Events</th>
+            <th>Document/Window Events</th>
+            </tr>
+            <tr>
+            <td>click</td>
+            <td>keypress</td>
+            <td>submit</td>
+            <td>load</td>
+            </tr>
+            <tr>
+            <td>dblclick</td>
+            <td>keydown</td>
+            <td>change</td>
+            <td>resize</td>
+            </tr>
+            <tr>
+            <td>mouseenter</td>
+            <td>keyup</td>
+            <td>focus</td>
+            <td>scroll</td>
+            </tr>
+            <tr>
+            <td>mouseleave</td>
+            <td>&nbsp;</td>
+            <td>blur</td>
+            <td>unload</td>
+            </tr>
+            </table>
+            </div>
+    <hr>
+    
+    <h2 class="h2-ro">jQuery Syntax For Event Methods</h2>
+    <p>In jQuery, most DOM events have an equivalent jQuery method.</p>
+    <p>To assign a click event to all paragraphs on a page, you can do this: </p>
+    <div class="w3-code w3-border notranslate jsHigh">
+    <div>
+        $(&quot;p&quot;).click();
+    </div>
+    </div>
+    <p>The next step is to define what should happen when the event fires. You must pass a function to the event:</p>
+    <div class="w3-code w3-border notranslate jsHigh">
+    <div>
+    $(&quot;p&quot;).click(function(){<br>
+    &nbsp; // action goes here!!<br>
+    });
+    </div>
+    </div>
+    <p id="demo">Olá!</p>
+    <button id="ocultar">Ocultar!</button>
+    <hr>
+    <h2>Commonly Used jQuery Event Methods</h2>
+    <p><b>$(document).ready()</b></p>
+    <p>The $(document).ready() method allows us to execute a function when the 
+    document is fully loaded. This event is already explained in the
+    <a href="jquery_syntax.asp">jQuery Syntax</a> chapter. </p>
+    <p><b>click()</b></p>
+    <p>The click() method attaches an event handler function to an HTML element.</p>
+    <p>The 
+    function is executed when the user clicks on the HTML element.</p>
+    <p>The following example says: When a click event fires on a &lt;p&gt; element; hide 
+    the current &lt;p&gt; element:</p>
+
+    <p class="hideP">If you click on me, I will disappear.</p>
+    <p class="hideP">Click me away!</p>
+    <p class="hideP">Click me too!</p>
+
+    <p><b>dblclick()</b></p>
+    <p>The dblclick() method attaches an event handler function to an HTML element.</p>
+    <p>The function is executed when the user double-clicks on the HTML element:</p>
+    <p class="hideP2">If you double-click on me, I will disappear.</p>
+    <p class="hideP2">Click me away!</p>
+    <p class="hideP2">Click me too!</p>
+
+    <p><b>mouseenter()</b></p>
+    <p>The function is executed when the mouse pointer enters the HTML element:</p>
+    <p class="mouse">Enter this paragraph</p>
+
+    <p><b>mouseleave()</b></p>
+    <p>The mouseleave() method attaches an event handler function to an HTML 
+    element.</p>
+    <p>The function is executed when the mouse pointer leaves the HTML element:</p>
+    <p class="leave">This is paragraph</p>
+
+    <p><b>mousedown()</b></p>
+    <p>The mousedown() method attaches an event handler function to an HTML  element.</p>
+    <p>The function is executed, when the left, middle or right mouse button is pressed down, while the mouse is over the HTML element:</p>
+    <p class="down">This is paragraph</p>
+
+    <p><b>mouseup()</b></p>
+    <p>The mouseup() method attaches an event handler function to an HTML element.</p>
+    <p>The function is executed, when the left, middle or right mouse button is released, while the 
+    mouse is over the HTML element:</p>
+    <p class="up">This is paragraph</p>
+
+    <p><b>hover()</b></p>
+    <p>The hover() method takes two functions and is a combination of the mouseenter() and mouseleave()
+    methods.</p>
+    <p>The first function is executed when the mouse enters the HTML element, and the second 
+    function is executed when the mouse leaves the HTML element:</p>
+    <p class="hover">This is paragraph</p>
+
+    <p><b>blur()</b></p>
+    <p>The blur() method attaches an event handler function to an HTML form field.</p>
+    <p>The function is executed when the form field loses focus:</p>
+    <form action="">
+        Name: <input type="text" name="fullname"><br>
+        Email: <input type="password" name="email">
+    </form>
+    <hr>
+
+    <h2 class="h2-ro">The on() Method</h2>
+    <p>The on() method attaches one or more event handlers for the selected elements.</p>
+    <p>Attach a click event to a &lt;p&gt; element:</p>
+    <p class="p">Click-me!</p>
+    <p class="p2">Change color.</p>
+
+
+    <p id="wrap"></p>
+    <script>
+        var wrap = "";
+        for (i = 0; i < 10; i++) {
+            wrap += "<br>";
+        }
+        document.write(wrap);
+    </script>
+</body>
+</html>
