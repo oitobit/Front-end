@@ -56,13 +56,14 @@ div.w3-panel {
     font-size: 16px;
 }
 
-button#btn {
+button#btn, #btn2, #btn3, #btn4 {
     width: 100px;
     height: 40px;
     border: none;
     background-color: #4CAF50;
     border-radius: 3px;
     cursor: pointer;
+    color: #fff;
 }
 
 a#link {
