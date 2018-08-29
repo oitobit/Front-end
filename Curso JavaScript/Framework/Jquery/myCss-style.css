@@ -57,13 +57,14 @@ div.w3-panel {
 }
 
 button#btn, #btn2, #btn3, #btn4 {
-    width: 100px;
-    height: 40px;
     border: none;
     background-color: #4CAF50;
-    border-radius: 3px;
+    border-radius: 3px; 
     cursor: pointer;
     color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 a#link {
@@ -127,15 +128,6 @@ div.w3-panel {
 .w3-code, .w3-codespan {
     font-family: Consolas,"courier new";
     font-size: 16px;
-}
-
-button#btn {
-    width: 100px;
-    height: 40px;
-    border: none;
-    background-color: #4CAF50;
-    border-radius: 3px;
-    cursor: pointer;
 }
 
 a#link {
