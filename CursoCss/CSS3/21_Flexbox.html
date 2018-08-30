@@ -27,6 +27,7 @@
     <hr>
     <h2>Parent Element (Container)</h2>
     <p>The flex container becomes flexible by setting the display property to flex:</p>
+    <p>The flex container properties are:</p>
 
     <ul style="font-size:16px;font-family:consolas,'Courier New', Courier, monospace">
         <li><a href="#flex-direction">flex-direction</a></li>
@@ -48,7 +49,97 @@
           <div>3</div>
       </div>
       <hr>
-      <div id="flex-container1">
+
+    <div id="flex-container-column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <hr>
+    <p>The row value stacks the flex items horizontally (from left to right):</p>
+    <div id="flex-container-row">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <hr>
+    <p>The row-reverse value stacks the flex items horizontally (but from right to left):</p>
+    <div id="flex-container-row-reverse">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <hr>
+
+    <h2>The flex-wrap Property</h2>
+    <p>The <code class="w3-codespan">flex-wrap</code> property specifies whether the 
+    flex items should wrap or not.</p>
+
+    <p>The examples below have 12 flex items, to better demonstrate the <code class="w3-codespan">
+    flex-wrap</code> property.</p>
+    <div id="flex-container-wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p>The nowrap value specifies that the flex items will not wrap (this is default):</p>
+    <div id="flex-container-nowrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <hr>
+
+    <h2>The flex-flow Property</h2>
+    <p>The <code class="w3-codespan">flex-flow</code> property is a shorthand property for setting both the <code class="w3-codespan">
+    flex-direction</code> and 
+    <code class="w3-codespan">flex-wrap</code> properties.</p>
+    <div id="flex-container-flow">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <hr>
+    
+    <h2>The justify-content Property</h2>
+    <p>The justify-content property is used to align the flex items:</p>
+    <div id="flex-container-justify">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <hr>
+
+    <h2>The align-items Property</h2>
+    <p>The align-items property is used to align the flex items vertically.</p>
+    <div id="flex-container-align">
         <div>1</div>
         <div>2</div>
         <div>3</div>

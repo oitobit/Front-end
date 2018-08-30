@@ -7,7 +7,6 @@ html, body {
 
 span {
     color: crimson;
-    font-weight: bold;
 }
 
 h1, h2 {
@@ -21,6 +20,13 @@ div#translate {
     background-color: yellow;
     border: 1px solid black;
     transform: translate(50px, 100px);
+}
+
+div#vertical-center {
+    width: 250px;
+    height: 100px;
+    background-color: #f3f3f3;
+    transform: translate(400px, 50px);
 }
 
 div#rotate {

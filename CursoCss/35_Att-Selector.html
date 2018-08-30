@@ -6,23 +6,37 @@
         <link rel="stylesheet" href="css/35_Att-Selector.css">
     </head>
     <body>
-        <h1>CSS Attribute Selectors</h1>
+        <h1 class="h1">CSS Attribute Selectors</h1>
         <hr>
-        <h2>CSS [attribute] Selector</h2>
+        <h2 class="h2">CSS [attribute] Selector</h2>
         <p>The [attribute] selector is used to select elements with a specified attribute.</p>
         <a href="http://www.google.com">Google</a>
         <a href="http://www.facebook.com" target="_blank">Facebook</a>
         <a href="http://www.twitter.com" target="_top">Twitter</a>
         <hr>
-        <h2>CSS [attribute="value"] Selector</h2>
-         <a id="a1" href="http://www.google.com">Google</a>
+
+        <h2 class="h2">CSS [attribute="value"] Selector</h2>
+        <a id="a1" href="http://www.google.com">Google</a>
         <a id="a2" href="http://www.facebook.com" target="_blank">Facebook</a>
         <a id="a3" href="http://www.twitter.com" target="_top">Twitter</a>
         <hr>
-        <h2>CSS [attribute~="value"] Selector</h2>
+
+        <h2 class="h2">CSS [attribute~="value"] Selector</h2>
         <p>The [attribute~="value"] selector is used to select elements with an attribute value containing a specified word.</p>
         <img src="img/klematis.jpg" title="klematis flower" width="150" height="113">
         <img src="img/img_flwr.gif" title="flower" width="224" height="162">
         <img src="img/img_tree.gif" title="tree" width="200" height="358">
+        <hr>
+
+        <h2 class="h2">CSS [attribute*=&quot;value&quot;] Selector</h2>
+        <p>The <code class="w3-codespan">[attribute*=&quot;value&quot;]</code> selector is used to select elements whose attribute 
+        value contains a specified value.</p>
+        <p>The following example selects all elements with a class attribute value that 
+        contains &quot;te&quot;:</p>
+        <p><strong>Note:</strong> The value does not have to be a whole word!&nbsp;&nbsp;</p>
+        <div class="first_test">The first div element.</div>
+        <div class="second">The second div element.</div>
+        <div class="my-test">The third div element.</div>
+        <p class="mytest">This is some text in a paragraph.</p>
     </body>
 </html>

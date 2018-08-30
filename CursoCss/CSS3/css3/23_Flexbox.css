@@ -10,47 +10,152 @@ h2 {
     text-align: center;
 }
 
-:root {
-    --background-color: #f1f1f1;
-    --margin: 10px;
-    --padding: 20px;
-    --font-size: 30px;
-    --text-align: center;
-    --line-height: 75px;
-    --background: dodgerblue;
-    --display: flex;
-    --flex-direction: column;
-    --flex-direction: column-reverse;
-}
-
 #flex-container {
     background-color: dodgerblue;
     display: flex;
 }
 
 #flex-container > div {
-    background-color: var(--background-color);
-    margin: var(--margin);
-    padding: var(--padding);
-    font-size: var(--font-size);
+    background-color: #f1f1f1;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
 }
 
 #flex-container1 {
-    background: var(--background);
-    display: var(--display);
-    /*flex-direction: var(--flex-direction);*/
+    display: flex;
+    flex-direction: column;
+    background-color: dodgerblue;
 }
 
 #flex-container1 > div {
-    background-color: var(--background-color);
-    margin: var(--margin);
-    font-size: var(--font-size);
-    text-align: var(--text-align);
-    line-height: var(--line-height);
+    background-color: #f1f1f1;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
 }
 
-#flex-container1 {
-    background: var(--background);
-    display: var(--display);
-    flex-direction: var(--flex-direction);
+#flex-container-column {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: dodgerblue;
+}
+
+#flex-container-column > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+#flex-container-row {
+    display: flex;
+    flex-direction: row;
+    background-color: dodgerblue;
+}
+
+#flex-container-row > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+#flex-container-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: dodgerblue;
+}
+
+#flex-container-row-reverse > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+#flex-container-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: dodgerblue;
+}
+
+#flex-container-wrap > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+#flex-container-nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: dodgerblue;
+}
+
+#flex-container-nowrap > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+#flex-container-flow {
+    display: flex;
+    flex-flow: row wrap; 
+    background-color: dodgerblue;
+}
+
+#flex-container-flow > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+#flex-container-justify {
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+}
+
+#flex-container-justify > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+#flex-container-align {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    background-color: dodgerblue;
+}
+
+#flex-container-align > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
 }

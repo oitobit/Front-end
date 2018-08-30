@@ -1,18 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
     <head>
-        <title>CSS Layout - The display Property</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="text.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Layout - The display Property</title>
+        <link rel="stylesheet" href="css/19_Display.css">
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+        <script type="text/JavaScript">
+            function myHide () {
+                document.getElementById("none").style.display = "none";
+            }
+
+            function myShow () {
+                document.getElementById("none").style.display = "block";
+            }
+
+            function myvisibility () {
+                document.getElementById("visibility").style.visibility = "hidden";
+            }
+        </script>
     </head>
     <body>
-        <h1>CSS Layout - The display Property</h1>
+        <h1 class="h1">CSS Layout - The display Property</h1>
         <hr>
         <p>
             The <span class="pink">display</span> property is the most important CSS property for controlling layout.
         </p>
         <hr>
-        <h2>The display Property</h2>
+        <h2 class="h2">The display Property</h2>
         <p>
             The display property specifies if/how an element is displayed.
         </p>
@@ -20,7 +38,7 @@
             Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.
         </p>
         <hr>
-        <h2>Block-level Elements</h2>
+        <h2 class="h2">Block-level Elements</h2>
         <p>
             A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
         </p>
@@ -40,7 +58,7 @@
             <li>section</li>
         </ul>
         <hr>
-        <h2>Inline Elements</h2>
+        <h2 class="h2">Inline Elements</h2>
         <p>
             An inline element does not start on a new line and only takes up as much width as necessary.
         </p>
@@ -56,7 +74,7 @@
             <li>img</li>
         </ul>
         <hr>
-        <h2>Display: none;</h2>
+        <h2 class="h2">Display: none;</h2>
         <p>
             display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved.
         </p>
@@ -64,7 +82,7 @@
             The &lt;script> element uses display: none; as default. 
         </p>
         <hr>
-        <h2>Override The Default Display Value</h2>
+        <h2 class="h2">Override The Default Display Value</h2>
         <p>
             As mentioned, every element has a default display value. However, you can override this.
         </p>
@@ -75,12 +93,18 @@
             A common example is making inline &lt;li> elements for horizontal menus:
         </p>
         <p>Display a list of links as a horizontal menu:</p>
+        <hr>
 
-<ul>
-  <li><a href="/html/default.asp" target="_blank">HTML</a></li>
-  <li><a href="/css/default.asp" target="_blank">CSS</a></li>
-  <li><a href="/js/default.asp" target="_blank">JavaScript</a></li>
-</ul>
-   <div class="div2">rodrigo sous de frnaça</div>
+        <h2 class="h2">Hide an Element - display:none or visibility:hidden?</h2>
+        <div id="none">
+            <img src="https://www.w3schools.com/css/img_5terre.jpg" alt=""><br>
+        </div>
+        <button onclick="myHide()">Display:none;
+        </button>
+        <button onclick="myShow()">Display:block;</button>
+        <div id="visibility">
+            <img src="https://www.w3schools.com/css/img_forest.jpg" alt="">
+        </div>
+        <button onclick="myvisibility()">visibility:hidden;</button>
     </body>
 </html>

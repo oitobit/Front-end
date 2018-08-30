@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript HTML DOM EventListener</title>
+    <style>
+        html, body {
+            width: 75%;
+            margin: 20px auto;
+            font-size: 1em;
+            font-family: Verdana, sans-serif;
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-weight: 500;
+        }
+        #myDIV {
+            background-color: coral;
+            border: 1px solid;
+            padding: 50px;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript HTML DOM EventListener</h1>
+    <hr>
+    <p>The addEventListener() method</p>
+    <hr>
+    <h2>Syntax</h2>
+    <div class="w3-code w3-border notranslate"><div>
+    <em>element</em>.addEventListener(<em>event, function, useCapture</em>);</div></div>
+    <p>The first parameter is the type of the event (like &quot;click&quot; or &quot;mousedown&quot;). </p>
+    <p>The second parameter is the function we want to call when the event occurs. </p>
+    <p>The third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional.</p>
+    <hr>
+
+    <h2>Add an Event Handler to an Element</h2>
+    <button id="btn">Clique-me!</button>
+    <hr>
+
+    <h2>Add Many Event Handlers to the Same Element</h2>
+    <p>The addEventListener() method allows you to add many events to the same element, without overwriting existing events:</p>
+
+    <button id="btn2">Clique-me!</button>
+    <hr>
+
+    <h2>The removeEventListener() method</h2>
+    <p>The removeEventListener() method removes event handlers that have been attached with the addEventListener() method:</p>
+    <div id="myDIV">This div element has an onmousemove event handler that displays a random number every time you move your mouse inside this orange field.
+        <p>Click the button to remove the div's event handler.</p>
+        <button onclick="removeHandler()" id="myBtn">Remove</button>
+    </div>
+
+    <p id="demo"></p>
+
+
+    <script src="JS/09_EventListener.js"></script>
+</body>
+</html>

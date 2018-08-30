@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Effects - Animation</title>
+    <link rel="stylesheet" href="myCss-style.css">
+    <style>
+        div.divAnimate {
+            background-color: lightblue;
+            position: relative;
+            height: 100px;
+            width: 100px;
+        }
+        div.Animate2 {
+            background-color: lightblue;
+            position: relative;
+            height: 100px;
+            width: 100px;
+        }
+        div.animate3 {
+            background-color: lightblue;
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script src="jquery.min.js"></script>    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $(".divAnimate").animate({left:'250px'},"fast")
+            })
+        })
+        $(document).ready(function() {
+            $(".btn2").click(function(){
+                $(".Animate2").animate({
+                    backgroundColor: 'green',
+                    left: '250px',
+                    opacity: "0.5",
+                    width: '150px',
+                    height: '150px'
+                },"fast")
+            })
+        })
+        $(document).ready(function(){
+            $(".btn3").click(function() {
+                $(".animate3").animate({
+                    left: "250px",
+                    width: "+=150px",
+                    height: "+=150px"
+                },"fast")
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1 class="h1-ro">jQuery Effects - Animation</h1>
+    <hr>
+    <p>The jQuery animate() method lets you create custom animations.</p>
+    <hr>
+    <h2 class="h2-ro">jQuery Animations - The animate() Method</h2>
+    <p>The jQuery animate() method is used to create custom animations.</p>
+    <p><b>Syntax:</b></p>
+    <div class="w3-code w3-border notranslate"><div>
+    $(<i>selector</i>).animate({<i>params</i>}<i>,speed,callback</i>);</div></div>
+    <p>The required params parameter defines the CSS properties to be animated.</p>
+    <p>The optional speed parameter specifies the duration of the effect. It can take the following values: &quot;slow&quot;, &quot;fast&quot;, or milliseconds.</p>
+    <p>The optional callback parameter is a function to be executed after the  animation completes.</p>
+    <p>The following example demonstrates a simple use of the animate() method; it moves a &lt;div&gt; element to the right, until it has reached a left property of 250px:</p>
+
+    <div class="w3-panel w3-note">
+        <p>By default, all HTML elements have a static position, and cannot be moved.<br> Tmanipulate the position, remember to first set the CSS position property of the elemento relative, fixed, or absolute!</p>
+    </div>
+    <button class="btn">Start Animation</button>
+    <br><br>
+    <div class="divAnimate"></div>
+    <hr>
+
+    <h2 class="h2">jQuery animate() - Manipulate Multiple Properties</h2>
+    <p>Notice that multiple properties can be animated at the same time:</p>
+    <div class="w3-panel w3-note">
+        <p><b>Is it possible to manipulate ALL CSS properties with the animate() method?</b><br><br>
+        Yes, almost! However, there is one important thing to remember: all property 
+        names must be camel-cased when used with the animate() method: You will need to 
+        write paddingLeft instead of padding-left, marginRight instead of margin-right, and so on. <br><br>
+        Also, color animation is not included in the core jQuery library.<br>
+        If you want to animate color, you need to download the
+        <a href="http://plugins.jquery.com/" target="_blank">Color 
+        Animations plugin</a> from jQuery.com.</p>
+    </div>
+            
+    <button class="btn2">Start animate</button>
+    <br><br>
+    <div class="Animate2"></div>
+    <hr>
+
+    <h2 class="h2-ro">jQuery animate() - Using Relative Values</h2>
+    <p>It is also possible to define relative values (the value is then relative to the element's current value). This is done by putting += or -= in front of the value:</p>
+
+    <button class="btn3">Start animate</button>
+    <br><br>
+    <div class="animate3"></div>
+            
+    </body>
+    </html>

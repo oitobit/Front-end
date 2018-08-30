@@ -4,9 +4,29 @@
     <link rel="stylesheet" href="18_Strings-Methods.css">
     <meta charset="utf-8">
     <title>JavaScript Strings Methods</title>
+    <style>
+      html, body {
+        /* width: 75%; */
+        /* margin: 20px auto; */
+        margin: 30px;
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      
+      }
+      .h1, .h2 {
+        text-align: center;
+        font-weight: 500;
+      }
+
+      p[id] {
+        color: crimson;
+        font-weight: bold;
+      }
+
+    </style>
   </head>
   <body>
-    <h1>
+    <h1 class="h1">
       JavaScript String Methods
     </h1>
       <hr>
@@ -16,7 +36,7 @@
       <hr>
       <p id="demo"></p>
 
-    <h2>String Methods and Properties</h2>
+    <h2 class="h2">String Methods and Properties</h2>
     <p>
       Primitive values, like "John Doe", cannot have properties or methods (because they are not objects).
     </p>
@@ -24,14 +44,14 @@
       But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.
     </p><hr>
 
-  <h1>String Length</h1>
+  <h2 class="h2">String Length</h2>
     <p>
       The <b>Length</b> property return the lenght of is String.
     </p>
     <p id="demo2"></p>
     <hr>
 
-    <h2>
+    <h2 class="h2">
       Finding a String in a String
     </h2>
      <p>
@@ -39,9 +59,30 @@
      </p>
      <p id="p1">Please locate where 'locate' occurs!.</p>
 
-    <button onclick="myFunction()">Try it</button>
-
     <p id="demo3"></p>
+
+    <p>The <strong>lastIndexOf()</strong> method returns the index of the <strong>last</strong> occurrence of a specified text in a string:</p>
+    <p id="demo4"></p>
+
+    <p>Both methods accept a second parameter as the starting position for the search:</p>
+    <p id="demo5"></p>
+
+    <h2 class="h2">Searching for a String in a String</h2>
+    <p>The search() method searches a string for a specified value and returns the position of the match:</p>
+    <p id="demo6"></p>
+    <hr>
+
+    <h2 class="h2">Did You Notice?</h2>
+    <p>The two methods, indexOf() and search(), are <strong>equal?</strong></p>
+    <p>They accept the same arguments (parameters), and return the same value?</p>
+    <p>The two methods are <strong>NOT</strong> equal. These are the differences:</p>
+    <ul>
+      <li>The search() method cannot take a second start position argument.</li>
+      <li>The indexOf() method cannot take powerful search values (regular expressions).</li>
+    </ul>
+    <p>You will learn more about regular expressions in a later chapter.</p>
+    <hr>
+
 
       <script type="text/javascript" src="JS/18_Strings-Methods.js"></script>
   </body>
