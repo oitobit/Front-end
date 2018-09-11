@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Effects - Sliding</title>
+    <link rel="stylesheet" href="myCss-style.css">
+    <style>
+        .panel, .flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        .panel {
+            padding: 50px;
+            display: none;
+        }
+
+        .panelUp, .flipUp {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        .panelUp {
+            padding: 50px;
+        }
+
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".flip").click(function(){
+                $(".panel").slideDown("slow");
+            })
+        })
+
+        $(document).ready(function(){
+            $(".flipUp").click(function(){
+                $(".panelUp").slideUp("slow");
+            })
+        })
+
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideToggle("slow");
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1 class="h1-ro">jQuery Effects - Sliding</h1>
+    <hr>
+    <p>The jQuery slide methods slide elements up and down.</p>
+    <hr>
+    <h2 class="h2-ro">jQuery Sliding Methods</h2>
+    <p>With jQuery you can create a sliding effect on elements.</p>
+    <p>jQuery has the following slide methods:</p>
+    <ul>
+        <li>slideDown()</li>
+        <li>slideUp()</li>
+        <li>slideToggle()</li>
+    </ul>
+    <hr>
+
+    <h2>jQuery slideDown() Method</h2>
+    <p>The jQuery slideDown() method is used to slide down an element.</p>
+    <p><b>Syntax:</b></p>
+    <div class="w3-code w3-border notranslate"><div>
+    $(<i>selector</i>).slideDown(<i>speed,callback</i>);</div></div>
+    <p>The optional speed parameter specifies the duration of the effect. It can take the following values: &quot;slow&quot;, &quot;fast&quot;, or milliseconds.</p>
+    <p>The optional callback parameter is a function to be executed after the sliding completes.</p>
+    <p>The following example demonstrates the slideDown() method:</p>
+    
+    <div class="flip">Click to slide down panel</div>
+    <div class="panel">Hellor wordl!</div>
+
+    <hr>
+
+    <h2>jQuery slideUp() Method</h2>
+    <p>The jQuery slideUp() method is used to slide up an element.</p>
+    <p><b>Syntax:</b></p>
+    <div class="w3-code w3-border notranslate"><div>
+    $(<i>selector</i>).slideUp(<i>speed,callback</i>);</div></div>
+    <p>The optional speed parameter specifies the duration of the effect. It can take the following values: &quot;slow&quot;, &quot;fast&quot;, or 
+    milliseconds.</p>
+    <p>The optional callback parameter is a function to be executed after the sliding completes.</p>
+    <p>The following example demonstrates the slideUp() method:</p>
+    <div class="w3-example">
+    <h3>Example</h3>
+    <div class="w3-code notranslate jsHigh">
+    $(&quot;#flip&quot;).click(function(){<br>
+    &nbsp;&nbsp;&nbsp; $(&quot;#panel&quot;).slideUp();<br>
+    });</div>
+    <a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjquery_slide_up">Try it Yourself &raquo;</a>
+    </div>
+
+    <div class="flipUp">Click to slide down panel</div>
+    <div class="panelUp">Hellor wordl!</div>
+
+    <hr>
+
+    <h2>jQuery slideToggle() Method</h2>
+    <p>The jQuery slideToggle() method toggles between the slideDown() and slideUp() 
+    methods.</p>
+    <p>If the elements have been slid down, slideToggle() will slide them up.</p>
+    <p>If the elements have been slid up, slideToggle() will slide them down. </p>
+    <div class="w3-code w3-border notranslate"><div>
+    $(<i>selector</i>).slideToggle(<i>speed,callback</i>);</div></div>
+    <p>The optional speed parameter can take the following values: &quot;slow&quot;, &quot;fast&quot;, milliseconds.</p>
+    <p>The optional callback parameter is a function to be executed after the 
+    sliding completes.</p>
+    <p>The following example demonstrates the slideToggle() method:</p>
+
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">Hellor wordl!</div>
+
+</body> 
+</html>

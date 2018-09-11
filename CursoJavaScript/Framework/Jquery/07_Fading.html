@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Effects - Fading</title>
+    <link rel="stylesheet" href="myCss-style.css">
+    <style>
+        #div1 {
+            width: 80px;
+            height: 80px;
+            background-color: lightcoral;
+            border-radius: 3px;
+            display: none;
+        }
+        #div2 {
+            width: 80px;
+            height: 80px;
+            background-color: lightgreen;
+            border-radius: 3px;
+            display: none;
+        }
+        #div3 {
+            width: 80px;
+            height: 80px;
+            background-color: lightblue;
+            border-radius: 3px;
+            display: none;
+        }
+        #div4 {
+            width: 80px;
+            height: 80px;
+            background-color: lightcoral;
+            border-radius: 3px;
+        }
+        #div5 {
+            width: 80px;
+            height: 80px;
+            background-color: lightgreen;
+            border-radius: 3px;
+        }
+        #div6 {
+            width: 80px;
+            height: 80px;
+            background-color: lightblue;
+            border-radius: 3px;
+        }
+        #div7 {
+            width: 80px;
+            height: 80px;
+            background-color: lightcoral;
+            border-radius: 3px;
+        }
+        #div8 {
+            width: 80px;
+            height: 80px;
+            background-color: lightgreen;
+            border-radius: 3px;
+        }
+        #div9 {
+            width: 80px;
+            height: 80px;
+            background-color: lightblue;
+            border-radius: 3px;
+        }
+        #div10 {
+            width: 80px;
+            height: 80px;
+            background-color: lightcoral;
+            border-radius: 3px;
+        }
+        #div11 {
+            width: 80px;
+            height: 80px;
+            background-color: lightgreen;
+            border-radius: 3px;
+        }
+        #div12 {
+            width: 80px;
+            height: 80px;
+            background-color: lightblue;
+            border-radius: 3px;
+        }
+    </style>
+
+    <script src="jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(3000);
+            })
+        })
+
+        $(document).ready(function(){
+            $("#btn2").click(function(){
+                $("#div4").fadeOut();
+                $("#div5").fadeOut("slow");
+                $("#div6").fadeOut(3000);
+            })
+        })
+
+        $(document).ready(function(){
+            $("#btn3").click(function(){
+                $("#div7").fadeToggle();
+                $("#div8").fadeToggle("slow");
+                $("#div9").fadeToggle(3000);
+            })
+        })
+
+        $(document).ready(function(){
+            $("#btn4").click(function(){
+                $("#div10").fadeTo("slow", 0.15);
+                $("#div11").fadeTo("slow", 0.4);
+                $("#div12").fadeTo("slow", 0.7);
+            })
+        })
+
+    </script>
+
+</head>
+<body>
+    <h1 class="h1-ro">jQuery Effects - Fading</h1>
+    <hr>
+    <p>With jQuery you can fade elements in and out of visibility.</p>
+    <hr>
+
+    <h2 class="h2-ro">jQuery Fading Methods</h2>
+    <p>With jQuery you can fade an element in and out of visibility.</p>
+    <p>jQuery has the following fade methods:</p>
+    <ul>
+      <li>fadeIn()</li>
+      <li>fadeOut()</li>
+      <li>fadeToggle()</li>
+      <li>fadeTo()</li>
+    </ul>
+    <hr>
+
+    <h2 class="h2-ro">jQuery fadeIn() Method</h2>
+    <p>The jQuery fadeIn() method is used to fade in a hidden element.</p>
+    <p><b>Syntax:</b></p>
+    <div class="w3-code w3-border notranslate jsHigh"><div>
+    $(<i>selector</i>).fadeIn(<i>speed,callback</i>);</div></div>
+    <p>The optional speed parameter specifies the duration of the effect. It can take the following values: &quot;slow&quot;, &quot;fast&quot;, or milliseconds.</p>
+    <p>The optional callback parameter is a function to be executed after the fading completes.</p>
+    <p>The following example demonstrates the fadeIn() method with different parameters:</p>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <br>
+    <button id="btn">Clique-me!</button>
+    <hr>
+    
+    <h2>jQuery fadeOut() Method</h2>
+    <p>The jQuery fadeOut() method is used to fade out a visible element.</p>
+    <p><b>Syntax:</b></p>
+    <div class="w3-code w3-border notranslate"><div>
+    $(<i>selector</i>).fadeOut(<i>speed,callback</i>);</div></div>
+    <p>The optional speed parameter specifies the duration of the effect. It can take the following     values: &quot;slow&quot;, &quot;fast&quot;, or 
+    milliseconds.</p>
+    <p>The optional callback parameter is a function to be executed after the 
+    fading completes.</p>
+    <p>The following example demonstrates the fadeOut() method with different 
+    parameters:</p>
+    <div id="div4"></div>
+    <div id="div5"></div>
+    <div id="div6"></div>
+    <br>
+    <button id="btn2">Clique-me!</button>
+    <hr>
+
+    <h2 class="h2-ro">jQuery fadeToggle() Method</h2>
+    <p>The jQuery fadeToggle() method toggles between the fadeIn() and fadeOut() 
+    methods.</p>
+    <p>If the elements are faded out, fadeToggle() will fade them in.</p>
+    <p>If the elements are faded in, fadeToggle() will fade them out. </p>
+    <p><b>Syntax:</b></p>
+    <div class="w3-code w3-border notranslate"><div>
+    $(<i>selector</i>).fadeToggle(<i>speed,callback</i>);</div></div>
+    <p>The optional speed parameter specifies the duration of the effect. It can take the following     values: &quot;slow&quot;, &quot;fast&quot;, or 
+    milliseconds.</p>
+    <p>The optional callback parameter is a function to be executed after the 
+    fading completes.</p>
+    <p>The following example demonstrates the fadeToggle() method with different 
+    parameters:</p>
+    <div id="div7"></div>
+    <div id="div8"></div>
+    <div id="div9"></div>
+    <br>
+    <button id="btn3">Clique-me!</button>
+    <hr>
+
+    <h2>jQuery fadeTo() Method</h2>
+    <p>The jQuery fadeTo() method allows fading to a given opacity (value between 0 and 1).</p>
+    <p><b>Syntax:</b></p>
+    <div class="w3-code w3-border notranslate jsHigh"><div>
+    $(<i>selector</i>).fadeTo(<i>speed,opacity,callback</i>);</div></div>
+    <p>The required speed parameter specifies the duration of the effect. It can take the following     values: &quot;slow&quot;, &quot;fast&quot;, or milliseconds.</p>
+    <p>The required opacity parameter in the fadeTo() method specifies fading to a given opacity (value between 0 and 1).</p>
+    <p>The optional callback parameter is a function to be executed after the function completes.</p>
+    <p>The following example demonstrates the fadeTo() method with different parameters:</p>
+
+    <div id="div10"></div>
+    <div id="div11"></div>
+    <div id="div12"></div>
+    <br>
+    <button id="btn4">Clique-me!</button>
+
+</body>
+</html>

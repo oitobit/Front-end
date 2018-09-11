@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Effect - Stop Animations</title>
+    <link rel="stylesheet" href="https://mycssframework.000webhostapp.com/myCss-style.css">
+    <style>
+        #panel, #flip {
+            padding: 5px;
+            font-size: 18px;
+            text-align: center;
+            background-color: #555;
+            color: white;
+            border: solid 1px #666;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="h2-ro">jQuery Stop Animations</h2>
+    <hr>
+    <p>The jQuery stop() method is used to stop animations or effects before it is finished.</p>
+    <hr>
+    
+    <h2>jQuery stop() Method</h2>
+    <p>The jQuery stop() method is used to stop an animation or effect before it is finished.</p>
+    <p>The stop() method works for all jQuery effect functions, including sliding, fading and custom animations.</p>
+    <p><b>Syntax:</b></p>
+    <div class="w3-code w3-border notranslate"><div>
+    $(<i>selector</i>).stop(<i>stopAll,goToEnd</i>);</div></div>
+    <p>The optional stopAll parameter specifies whether also the animation queue 
+    should be cleared or not. Default is false, which means that only the active 
+    animation will be stopped, allowing any queued animations to be performed 
+    afterwards.</p>
+    <p>The optional goToEnd parameter specifies whether or 
+    not to complete the current animation immediately. Default is false.</p>
+    <p>So, by default, the stop() method kills the current animation being performed 
+    on the selected element.</p>
+    <p>The following example demonstrates the stop() method, with no parameters:</p>
+    <div class="w3-example">
+
+    <button id="btn">Stop sliding</button>
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">Hello world!</div>
+
+
+    <!-- Código JavaScript -->
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideToggle(5000);
+            });
+            $("#btn").click(function(){
+                $("#panel").stop();
+            })
+        })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery - Syntax</title>
+    <link rel="stylesheet" href="myCss-style.css">
+
+     <!--Código JavaScript-->
+     <script src="jquery.min.js"></script>
+     <script type="text/javascript">
+     //Códificação JavaScript Aqui
+        $(document).ready(function(){
+            $("#ocultar").click(function(){
+                $("#demo").hide();
+            });
+            $("#mostrar").click(function(){
+                $("#demo").show();
+            });
+        });
+     </script>
+</head>
+<body>
+    <h1 class="h1-ro">jQuery Syntax</h1>
+    <hr>
+    <p>With jQuery you select (query) HTML elements and perform "actions" on them.</p>
+    <hr>
+    
+    <h2 class="h2-ro">jQuery Syntax</h2>
+    <p>The jQuery syntax is tailor-made for <b>selecting</b> HTML elements and performing some  <b>action</b> on the element(s).</p>
+    <p>Basic syntax is: <b>$(<i>selector</i>).<i>action</i>()</b></p>
+    <ul>
+        <li>A $ sign to define/access jQuery</li>
+        <li>A (<i>selector</i>) to &quot;query (or find)&quot; HTML elements</li>
+        <li>A jQuery <i>action</i>() to be performed on the element(s)</li>
+    </ul>
+
+    <p id="demo">Olá!</p>
+    <button id="ocultar">Ocutar!</button>
+    <button id="mostrar">Mostrar!</button>
+
+    <p>Examples:</p>
+    <p>$(this).hide() - hides the current element.</p>
+    <p>$(&quot;p&quot;).hide() - hides all &lt;p&gt; elements.</p>
+    <p>$(&quot;.test&quot;).hide() - hide<!--  -->s all elements with class=&quot;test&quot;.</p>
+    <p>$(&quot;#test&quot;).hide() - hides the element with id=&quot;test&quot;.</p>
+
+    <div class="w3-panel w3-note">
+        <p><b>Are you familiar with CSS selectors?</b><br><br>
+        jQuery uses CSS syntax to select elements. You will learn more about the selector syntax in the next chapter of this tutorial.</p>
+    </div>
+    <hr>
+
+    <h2 class="h2-ro">The Document Ready Event</h2>
+    <p>You might have noticed that all jQuery methods in our examples, are inside a document ready  event:</p>
+    <div class="w3-code w3-border notranslate jsHigh">
+        <div>
+        $(document).ready(function(){<br>
+        <br>&nbsp;&nbsp; <i>// jQuery methods go here...</i><br><br>
+        });
+        </div>
+    </div>
+    <p>This is to prevent any jQuery code from running before the document is finished loading (is ready).</p>
+    <p>It is good practice to wait for the document to be fully loaded and ready before working with it. This also allows you to have your JavaScript code before the body of your document, in the head section. </p>
+    <p>Here are some examples of actions that can fail if methods are run before the document is fully loaded:</p>
+    <ul>
+        <li>Trying to hide an element that is not created yet</li>
+        <li>Trying to get the size of an image that is not loaded yet</li>
+      </ul>
+      <p><b>Tip:</b> The jQuery team has also created an even shorter method for the 
+      document ready event:</p>
+      <div class="w3-code w3-border notranslate jsHigh">
+        <div>
+        $(function(){<br>
+        <br>&nbsp;&nbsp; <i>// jQuery methods go here...</i><br><br>
+        });
+        </div>
+        </div>
+        <p>Use the syntax you prefer. We think that the document ready event is easier to understand when reading the code.</p>
+</body>
+</html>

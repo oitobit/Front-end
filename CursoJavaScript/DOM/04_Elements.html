@@ -1,0 +1,114 @@
+<!DOCYTPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elements</title>
+        <style>
+            html, body {
+                width: 75%;
+                margin: 20px auto;
+                font-family: Verdana, sans-serif;
+            }
+            h2 {
+                text-align: center;
+                font-weight: 300;
+            }
+        </style>
+    </head>
+    <body>
+        
+        
+<h2>Finding HTML Elements</h2>
+<p>Often, with JavaScript, you want to manipulate HTML elements.</p>
+<p>To do so, you have to find the elements first. There are a couple of ways to do this:</p>
+<ul>
+  <li>Finding HTML elements by id</li>
+  <li>Finding HTML elements by tag name </li>
+  <li>Finding HTML elements by class name</li>
+  <li>Finding HTML elements by CSS selectors</li>
+  <li>Finding HTML elements by HTML object collections</li>
+</ul>
+<hr>
+
+    <h2>Finding HTML Element by Id</h2>
+    <p>The easiest way to find an HTML element in the DOM, is by using the element id.</p>
+    <p>This example finds the element with id=&quot;intro&quot;:</p>
+    <p id="intro">Hello World!</p>
+    <p>This example demonstrates the <b>getElementById</b> method!</p>
+
+<p id="demo"></p>
+<hr>
+
+<h2>Finding HTML Elements by Tag Name</h2>
+<p>This example finds all &lt;p&gt; elements:</p>
+<p>Hello World!</p>
+
+<p>The DOM is very useful.</p>
+<p>This example demonstrates the <b>getElementsByTagName</b> method</p>
+
+<p id="demo2"></p>
+
+This example finds the element with id="main", and then finds all <p> elements inside "main":
+
+        <p>Hello World!</p>
+
+        <div id="main">
+        <p>The DOM is very useful.</p>
+        <p>This example demonstrates the <b>getElementsByTagName</b> method</p>
+        </div>
+        
+        <p id="demo3"></p>
+        <hr>
+
+        <h2>Finding HTML Elements by Class Name</h2>
+        <p>If you want to find all HTML elements with the same class name, use 
+        getElementsByClassName().<br>
+        </p>
+
+        <p>This example returns a list of all elements with class=&quot;intro&quot;.</p>
+
+        <p>Hello World!</p>
+
+<p class="intro">The DOM is very useful.</p>
+<p class="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+
+<p id="demo4"></p>
+
+<hr>
+<h2>Finding HTML Elements by CSS Selectors</h2>
+<p>If you want to find all HTML elements that matches a specified CSS selector 
+(id, class names, types, attributes, values of attributes, etc), use the querySelectorAll() method.<br>
+</p>
+
+<p>This example returns a list of all &lt;p&gt; elements with class=&quot;intro&quot;.</p>
+
+<p>Hello World!</p>
+
+<p class="intro">The DOM is very useful.</p>
+<p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+
+<p id="demo5"></p>
+
+
+<hr>
+<h2>Finding HTML Elements by HTML Object Collections</h2>
+<p>This example finds the form element with id=&quot;frm1&quot;, in the forms 
+collection, and displays all element 
+values:</p>
+<form id="frm1" action="/action_page.php">
+    First name: <input type="text" name="fname" value="Donald"><br>
+    Last name: <input type="text" name="lname" value="Duck"><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+  
+  <p>Click "Try it" to display the value of each element in the form.</p>
+
+  <button onclick="myFunction()">Try it</button>
+
+<p id="demo6"></p>
+
+        <script type="text/javascript" src="JS/04_Elements.js">
+        </script>
+    </body>
+</html>

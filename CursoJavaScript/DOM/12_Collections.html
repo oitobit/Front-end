@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript HTML DOM Collections</title>
+    <style>
+        .w3-note {
+            background-color: #ffffcc;
+            border-left: 6px solid #ffeb3b;
+        }
+        .w3-panel {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        
+        }
+        .w3-container, .w3-panel {
+            padding: 0.01em 16px;
+        }
+        html, body {
+            width: 75%;
+            margin: 20px auto;
+            font-size: 1em;
+            font-family: Verdana, sans-serif;
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <h2>JavaScript HTML DOM Collections</h2>
+    <hr>
+    <h2>The HTMLCollection Object</h2>
+    <p>The getElementsByTagName() method returns an <b>HTMLCollection</b> object.</p>
+    <p>An HTMLCollection object is 
+    an array-like list (collection) of HTML elements.</p>
+    <p>The following code selects all &lt;p&gt; elements in a document:</p>
+    <p>Paragraph1</p>
+    <p>Paragraph2</p>
+    <p id="demo"></p>
+    <p><strong>Note</strong>: The index starts at 0.</p>
+    <hr>
+
+    <h2>HTML HTMLCollection Length</h2>
+    <p>The length property defines the number of elements in an HTMLCollection:</p>
+    <span>span1</span><br>
+    <span>span2</span><br>
+    <span id="span"></span>
+    <p>Example explained:</p>
+    <ol>
+        <li>Create a collection of all &lt;p&gt; elements</li>
+        <li>Display the length of the collection</li>
+    </ol>
+    <div class="w3-panel w3-note">
+        <p><strong>An HTMLCollection is NOT an array!</strong><br></p>
+            <p>An HTMLCollection may look 
+        like an array, but it is not.</p>
+            <p>You can loop through the list and refer to 
+        the elements with a number (just like an array).</p>
+            <p>However, you cannot use array methods like valueOf(), pop(), push(), 
+        or join() on an HTMLCollection.</p>
+    </div>
+
+    <script src="JS/12_Collections.js"></script>
+</body>
+</html>
