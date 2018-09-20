@@ -27,6 +27,33 @@
         .w3-border {
             border: 1px solid #ccc !important;
         }
+        
+        hr {
+            border: 0;
+            border-top-color: currentcolor;
+            border-top-style: none;
+            border-top-width: 0px;
+            border-top: 1px solid #eee;
+            margin: 20px 0;
+        }
+
+        p[id] {
+            color: crimson;
+            font-weight: bold;
+        }
+
+        .w3-note {
+            background-color: #ffffcc;
+            border-left: 6px solid #ffeb3b;
+        }
+
+        .w3-panel {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+        .w3-container, .w3-panel {
+            padding: 0.01em 16px;
+        }
     </style>
 </head>
 <body>
@@ -50,14 +77,22 @@
 
     <h2>Window Screen Width</h2>
     <p>The screen.width property returns the width of the visitor's screen in pixels.</p>
+    <p id="demo"></p>
+    <hr>
+
+    <h2>Window Screen Height</h2>
+    <p>The screen.height property returns the height of the visitor's screen in pixels.</p>
+    <p id="demo2"></p>
     <hr>
 
     <h2>Window Screen Available Width</h2>
     <p>The screen.availWidth property returns the width of the visitor's screen, in pixels, minus interface features like the Windows Taskbar.</p>
+    <p id="demo3"></p>
     <hr>
 
     <h2>Window Screen Available Height</h2>
     <p>The screen.availHeight property returns the height of the visitor's screen, in pixels, minus interface features like the Windows Taskbar.</p>
+    <p id="demo4"></p>
     <hr>
 
     <h2>Window Screen Color Depth</h2>
@@ -69,10 +104,21 @@
     </ul>
     <p>Older computers used 16 bits: 65,536 different "High Colors" resolution.</p>
     <p>Very old computers, and old cell phones used 8 bits: 256 different "VGA colors".</p>
+    <p id="demo5"></p>
+    <div class="w3-panel w3-note">
+        <p>The #rrggbb (rgb) values used in HTML represents "True Colors" (16,777,216 different colors)</p>
+    </div>
     <hr>
 
     <h2>Window Screen Pixel Depth</h2>
     <p>The screen.pixelDepth property returns the pixel depth of the screen.</p>
+    <p id="demo6"></p>
+    <div class="w3-panel w3-note">
+        <p>For modern computers, Color Depth and Pixel Depth are equal.</p>
+    </div>
+
+    <!-- Código javascript -->
+    <script src="JS/02_Screen.js"></script>
 
 </body>
 </html>
