@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/Item.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> 
+    <title>CSS Grid Item</title>
+</head>
+<body>
+    <h1>CSS Grid Item</h1>
+    <hr>
+
+    <h2 style="text-align:left;">Child Elements (Items)</h2>
+    <p>A grid <em>container</em> contains grid <em>items</em>.</p>
+    <p>By default, a container has one grid item for each column, in each row, but you can style the grid items so that they 
+    will span multiple columns and/or rows.</p>
+    <hr>
+
+    <h2>The grid-column Property:</h2>
+    <p>The <code class="w3-codespan">grid-column</code> property defines on which 
+    column(s) to place an item.</p>
+    <p>You define where the item will start, and where the item will end.</p>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>  
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>  
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+        <div class="item13">13</div>
+        <div class="item14">14</div>
+        <div class="item15">15</div>
+    </div>
+    <p>To place an item, you can refer to <em>line numbers</em>, or use the keyword &quot;span&quot; to 
+    define how many columns the item will span.</p><br><br>
+
+    <div class="grid-container2">
+        <div class="item1-span">1</div>
+        <div class="item2-span">2</div>
+        <div class="item3-span">3</div>  
+        <div class="item4-span">4</div>
+        <div class="item5-span">5</div>
+        <div class="item6-span">6</div>
+        <div class="item7-span">7</div>
+        <div class="item8-span">8</div>  
+        <div class="item9-span">9</div>
+        <div class="item10-span">10</div>
+        <div class="item11-span">11</div>
+        <div class="item12-span">12</div>
+        <div class="item13-span">13</div>
+        <div class="item14-span">14</div>
+        <div class="item15-span">15</div>
+        <div class="item16-span">16</div>
+    </div><br><br>
+    <hr>
+
+    <h2>The grid-row Property:</h2>
+    <p>The <code class="w3-codespan">grid-row</code> property defines on which row to 
+    place an item.</p>
+    <p>You define where the item will start, and where the item will end.</p>
+    <div class="grid-container-row">
+        <div class="item1-row">1</div>
+        <div class="item2-row">2</div>
+        <div class="item3-row">3</div>  
+        <div class="item4-row">4</div>
+        <div class="item5-row">5</div>
+        <div class="item6-row">6</div>
+        <div class="item7-row">7</div>
+        <div class="item8-row">8</div>  
+        <div class="item9-row">9</div>
+        <div class="item10-row">10</div>
+        <div class="item11-row">11</div>
+        <div class="item12-row">12</div>
+        <div class="item13-row">13</div>
+        <div class="item14-row">14</div>
+        <div class="item15-row">15</div>
+        <div class="item16-row">16</div>
+    </div>
+    <p>To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will span:</p><br><br>
+
+    <div class="grid-container-row2">
+        <div class="item1-row2">1</div>
+        <div class="item2-row2">2</div>
+        <div class="item3-row2">3</div>  
+        <div class="item4-row2">4</div>
+        <div class="item5-row2">5</div>
+        <div class="item6-row2">6</div>
+        <div class="item7-row2">7</div>
+        <div class="item8-row2">8</div>  
+        <div class="item9-row2">9</div>
+        <div class="item10-row2">10</div>
+        <div class="item11-row2">11</div>
+        <div class="item12-row2">12</div>
+        <div class="item13-row2">13</div>
+        <div class="item14-row2">14</div>
+        <div class="item15-row2">15</div>
+        <div class="item16-row2">16</div>
+        <div class="item17-row2">17</div>
+    </div><br><br>
+
+    <h2>The grid-area Property</h2>
+    <p>The <code class="w3-codespan">grid-area</code> property can be used as a shorthand property for the 
+    <em>grid-row-start, grid-column-start, grid-row-end </em>and the <em>grid-column-end</em> properties.</p>
+    <div class="grid-container-area">
+        <div class="item1-area">1</div>
+        <div class="item2-area">2</div>
+        <div class="item3-area">3</div>  
+        <div class="item4-area">4</div>
+        <div class="item5-area">5</div>
+        <div class="item6-area">6</div>
+        <div class="item7-area">7</div>
+        <div class="item8-area">8</div>  
+        <div class="item9-area">9</div>
+        <div class="item10-area">10</div>
+        <div class="item11-area">11</div>
+        <div class="item12-area">12</div>
+        <div class="item13-area">13</div>
+        <div class="item14-area">14</div>
+        <div class="item15-area">15</div>
+    </div>
+</body>
+</html>

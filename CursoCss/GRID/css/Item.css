@@ -1,0 +1,126 @@
+:root {
+    --color-green: rgb(66, 192, 66);
+    --color-blue: lightblue;
+}
+
+html, body {
+    max-width: 75%;
+    margin: 20px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.w3-codespan {
+    color: crimson;
+}
+
+/* grid-column */
+div.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: var(--color-blue);
+    padding: 10px;
+}
+
+div.grid-container > div {
+    background-color: var(--color-green);
+    font-size: 30px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+div.item1 {
+    grid-column: 1/5;
+}
+
+/* grid-column span */
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: var(--color-blue);
+    padding: 10px;
+  }
+
+.grid-container2 > div {
+    background-color: var(--color-green);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.item1-span {
+    grid-column: 1/ span 3;
+}
+
+/* grid-row */
+.grid-container-row {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: var(--color-blue);
+    padding: 10px;
+}
+
+.grid-container-row > div {
+    background-color: var(--color-green);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.item1-row {
+    grid-row: 1/4;
+}
+
+/* grid-row-2 */
+.grid-container-row2{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: var(--color-blue);
+    padding: 10px;
+}
+
+.grid-container-row2 > div {
+    background-color: var(--color-green);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.item1-row2 {
+    grid-row: 1 / span 2;
+}
+
+/* grid-area */
+.grid-container-area {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: var(--color-blue);
+    padding: 10px;
+}
+
+.grid-container-area > div {
+    background-color: var(--color-green);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.item8-area {
+    grid-area: 1 / 2 / 5 / 6;
+}
