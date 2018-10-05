@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Let</title>
+    <style>
+    html, body {
+        width: 75%;
+        margin: 20px auto;
+        font-size: 16px;
+        font-family: Verdana, sans-serif;
+    }
+    h1, h2 {
+        font-weight: 300;
+        text-align: center;
+    }
+    p[id] {
+        color: crimson;
+    }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Let</h1>
+    <hr>
+
+    <h2>Redeclaring Variables</h2>
+
+    <p>Redeclaring a variable using the <strong>var keyword</strong> can impose problems.</p>
+    <p>Redeclaring a variable inside a block will also redeclare the variable 
+    outside the block:</p>
+    <p id="demo"></p>
+
+    <p>Redeclaring a variable using the <strong>let keyword</strong> can solve this problem.</p>
+    <p>Redeclaring a variable inside a block will not redeclare the variable outside 
+    the block:</p>
+    <p id="demo2"></p>
+    <hr>
+
+    <h2>Loop Scope</h2>
+    <p>Using <strong>var</strong> in a loop:</p>
+    <p id="demo3"></p>
+
+    <p>Using <strong>let</strong> in a loop:</p>
+    <p id="demo4"></p>
+    <hr>
+    
+    <p>In the first example, using <strong>var</strong>, the variable declared in the loop redeclares the variable outside the loop. </p>
+    <p>In the second example, using <strong>let</strong>, the variable declared in the loop does not redeclare the variable outside the loop. </p>
+    <p>When <strong>let</strong> is used to declare the i variable in a loop, the i variable will only be visible within the loop. </p>
+
+    <script src="JS/40_Let.js"></script>
+    <!-- //Código JavaScript -->
+</body>
+</html>
