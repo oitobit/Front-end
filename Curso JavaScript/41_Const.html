@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Const</title>
+    <style>
+        html, body {
+            width: 75%;
+            margin: 20px auto;
+            font-size: 16px;
+            font-family: Verdana, sans-serif;
+        }
+        h1, h2 {
+            font-weight: 300;
+            text-align: center;
+        }
+        p[id] {
+            color: crimson;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Const</h1>
+    <hr>
+
+   <h2>Block Scope</h2>
+    <p>Declaring a variable with <strong>const</strong> is similar to <strong>let</strong> 
+    when it comes to <strong>Block Scope</strong>.</p>
+    <p>The x declared in the block, in this example, is not the same as the x declared outside the block:</p>
+    <p id="demo"></p>
+    <hr>
+
+    <h2>Assigned when Declared</h2>
+
+    <p>JavaScript const variables must be assigned a value when they are declared:</p>
+    <hr>
+
+    <h2>Not Real Constants</h2>
+    <p>The keyword const is a little misleading.</p>
+    <p>It does NOT define a constant value. It defines a constant reference to a value.</p>
+    <p>Because of this, we cannot change constant primitive values, but we can change the properties of constant objects.</p>
+    <hr>
+
+    <h2>Primitive Values</h2>
+    <p>If we assign a primitive value to a constant, we cannot change the  primitive value:&nbsp;</p>
+    <p id="demo2"></p>
+    <hr>
+
+    <h2>Constant Objects can Change</h2>
+    <p>You can change the properties of a constant object:</p>
+    <p id="demo3"></p>
+    <hr>
+
+    <h2>Constant Arrays can Change</h2>
+    <p>You can change the elements of a constant array:</p>
+    <p id="demo4"></p>
+
+    <!-- Código JavaScript -->
+    <script src="JS/41_Const.js"></script>
+</body>
+</html>
