@@ -14,6 +14,7 @@ h1, h2 {
     font-weight:400;
 }
 
+/* translate */
 div#translate {
     width:300px;
     height:100px;
@@ -29,6 +30,15 @@ div#vertical-center {
     transform: translate(400px, 50px);
 }
 
+div#other-translate {
+    background-color: lightblue;
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    -moz-transform: translate(150px, 100px);
+}
+
+/* rotate */
 div#rotate {
     width: 300px;
     height: 100px;
@@ -47,6 +57,22 @@ div#myDiv {
     -moz-transform: rotate(20deg);/*SIntaxe utlizada no mozila firefox*/
 }
 
+div#rotate2 {
+    width: 300px;
+    height: 100px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+div#myDiv2 {
+    width: 300px;
+    height: 100px;
+    background-color: lightblue;
+    border: 1px solid black;
+    -moz-transform: rotate(-30deg); /* anti-horário */
+}
+
+/* scale */
 div#scale {
     width: 300px;
     height: 100px;
@@ -55,6 +81,17 @@ div#scale {
     transform: scale(1, 2);
 }
 
+div#scale2 {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scale(1, 2);
+    float: right;
+    margin-bottom: 20px;
+}
+
+/* skew */
 div#skew {
     width: 300px;
     height: 100px;
