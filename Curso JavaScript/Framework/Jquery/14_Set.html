@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery - Set Content and Attributes</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="myCss-style.css">
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+    <h1 class="h1-ro">jQuery - <span class="color_h1">Set Content and Attributes</span></h1>
+    <hr class="break">
+
+    <h2>Set Content - text(), html(), and val()</h2>
+    <p>We will use the same three methods from the previous page to <b>set content</b>:</p>
+    <ul>
+        <li>text() - Sets or returns the text content of selected elements</li>
+        <li>html() - Sets or returns the content of selected elements (including HTML markup)</li>
+        <li>val() - Sets or returns the value of form fields</li>
+    </ul>
+    <p>The following example demonstrates how to set content with the jQuery text(), html(), 
+    and val() methods:</p>
+
+    <div class="panel">Set Content - text(), html(), and val()</div>
+    <div class="workspace">
+        <p id="test1">This is a paragraph.</p>
+        <p id="test2">This is another paragraph.</p>
+        <p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+        <button id="btn">Set text</button>
+        <button id="btn2">Set html</button>
+        <button id="btn3">Set Value</button>
+    </div>
+    <hr class="break">
+
+    <h2>Set Attributes - attr()</h2>
+    <p>The jQuery attr() method is also used to set/change attribute values.</p>
+    <p>The following example demonstrates how to change (set) the value of the href attribute 
+    in a link:</p>
+
+    <div class="panel">Set Content - text(), html(), and val()</div>
+    <div class="workspace">
+        <a href="https://www.w3schools.com" id="w3c">w3schools</a><br>
+        <button id="btn4">Change href value</button>
+    </div>
+
+
+    <!-- Código JavaScript -->
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#test1").text("Hello World!")
+            })
+            $("#btn2").click(function(){
+                $("#test2").html("<b>Hello World!</b>")
+            })
+            $("#btn3").click(function(){
+                $("#test3").val("Nika Nanes")
+            })
+        })
+        $(document).ready(function(){
+            $("#btn4").click(function(){
+                $("#w3c").text("w3school/jquery"),
+                $("#w3c").attr("href", "https://www.w3schools.com/jquery/")
+            })
+        })
+    </script>
+</body>
+</html>
