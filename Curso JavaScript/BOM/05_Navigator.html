@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Window Navigator</title>
+    <title>JavaScript Window Navigator</title>
+    <style>
+        html, body {
+            width: 75%;
+            margin: 20px auto;
+            font-size: 1em;
+            font-family: Verdana, sans-serif;
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .w3-section, .w3-code {
+            margin-top: 16px !important;
+            margin-bottom: 16px !important;
+            padding: 10px;
+        }
+
+        .w3-border {
+            border: 1px solid #ccc !important;
+        }
+        
+        hr {
+            border: 0;
+            border-top-color: currentcolor;
+            border-top-style: none;
+            border-top-width: 0px;
+            border-top: 1px solid #eee;
+            margin: 20px 0;
+        }
+
+        p[id] {
+            color: crimson;
+            font-weight: bold;
+        }
+
+        .w3-note {
+            background-color: #ffffcc;
+            border-left: 6px solid #ffeb3b;
+        }
+
+        .w3-panel {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        .w3-container, .w3-panel {
+            padding: 0.01em 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Window Navigator</h1>
+    <hr>
+    <p>The window.navigator object contains information about the visitor's browser.</p>
+    <hr>
+
+    <h2>Window Navigator </h2>
+    <p>The <strong>window.navigator</strong> object can be written without the window prefix.</p>
+    <p>Some examples:</p>
+    <ul>
+        <li>navigator.appName</li>
+        <li>navigator.appCodeName</li>
+        <li>navigator.platform</li>
+    </ul>
+    <h2>Browser Cookies</h2>
+    <p>The <strong>cookieEnabled</strong> property returns true if cookies are enabled, otherwise 
+    false:</p>
+    <p id="demo"></p>
+    <hr>
+
+    <h2>Browser Application Name</h2>
+    <p>The <strong>appName</strong> property returns the application name 
+    of the browser:</p>
+    <p id="demo2"></p>
+    <hr>
+
+    <h2>Browser Application Code Name</h2>
+    <p>The <strong>appCodeName</strong> property returns the application code name 
+    of the browser:</p>
+    <p id="demo3"></p> 
+    <hr>
+
+    <h2>The Browser Agent</h2>
+    <p>The <strong>userAgent</strong> property returns the user-agent header sent by the browser to the server:</p>
+    <p id="demo4"></p>
+
+    <script src="JS/05_Navigator.js"></script>
+</body>
+</html>
