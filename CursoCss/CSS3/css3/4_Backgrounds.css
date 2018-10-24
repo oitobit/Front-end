@@ -1,19 +1,59 @@
 html, body {
     font-size: 16px;
     font-family: Verdana, sans-serif;
-    background-color: floralwhite;
-    padding: 30px;
+    width: 75%;
+    margin: 10px auto;
 }
 
 h1, h2 {
     font-weight: 400;
+    text-align: center;
 }
 
 #example1 {
-    background-image: url(..img/img_lights.jpg), url(../img/flower-vector-icon.jpg);
-    background-position: right bottom, left top;
+    background-image: url('/home/rolinux/Dropbox/Front-end/Front-end/CursoCss/img/img_flwr.gif') ,url('https://www.w3schools.com/css/paper.gif');
     background-repeat: no-repeat, repeat;
+    background-position: bottom right, top left;
     padding: 15px;
-    width: 400px;
-    height: 200px;
+}
+
+#example2 {
+    background-image: url('/home/rolinux/Dropbox/Front-end/Front-end/CursoCss/img/img_flwr.gif');
+    background-repeat: no-repeat;
+    background-size: 100px 80px;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+#example3 {
+    background-image: url('/home/rolinux/Dropbox/Front-end/Front-end/CursoCss/img/img_flwr.gif');
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.div1 {
+    background-image: url('/home/rolinux/Dropbox/Front-end/Front-end/CursoCss/img/img_flwr.gif');
+    border: 1px solid black;
+    height:120px;
+    width:150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.div2 {
+    background-image: url('/home/rolinux/Dropbox/Front-end/Front-end/CursoCss/img/img_flwr.gif');
+    border: 1px solid black;
+    height:120px;
+    width:150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div3 {
+    background-image: url('/home/rolinux/Dropbox/Front-end/Front-end/CursoCss/img/img_flwr.gif');
+    border: 1px solid black;
+    height:120px;
+    width:150px;
+    background-repeat: no-repeat;
 }
