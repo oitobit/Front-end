@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery - Add Elements</title>
+    <link rel="stylesheet" href="myCss-style.css">
+</head>
+<body>
+    <h1 class="h1-ro">jQuery - Add Elements</h1>
+    <hr>
+    <p>With jQuery, it is easy to add new elements/content.</p>
+    <hr>
+
+    <h2 class="h2-ro">Add New HTML Content</h2>
+    <p>We will look at four jQuery methods that are used to add new content:</p>
+    <ul>
+        <li>append() - Inserts content at the end of the selected elements</li>
+        <li>prepend() - Inserts content at the beginning of the selected elements</li>
+        <li>after() - Inserts content after the selected elements</li>
+        <li>before() - Inserts content before the selected elements</li>
+    </ul>
+    <hr>
+
+    <h2 class="h2-ro">jQuery append() Method</h2>
+    <p>The jQuery append() method inserts content AT THE END of the selected HTML elements.</p>
+
+    <ol id="append">
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ol>
+    <button id="btn">Append list items</button>
+    <hr>
+
+    <h2 class="h2-ro">jQuery prepend() Method</h2>
+    <p>The jQuery prepend() method inserts content AT THE BEGINNING of the selected HTML elements.</p>
+    <ol id="prepend">
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ol>
+    <button id="btn2">Append list items</button>
+    <hr>
+
+    <h2 class="h2-ro">jQuery after() and before() Methods</h2>
+    <p>The jQuery after() method inserts content AFTER the selected HTML elements.</p>
+    <p>The jQuery before() method inserts content BEFORE the selected HTML elements.</p>
+    <img src="https://www.w3schools.com/images/w3jquery.gif" alt="jQuery" width="100" height="140">
+    <br><br>
+
+    <button id="btn3">Insert Before</button>
+    <button id="btn4">Insert After</button>
+
+
+    <!-- Código JavaScript -->
+    <script src="jquery.min.js"></script>
+    <script>
+        // jQuery append() Method
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#append").append("<li>List Item</li>");
+            })
+        })
+
+        // jQuery prepend() Method
+        $(document).ready(function() {
+            $("#btn2").click(function() {
+                $("#prepend").prepend("<li>List Item</li>");
+            })
+        })
+
+        // jQuery after() and before() Methods
+        $(document).ready(function(){
+            $("#btn3").click(function(){
+                $("img").before("<img src='https://www.w3schools.com/images/w3jquery.gif' alt='jQuery' width='100' height='140'>");
+            })
+            $("#btn4").click(function() {
+                $("img").after("<b>After</b>");
+            })
+        })
+    </script>
+</body>
+</html>
