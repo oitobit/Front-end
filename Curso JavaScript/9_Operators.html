@@ -1,44 +1,94 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <p>Valor de x é igual a: </p>
-    <p id="demo"></p>
-    <script>
-      x = 5;
-      y = 6;
-      a = x + y; // operator of addition
-      s = x - y; // operator of subtration
-      m = x * y; // operator of multiplication
-      d = x / y; // operator of division
-      r = a+s+m+d;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Comparison Operators</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        html, body {
+            width: 75%;
+            margin: 10px auto;
+        }
 
-      document.write(a + "<br>");
-      document.write(s + "<br>");
-      document.write(m + "<br>");
-      document.write(d + "<br>"); 
-      document.write(r + "<br>");
-      /*
-      The operator "=" assignments a value to a variable
-      */
-      console.log(x + y);
-      document.getElementById("demo").innerHTML = x;
+        h2 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
 
-      //JavaScript Arithmetic Operators
-      //Arithmetic operators are used to perform arithmetic on numbers:
-      document.write("<br>" + "JavaScript Arithmetic Operators" + "<br>")
-      document.write("description: addition ", x + y + "<br>")
-      document.write("description: subtraction ", x - y + "<br>")
-      document.write("description: multiplication ", x * y + "<br>")
-      document.write("description: division ", x / y + "<br>")
-      document.write("description: modulus ", x % y + "<br>")
-      document.write("description: increment ", ++ y + "<br>")
-      document.write("description: decrement ", -- y + "<br>")
+        div.panel {
+            background: -moz-linear-gradient(rgb(19, 132, 197), rgb(25, 129, 189));
+            background: -webkit-linear-gradient(rgb(19, 132, 197), rgb(25, 129, 189));
+            padding: 12px;
+            color: white;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        }
 
-      //JavaScript Assignment Operators
-      //Assignment operators assign values to JavaScript variables.
-      document.write("<br>" + "JavaScript Arithmetic Operators" + "<br>")
-      document.write("operator: "," =", x = y + "<br>")
-      document.write("operator: ","+=", x = y + "<br>")
-    </script>
-  </body>
+        div.workspace {
+            border: 0px solid black;
+            border-radius: 3px;
+            background-color: rgb(243, 233, 220);
+            padding: 10px 40px;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>JavaScript Comparison Operators</h2>
+    <table class="w3-table-all notranslate">
+        <tr>
+        <th style="width:12%">Operator</th>
+        <th>Description</th>
+        </tr>
+        <tr>
+        <td>==</td>
+        <td>equal to</td>
+        </tr>
+        <tr>
+        <td>===</td>
+        <td>equal value and equal type</td>
+        </tr>
+        <tr>
+        <td>!=</td>
+        <td>not equal</td>
+        </tr>
+        <tr>
+        <td>!==</td>
+        <td>not equal value or not equal type</td>
+        </tr>
+        <tr>
+        <td>&gt;</td>
+        <td>greater than</td>
+        </tr>
+        <tr>
+        <td>&lt;</td>
+        <td>less than</td>
+        </tr>
+        <tr>
+        <td>&gt;=</td>
+        <td>greater than or equal to</td>
+        </tr>
+        <tr>
+        <td>&lt;=</td>
+        <td>less than or equal to</td>
+        </tr>
+        <tr>
+        <td>?</td>
+        <td>ternary operator</td>
+        </tr>
+        </table>
+
+    <div class="panel"></div>
+    <div class="workspace">
+        
+    </div>
+
+    <script src="JS/9_Operators.js"></script>
+</body>
 </html>

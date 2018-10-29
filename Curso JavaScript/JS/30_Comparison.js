@@ -1,11 +1,13 @@
 //OPERATOR FO COMPARATION
 //variable of value
 var x = 5;
+var nome = "Rodrigo";
 
 //equals to(self value:true)
 document.getElementById("demo").innerHTML = (x == 8);//false
 document.getElementById("demo1").innerHTML = (x == 5);//true
 document.getElementById("demo2").innerHTML = (x == "5");//true
+document.getElementById("nom1").innerHTML = ("5" == nome);
 
 //equals value and equals type(self value and type:true)
 document.getElementById("demo3").innerHTML = (x === 5);//true
