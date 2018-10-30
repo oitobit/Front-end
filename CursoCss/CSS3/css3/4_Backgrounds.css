@@ -57,3 +57,46 @@ h1, h2 {
     width:150px;
     background-repeat: no-repeat;
 }
+
+div#exp1 {
+    background-image: url('/home/rolinux/Dropbox/Front-end/Front-end/CursoCss/img/img_flwr.gif');
+    background-repeat: no-repeat;
+    border: 10px solid black;
+    padding: 35px;
+}
+
+div#exp2 {
+    background-image: url('/home/rolinux/Dropbox/Front-end/Front-end/CursoCss/img/img_flwr.gif');
+    background-repeat: no-repeat;
+    border: 10px solid black;
+    padding: 35px;
+    background-origin: border-box;
+}
+
+div#exp3 {
+    background-image: url('/home/rolinux/Dropbox/Front-end/Front-end/CursoCss/img/img_flwr.gif');
+    background-repeat: no-repeat;
+    border: 10px solid black;
+    padding: 35px;
+    background-origin: content-box;
+}
+
+div#ex1 {
+    border: 10px dotted black;
+    padding: 35px;
+    background-color: yellow;
+}
+
+div#ex2 {
+    border: 10px dotted black;
+    padding: 35px;
+    background-color: yellow;
+    background-clip: padding-box;
+}
+
+div#ex3 {
+    border: 10px dotted black;
+    padding: 35px;
+    background-color: yellow;
+    background-clip: content-box;
+}
