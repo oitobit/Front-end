@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-
-=======
->>>>>>> fb9627c7fd368210c38c91dcff1da32f8ae85b81
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,10 +18,6 @@
         }
     </style>
 </head>
-<<<<<<< HEAD
-
-=======
->>>>>>> fb9627c7fd368210c38c91dcff1da32f8ae85b81
 <body>
     <h1 class="h1-ro">jQuery - Get and Set CSS Classes</h1>
     <hr>
@@ -33,13 +25,10 @@
     <hr>
 
     <h2 class="h2-ro">jQuery Manipulating CSS</h2>
-<<<<<<< HEAD
     <p>jQuery has several methods for CSS manipulation. We will look at the
         following methods:</p>
-=======
     <p>jQuery has several methods for CSS manipulation. We will look at the 
     following methods:</p>
->>>>>>> fb9627c7fd368210c38c91dcff1da32f8ae85b81
     <ul>
         <li>addClass() - Adds one or more classes to the selected elements</li>
         <li>removeClass() - Removes one or more classes from the selected elements</li>
@@ -49,33 +38,25 @@
     <hr>
 
     <h2 class="h2-ro">jQuery addClass() Method</h2>
-<<<<<<< HEAD
-    <p>The following example shows how to add class attributes to different
-        elements. Of course you can select multiple elements, when adding classes:</p>
-=======
+    <p>The following example shows how to add class attributes to different elements. Of course you can select multiple elements, when adding classes:</p>
     <p>The following example shows how to add class attributes to different 
     elements. Of course you can select multiple elements, when adding classes:</p>
->>>>>>> fb9627c7fd368210c38c91dcff1da32f8ae85b81
 
     <div class="panel">addClass Method()</div>
     <div class="workspace">
         <h1 id="h1">Heading 1</h1>
         <h2 id="h2">Heading 2</h2>
-<<<<<<< HEAD
 
         <p class="p2">This is a paragraph.</p>
         <p class="p2">This is another paragraph.</p>
 
         <div id="div">This is some important text!</div><br>
-
-=======
         
         <p class="p2">This is a paragraph.</p>
         <p class="p2">This is another paragraph.</p>
         
         <div id="div">This is some important text!</div><br>
         
->>>>>>> fb9627c7fd368210c38c91dcff1da32f8ae85b81
         <button id="btn">Add classes to elements</button>
     </div>
 
@@ -85,49 +66,40 @@
         <div id="div1">This is some text.</div>
         <div id="div2">This is some text.</div>
         <br>
-<<<<<<< HEAD
 
         <button id="btn2">Add classes to first div element</button>
-=======
         
         <button id="btn2">Add classes to first div element</button>  
->>>>>>> fb9627c7fd368210c38c91dcff1da32f8ae85b81
     </div>
     <hr>
 
     <h2 class="h2-ro">jQuery removeClass() Method</h2>
-<<<<<<< HEAD
     <p>The following example shows how to remove a specific class attribute from different
         elements:</p>
-=======
     <p>The following example shows how to remove a specific class attribute from different 
     elements:</p>
->>>>>>> fb9627c7fd368210c38c91dcff1da32f8ae85b81
     <div class="panel">addClass Method()</div>
     <div class="workspace">
         <h1 class="blue">Heading 1</h1>
         <h2 class="blue">Heading 2</h2>
-<<<<<<< HEAD
+ 
 
         <p class="blue">This is a paragraph.</p>
         <p class="blue">This is another paragraph.</p>
 
         <div class="important">This is some important text!</div><br>
 
-=======
-        
         <p class="blue">This is a paragraph.</p>
         <p class="blue">This is another paragraph.</p>
         
         <div class="important">This is some important text!</div><br>
         
->>>>>>> fb9627c7fd368210c38c91dcff1da32f8ae85b81
+ 
         <button id="btn3">Add classes to elements</button>
     </div>
     <hr>
 
     <h2 class="h2-ro">jQuery toggleClass() Method</h2>
-<<<<<<< HEAD
     <p>The following example will show how to use the jQuery toggleClass() method.
         This method toggles between adding/removing classes from the selected elements:</p>
 
@@ -139,7 +111,7 @@
         <p class="pp">This is a paragraph.</p>
         <p class="pp">This is another paragraph.</p>
 
-=======
+ 
     <p>The following example will show how to use the jQuery toggleClass() method. 
     This method toggles between adding/removing classes from the selected elements:</p>
     
@@ -151,68 +123,65 @@
         <p class="pp">This is a paragraph.</p>
         <p class="pp">This is another paragraph.</p>
         
->>>>>>> fb9627c7fd368210c38c91dcff1da32f8ae85b81
+ 
         <button id="btn4">Add classes to elements</button>
     </div>
 
-
     <!-- //Código javascript -->
+    <script src="jquery.min.js"></script>
     <script type="text/javascript">
 
         // added one or more classes of element selected
-<<<<<<< HEAD
         $(document).ready(function () {
             $("#btn").click(function () {
-=======
+ 
         $(document).ready(function(){
             $("#btn").click(function() {
->>>>>>> fb9627c7fd368210c38c91dcff1da32f8ae85b81
+ 
                 $("#h1, #h2, .p2").addClass("blue");
                 $("#div").addClass("important");
             })
         })
-<<<<<<< HEAD
+ 
 
         // added several class
         $(document).ready(function () {
             $("#btn2").click(function () {
-=======
+ 
         
         // added several class
         $(document).ready(function(){
             $("#btn2").click(function() {
->>>>>>> fb9627c7fd368210c38c91dcff1da32f8ae85b81
+ 
                 $("#div1").addClass("blue important");
             })
         })
 
         // remove one or more classes of element selected
-<<<<<<< HEAD
+ 
         $(document).ready(function () {
             $("#btn3").click(function () {
-=======
+ 
         $(document).ready(function() {
             $("#btn3").click(function() {
->>>>>>> fb9627c7fd368210c38c91dcff1da32f8ae85b81
+ 
                 $(".blue, .important").removeClass("blue important");
             })
         })
 
         // toggle between add/remove classses
-<<<<<<< HEAD
+ 
         $(document).ready(function () {
             $("#btn4").click(function () {
-=======
+            })
+        })
+        
         $(document).ready(function() {
             $("#btn4").click(function() {
->>>>>>> fb9627c7fd368210c38c91dcff1da32f8ae85b81
+ 
                 $("#h11, #h22, .pp").toggleClass("blue");
             })
         })
     </script>
 </body>
-<<<<<<< HEAD
-
-=======
->>>>>>> fb9627c7fd368210c38c91dcff1da32f8ae85b81
-</html>
+ </html>
