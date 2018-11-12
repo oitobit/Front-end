@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery - css() Method</title>
+    <link rel="stylesheet" href="myCss-style.css"> 
+</head>
+<body>
+    <h1 class="h1-ro">jQuery - css() Method</h1>
+    <hr>
+
+    <h1 class="h2-ro">jQuery - css() Method</h1>
+    <p>The css() method sets or returns one or more style properties for the selected elements.</p>
+    <hr>
+
+    <h2 class="h2-ro">Return a CSS Property</h2>
+    <p>To return the value of a specified CSS property, use the following syntax:</p>
+    <div class="w3-code w3-border notranslate"><div>
+        css(&quot;<i>propertyname</i>&quot;);</div></div>
+    <p>The following example will return the background-color value of the FIRST matched element:</p>
+    
+    <p id="demo">Centralizar</p>
+    <hr>
+
+
+    <h2 class="h2-ro">Set a CSS Property</h2>
+    <p>To set a specified CSS property, use the following syntax:</p>
+    <div class="w3-code w3-border notranslate"><div>
+    css(&quot;<i>propertyname</i>&quot;,&quot;<i>value</i>&quot;);</div></div>
+    <p id="demo2">I'm a paragraph</p>
+
+    <hr>
+
+    <h2 class="h2-ro">Set Multiple CSS Properties</h2>
+    <p>To set multiple CSS properties, use the following syntax:</p>
+    <div class="w3-code w3-border notranslate"><div>
+    css({&quot;<i>propertyname</i>&quot;:&quot;<i>value</i>&quot;,&quot;<i>propertyname</i>&quot;:&quot;<i>value</i>&quot;,...});</div></div>
+
+    <p id="demo3">Right weight color</p>
+
+
+    <!-- //código javascript -->
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#demo").css("text-align","center");
+        })
+
+        $(document).ready(function(){
+            $("#demo2").css("background-color","yellow");
+        })
+
+        $(document).ready(function(){
+            $("#demo3").css({"text-align":"right","font-weight":"black","background-color":"#ff0000","color":"#ffffff"});
+        })
+    </script>
+</body>
+</html>
