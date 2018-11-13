@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery - Dimensions</title>
+    <link rel="stylesheet" href="myCss-style.css">
+    <style>
+        #div1 {
+            width: 300px;
+            height: 100px;
+            margin: 3px;
+            background-color: lightblue;
+        }
+
+        #div2 {
+            height: 100px;
+            width: 300px;
+            padding: 10px;
+            margin: 3px;
+            border: 1px solid blue;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1-ro">jQuery - Dimensions</h1>
+    <hr>
+    <p>With jQuery, it is easy to work with the dimensions of elements and browser window</p>
+    <hr>
+
+    <h2 class="h2-ro">jQuery Dimension Methods</h2>
+    <p>jQuery has several important methods for working with dimensions:</p>
+    <ul>
+        <li>width()</li>
+        <li>height()</li>
+        <li>innerWidth()</li>
+        <li>innerHeight()</li>
+        <li>outerWidth()</li>
+        <li>outerHeight()</li>
+    </ul>
+    <hr>
+
+    <h2 class="h2-ro">jQuery Dimensions</h2>
+    <img src="http://www.tutorialsteacher.com/Content/images/jquery/jquery-dom-dimension.png" alt="dimensions">
+    <p>A imagem acima, ilustra que se definido o innerHeight ou innerWidth, a ocupação do espaço da área será coberta do inicio do conteúdo(elemento) até a borda.</p>
+    <p>Definido o outerHeight ou outerWidth, a ocupação do espaço da área será coberta do inicio do conteúdo(elemento) até é o padding, cobrindo também a borda do elemento.</p>
+    <hr>
+
+    <h2 class="h2-ro">jQuery width() and height() Methods</h2>
+    <p>The width() method sets or returns the width of an element (excludes 
+    padding, border and margin).</p>
+
+    <p>The height() method sets or returns the height of an element (excludes padding, border 
+    and margin).</p>
+    <p>The following example returns the width and height of a specified &lt;div&gt; 
+    element:</p>
+
+    <div class="panel">Height and Width Methods()</div>
+    <div class="workspace">
+
+        <div id="div1"></div>
+
+        <button id="btn">Display dimensions</button>
+        
+    </div>
+    <hr>
+
+    <h2 class="h2-ro">jQuery innerWidth() and innerHeight() Methods</h2>
+    <p>The innerWidth() method returns the width of an element (includes padding).</p>
+    <p>The innerHeight() method returns the height of an element (includes padding).</p>
+    <p>The following example returns the inner-width/height of a specified &lt;div&gt; 
+    element:</p>
+
+    <div class="panel">innerHeight and innerWidth Methods()</div>
+    <div class="workspace">
+
+        <div id="div2"></div>
+
+        <button id="btn2">Display dimensions</button>
+        
+    </div>
+
+    <!-- Código javascript -->
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#btn").click(function(){
+                var txt = "";
+                txt += "Width of div is: " +  $("#div1").width() + "<br>";
+                txt += "Height of div is: " + $("#div1").height();
+                $("#div1").html(txt);
+            })
+        })
+
+        $(document).ready(function() {
+            $("#btn2").click(function() {
+                var text = "";
+                text += "Width div2 is: " + $("#div2").width() +  "<br>";
+                text += "Height div2 is: " + $("#div2").height();
+                $("#div2").html(text);
+            })
+        })
+    </script>
+</body>
+</html>
