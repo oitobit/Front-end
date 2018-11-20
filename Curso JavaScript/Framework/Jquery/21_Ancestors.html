@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Traversing - Ancestors</title>
+    <link rel="stylesheet" href="myCss-style.css">
+    <style>
+        .ancestors * { 
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }   
+    </style>
+</head>
+<body>
+    <h1 class="h1-ro">jQuery Traversing - Ancestors</h1>
+    <hr>
+    <p class="intro">An ancestor is a parent, grandparent, great-grandparent, and so 
+    on.</p>
+    <p class="intro">With jQuery you can traverse up the DOM tree to 
+    find ancestors of an element.</p>
+    <hr>
+
+    <h2 class="h2-ro">Traversing Up the DOM Tree</h2>
+    <p>Three useful jQuery methods for traversing up the DOM tree are:</p>
+    <ul>
+        <li>parent()</li>
+        <li>parents()</li>
+        <li>parentsUntil()</li>
+    </ul>
+    <hr>
+
+    <h2 class="h2-ro">jQuery parent() Method</h2>
+    <p>The parent() method returns the direct parent element of the selected element.</p>
+    <p>This method only traverse a single level up the DOM tree.</p>
+    <p>The following example returns the direct parent element of each &lt;span&gt; 
+    elements:</p>
+
+    <div class="ancestors">
+        <div style="width:500px;">div (great-grandparent)
+            <ul>ul (grandparent)  
+                <li>li (direct parent)
+                <span>span</span>
+                </li>
+            </ul>   
+        </div>
+            
+        <div style="width:500px;">div (grandparent)   
+            <p>p (direct parent)
+                <span>span</span>
+            </p> 
+        </div>
+    </div>
+    <hr>
+
+    <h2 class="h2-ro">jQuery parents() Method</h2>
+    <p>The parents() method returns all ancestor elements of the selected element, 
+    all the way up to the document's root element (&lt;html&gt;).</p>
+    <p>The following example returns all&nbsp;ancestors of all 
+    &lt;span&gt; elements:</p>
+    
+    <div class="ancestors">div (great-great-grandparent)
+        <div style="width:500px;">div (great-grandparent)
+            <ul>ul (grandparent)  
+                <li>li (direct parent)
+                    <span id="span">span</span>
+                </li>
+            </ul>   
+        </div>
+    </div>
+        <button id="btn">See all parents!</button>
+    
+        <p><b>Obs.:</b> Ao clicar no botão, todas as propriedades serão aplicadas ao documento desta página. Dessa forma todos os elementos ancestrais do "span" também terão parte dessa aplicação, consistindo até o elemento root deste documento.</p>
+    
+        <p>You can also use an optional parameter to filter the search for ancestors.</p>
+        <p>The following example returns all ancestors of all &lt;span&gt; elements that are &lt;ul&gt; elements:</p>
+
+    <div class="ancestors">div (great-great-grandparent)
+        <div style="width:500px;">div (great-grandparent)
+            <ul>ul (grandparent)  
+                <li>li (direct parent)
+                    <span id="span2">span</span>
+                </li>
+            </ul>   
+        </div>
+    </div>
+    <hr>
+
+    <h2 class="h2-ro">jQuery parentsUntil() Method</h2>
+    <p>The parentsUntil() method returns all ancestor elements between two given 
+    arguments.</p>
+    <p>The following example returns all&nbsp;ancestor elements 
+    between a &lt;span&gt; and a &lt;div&gt; element:</p>
+
+    <!-- Código JavaScript -->
+    <script src="jquery.min.js"></script>    
+    <script>
+        $(document).ready(function() {
+            $("span").parent().css({"color":"red","border":"2px solid red"})
+        })
+
+        $(document).ready(function() {
+            $("#btn").click(function(){
+                $("#span").parents().css({"color":"red","border":"2px solid red"})
+            })
+        })
+
+        $(document).ready(function() {
+            $("#span2").parents("ul").css({"color":"red","border":"2px solid red"})
+        })
+    </script>
+</body>
+</html>
