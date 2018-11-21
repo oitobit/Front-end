@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Traversing - Descendants</title>
+    <link rel="stylesheet" href="myCss-style.css">
+    <style>
+        .descendants * { 
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1-ro">jQuery Traversing - Descendants</h1>
+    <hr>
+    <p class="intro">A descendant is a child, grandchild, great-grandchild, and so on.</p>
+    <p class="intro">With jQuery you can traverse down the DOM tree to find descendants of an element.</p>
+    <hr>
+
+    <h2 class="h2-ro">Traversing Down the DOM Tree</h2>
+    <p>Two useful jQuery methods for traversing down the DOM tree are:</p>
+    <ul>
+        <li>children()</li>
+        <li>find()</li>
+    </ul>
+    <hr>
+
+    <h2 class="h2-ro">jQuery children() Method</h2>
+    <p>The children() method returns all direct children of the selected element.</p>
+    <p>This method only traverses a single level down the DOM tree.</p>
+    <p>The following example returns all elements that are direct children of each &lt;div&gt; elements:</p>
+
+    <div class="descendants" style="width:500px;">div (current element) 
+        <p>p (child)
+            <span>span (grandchild)</span>     
+        </p>
+        <p>p (child)
+            <span>span (grandchild)</span>
+        </p> 
+    </div>     
+    <hr>
+
+    <h2 class="h2-ro">jQuery find() Method</h2>
+    <p>The find() method returns descendant elements of the selected element, all the way down to the last descendant.</p>
+    <p>The following example returns all &lt;span&gt; elements that are descendants of &lt;div&gt;:</p>
+
+    <div class="descendants div2" style="width:500px;">div (current element) 
+        <p>p (child)
+            <span>span (grandchild)</span>     
+        </p>
+        <p>p (child)
+            <span>span (grandchild)</span>
+        </p> 
+    </div>
+
+
+    <!-- Código JavaScript -->
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("div").children().css({"color":"red", "border":"2px solid red"});
+        })
+        $(document).ready(function(){
+            $(".div2").find("span").css({"color": "red", "border": "2px solid red"});
+        });
+    </script>
+</body>
+</html>
