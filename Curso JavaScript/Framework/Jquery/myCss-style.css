@@ -1,4 +1,4 @@
-@import url("https://www.w3schools.com/w3css/4/w3.css");
+@import url('https://www.w3schools.com/w3css/4/w3.css');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700');
 
 
@@ -15,7 +15,7 @@ html, body {
     width: 75%;
     margin: 20px auto;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     counter-reset: indice;
 }
 
@@ -94,7 +94,7 @@ button#btn, #btn2, #btn3, #btn4 {
     cursor: pointer;
     color: #fff;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: 400;
     font-style: normal;
     padding: 7px 10px;
@@ -183,7 +183,7 @@ div.panel {
     padding: 12px;
     color: white;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-weight: bold;
 }
 
@@ -193,6 +193,11 @@ div.workspace {
     background-color: rgb(243, 233, 220);
     padding: 10px 40px;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     position: relative;
+}
+
+p.intro {
+    font-size: 1em;
+    font-family: var(--font-family);
 }
