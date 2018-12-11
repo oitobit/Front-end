@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Traversing - Siblings</title>
+    <link rel="stylesheet" href="myCss-style.css">
+    <style>
+        .siblings * { 
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1-ro">jQuery Traversing - Siblings</h1>
+    <hr>
+    <p>With jQuery you can traverse sideways in the DOM tree to find siblings of an element.</p>
+    <p>Siblings share the same parent.</p>
+    <hr>
+
+    <h2 class="h2-ro">Traversing Sideways in The DOM Tree</h2>
+    <p>There are many useful jQuery methods for traversing sideways in the DOM tree:</p>
+    <ul>
+        <li>siblings()</li>
+        <li>next()</li>
+        <li>nextAll()</li>
+        <li>nextUntil()</li>
+        <li>prev()</li>
+        <li>prevAll()</li>
+        <li>prevUntil()</li>
+    </ul>
+    <hr>
+
+    <h2 class="h2-ro">jQuery siblings() Method</h2>
+    <p>The siblings() method returns all sibling elements of the selected element.</p>
+    <p>The following example returns all sibling elements of &lt;p1&gt;:</p>
+
+    <div class="siblings">div (parent)
+        <h3>h3
+            <p id="p1">p1</p>
+            <p>p2</p>
+            <p>p3</p>
+        </h3>
+        <h4>h4</h4>
+    </div>
+
+    <p>You can also use an optional parameter to filter the search for siblings.</p>
+    <p>The following example returns all sibling elements of &lt;h2&gt; that are &lt;p&gt; 
+    elements:</p>
+
+    <div class="siblings">div (parent)
+        <h2>h2</h2>
+        <p id="p">p1</p>
+        <p>p2</p>
+        <p>p3</p>
+        <p>p4</p>
+        <p id="p">p5</p>
+    </div>
+    <hr>
+
+    <h2 class="h2-ro">jQuery next() Method</h2>
+    <p>The next() method returns the next sibling element of the selected element.</p>
+    <p>The following example returns the next sibling of &lt;p1&gt;:</p>
+    <div class="siblings">
+        <p id="demo">p1</p>
+        <p>p2</p>
+        <p>p3</p>
+        <p>p4</p>
+    </div>
+
+    <!-- Código JavaScript -->
+    <script src="jquery.min.js"></script>
+    <script>
+        // find siblings of element #p1 within one h3
+        $(document).ready(function() {
+            $("#p1").siblings().css({"border": "2px solid blue", "color": "blue"});
+        });
+
+        // find sibling sideways element #p
+        $(document).ready(function() {
+            $("h2").siblings("#p").css({"border": "2px solid red", "color": "red"});
+        });
+
+        // find next element of one element #demo
+        $(document).ready(function() {
+            $("#demo").next().css({"border": "2px solid green", "color": "green"});
+        });
+    </script>   
+</body>
+</html>
